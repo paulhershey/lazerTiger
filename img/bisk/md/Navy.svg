@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="335" height="690" viewBox="0 0 335 690">
-  <g fill="none" fill-rule="evenodd">
-    <rect width="335" height="258" fill="#223746"/>
-    <rect width="335" height="72" y="258" fill="#465462"/>
-    <rect width="335" height="72" y="330" fill="#67757D"/>
-    <rect width="335" height="72" y="402" fill="#89919A"/>
-    <rect width="335" height="72" y="474" fill="#A7AFB5"/>
-    <rect width="335" height="72" y="546" fill="#C7CBD0"/>
-    <rect width="335" height="72" y="618" fill="#EBEEED"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="335" height="690"><g fill="none" fill-rule="evenodd"><path fill="#223746" d="M0 0h335v258H0z"/><path fill="#465462" d="M0 258h335v72H0z"/><path fill="#67757D" d="M0 330h335v72H0z"/><path fill="#89919A" d="M0 402h335v72H0z"/><path fill="#A7AFB5" d="M0 474h335v72H0z"/><path fill="#C7CBD0" d="M0 546h335v72H0z"/><path fill="#EBEEED" d="M0 618h335v72H0z"/></g></svg>

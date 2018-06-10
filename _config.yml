@@ -1,0 +1,23 @@
+---
+timezone: UTC
+title: Paul Hershey
+email: hersheypaul@gmail.com
+description: 'Write your description here for you website SEO.
+
+'
+url:
+author: Paul Hershey
+twitter:
+  username:
+  card: summary
+social:
+  name: Paul Hershey
+  links:
+    - https://twitter.com/paulhershey
+baseurl:
+plugins:
+- jekyll-sitemap
+- jekyll-seo-tag
+permalink: "/articles/:title/"
+highlighter: rouge
+markdown: kramdown

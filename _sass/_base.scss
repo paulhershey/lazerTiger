@@ -1,0 +1,43 @@
+// Grid Overlay
+.grid-overlay {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.grid-overlay div[class^="col-"] {
+  border-left: 2px dotted rgba(0, 0, 0, 0.1);
+  border-right: 2px dotted rgba(0, 0, 0, 0.1);
+}
+
+.grid-overlay div[class^="col-"] h1 {
+  background-color: rgba(255, 0, 0, 0.1);
+  height: 100vh;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.grid-overlay div[class^="col-"]:nth-child(even) h1 {
+  background-color: rgba(255, 0, 0, 0.2);
+  height: 100vh;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+// End Grid Overlay
+
+// Gradient Classes
+.primary-gradient   { background: $primary-gradient; }
+.secondary-gradient { background: $secondary-gradient; }
+
+
+// Shadow Classes
+.s-light-1 { box-shadow: $shadow-light-1; }
+.s-light-2 { box-shadow: $shadow-light-2; }
+.s-light-3 { box-shadow: $shadow-light-3; }
+.s-light-4 { box-shadow: $shadow-light-4; }
+
+.s-dark-1  { box-shadow: $shadow-dark-1; }
+.s-dark-2  { box-shadow: $shadow-dark-2; }
+.s-dark-3  { box-shadow: $shadow-dark-3; }
+.s-dark-4  { box-shadow: $shadow-dark-4; }

@@ -24,9 +24,7 @@
   z-index: 1;
   left: 0;
   overflow: hidden;
-  background: -webkit-linear-gradient(219deg, $pink, $red);
-  background: -moz-linear-gradient(219deg, $pink, $red);
-  background: -o-linear-gradient(219deg, $pink, $red);
+  @include background-gradient(219deg, $pink, $red);
   transition: 0.5s;
 
   > .content {

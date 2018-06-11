@@ -1,0 +1,13 @@
+@mixin background-gradient($direction, $start, $stop) {
+  background: -webkit-linear-gradient($direction, $start, $stop);
+  background: -moz-linear-gradient($direction, $start, $stop);
+  background: -o-linear-gradient($direction, $start, $stop);
+}
+
+@mixin appearance($arg) {
+  -webkit-appearance: $arg;
+  -moz-appearance: $arg;
+  -ms-appearance: $arg;
+  -o-appearance: $arg;
+  appearance: $arg;
+}

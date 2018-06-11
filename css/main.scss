@@ -3,10 +3,12 @@
 //Bootstrap Imports
 @import "vendor/custom-variables";
 @import "vendor/bootstrap";
-
+@import "mixins";
+@import "fonts";
 
 //Page Components
-@import "fonts";
 @import "base";
 @import "header";
 @import "dropdown";
+
+@import "contact";

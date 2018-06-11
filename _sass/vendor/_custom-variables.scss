@@ -89,7 +89,8 @@ $spacers: map-merge((
   2: ($spacer * .5),   // 8px
   3: $spacer,          // 16px Default
   4: ($spacer * 2),    // 32px
-  5: ($spacer * 4)     // 64px
+  5: ($spacer * 4),    // 64px
+  6: ($spacer * 9)     // 144px
 ), $spacers);
 
 // This variable affects the `.h-*` and `.w-*` classes.

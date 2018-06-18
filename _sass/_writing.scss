@@ -1,0 +1,47 @@
+.writing {
+  padding-top: map-get($spacers, 8);
+  padding-bottom: map-get($spacers, 8);
+  background: $black;
+  color: $white;
+
+  .title {
+    margin-bottom: map-get($spacers, 5);
+  }
+
+  [class^="col"] {
+    margin-bottom: map-get($spacers, 5);
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: map-get($spacers, 3);
+    text-decoration: none;
+    color: $white;
+    transform: translate(0);
+    box-shadow: $shadow-dark-1;
+    transition: all 0.3s;
+
+    .img-contain {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+
+    &:hover {
+      transform: translateY(-5%);
+      box-shadow: $shadow-dark-4;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 50%;
+    }
+  }
+}

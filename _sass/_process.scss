@@ -1,0 +1,13 @@
+.process {
+  padding-top: map-get($spacers, 8);
+  background: $black;
+  color: $white;
+
+  .content {
+    margin-bottom: map-get($spacers, 7);
+
+    img {
+      margin-bottom: map-get($spacers, 5);
+    }
+  }
+}

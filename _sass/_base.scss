@@ -1,7 +1,12 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+}
 // Grid Overlay
 .grid-overlay {
-  z-index: -1;
-  position: absolute;
+  // z-index: -1;
+  // position: absolute;
   top: 0;
   width: 100%;
 }

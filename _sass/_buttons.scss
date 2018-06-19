@@ -1,0 +1,87 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: $btn-width;
+  margin: 1rem auto;
+  text-decoration: none;
+  text-align: center;
+  line-height: $btn-height;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  border-radius: 30px;
+  z-index: 1;
+
+  span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: currentColor;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  &:hover {
+    text-decoration: none;
+    span {
+      width: 225%;
+      height: $btn-width * 2.25;
+    }
+  }
+
+  &-primary {
+    color: $primary;
+    &:hover {
+      color: tint($primary, 75%);
+      span {
+        background-color: $primary;
+      }
+    }
+  }
+
+  &-secondary {
+	  color: $black;
+    &:hover {
+      color: tint($black, 75%);
+      span {
+        background-color: $black;
+      }
+    }
+  }
+
+  &-dribbble {
+    color: #f341c3;
+    &:hover {
+      color: tint(#f341c3, 75%);
+      span {
+        background-color: #f341c3;
+      }
+    }
+  }
+
+  &-medium {
+    color: #00b973;
+    &:hover {
+      color: tint(#00b973, 75%);
+      span {
+        background-color: #00b973;
+      }
+    }
+  }
+
+  &-behance,
+  &-linkedin {
+    color: #4a90e2;
+    &:hover {
+      color: tint(#4a90e2, 75%);
+      span {
+        background-color: #4a90e2;
+      }
+    }
+  }
+
+}

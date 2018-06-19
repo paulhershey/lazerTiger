@@ -4,6 +4,7 @@ var browserSync  = require('browser-sync').create();
 var autoprefixer = require('gulp-autoprefixer');
 var uglify       = require('gulp-uglify');
 var imagemin     = require('gulp-imagemin');
+var svgSprite    = require('gulp-svg-sprite');
 
 //Error Logging
 function errorLog(error) {
@@ -29,6 +30,20 @@ gulp.task('styles', function () {
 //  .pipe(imagemin())
 //  .pipe(gulp.dest('img/min'));
 // });﻿
+
+gulp.task('svg', function () {
+  gulp.src('**/*.svg', { cwd: './img/home/sm/' })
+    .pipe(svgSprite({
+      mode: {
+        symbol: {
+          dest: '.',
+          example: true,
+          sprite: 'sprite.svg'
+        },
+      }
+    }))
+    .pipe(gulp.dest('./img/svg/'));
+});
 
 //Uglify Javascript Task
 gulp.task('uglify', function () {

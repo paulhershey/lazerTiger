@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
-  <g fill="none" fill-rule="evenodd" transform="translate(-18 -18)">
-    <rect width="72" height="72" fill="none"/>
-    <g transform="translate(18 18)">
-      <circle cx="18" cy="18" r="18" fill="#48484F"/>
-      <path fill="#FFF" fill-rule="nonzero" d="M13.8461538,8.30769231 L30.4615385,17.8099548 L13.8461538,26.7692308 L13.8461538,8.30769231 Z M15.4685347,24.055874 L27.1289304,17.7684057 L15.4685347,11.0998788 L15.4685347,24.055874 Z"/>
-      <path fill="#FFF" fill-rule="nonzero" d="M9.23076923,10.1538462 L23.0769231,17.7556561 L9.23076923,24.9230769 L9.23076923,10.1538462 Z M10.8528348,22.3029919 L19.7155991,17.715208 L10.8528348,12.8493766 L10.8528348,22.3029919 Z"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"><g fill="none" fill-rule="evenodd"><path d="M-18-18h72v72h-72z"/><g><circle cx="18" cy="18" r="18" fill="#48484F"/><path fill="#FFF" fill-rule="nonzero" d="M13.846 8.308l16.616 9.502-16.616 8.96V8.307zm1.623 15.748l11.66-6.288-11.66-6.668v12.956z"/><path fill="#FFF" fill-rule="nonzero" d="M9.23 10.154l13.847 7.602L9.23 24.923v-14.77zm1.623 12.149l8.863-4.588-8.863-4.866v9.454z"/></g></g></svg>

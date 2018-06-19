@@ -1,0 +1,11 @@
+.about {
+  padding-top: map-get($spacers, 6);
+
+  .logo-list {
+    margin-top: map-get($spacers, 4);
+
+    > [class^='col'] {
+      margin-bottom: map-get($spacers, 4);
+    }
+  }
+}

@@ -22,7 +22,7 @@
     color: $white;
     transform: translate(0);
     box-shadow: $shadow-dark-1;
-    transition: all 0.3s;
+    transition: all 0.6s;
 
     .img-contain {
       position: absolute;
@@ -34,8 +34,8 @@
     }
 
     &:hover {
-      transform: translateY(-5%);
-      box-shadow: $shadow-dark-4;
+      transform: translateY(-8px);
+      box-shadow: $shadow-dark-3;
     }
 
     &:before {

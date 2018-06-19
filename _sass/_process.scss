@@ -1,7 +1,15 @@
 .process {
-  padding-top: map-get($spacers, 8);
   background: $black;
   color: $white;
+  padding-top: map-get($spacers, 6);
+
+  @include media-breakpoint-up(lg) {
+    padding-top: map-get($spacers, 8);
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-top: map-get($spacers, 9);
+  }
 
   .content {
     margin-bottom: map-get($spacers, 7);

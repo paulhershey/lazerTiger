@@ -5,75 +5,80 @@ title: Paul Hershey
 
 <section class="hero ~ container">
   <div class="jumbotron">
-    <img src="#" alt="Paul Hershey">
+    {% include svg.html name="logo" %}
     <h1>Product Designer</h1>
     <p>Research / Interaction Design / FE Design</p>
-    <a href="#" class="btn btn-primary">Case Studies<span></span></a>
+    <a class="btn btn-primary" href="#casestudies">Case Studies<span></span></a>
   </div>
 </section>
 
 <section class="about ~ container text-center">
-  <h2>About</h2>
-  <p>I help people create human-centered products that users love. I have over fifteen years of experience in the design field and have worked with the U.S. Army, Infor, Code School, and Electronic Arts to name a few. I enjoy every stage of the design process from initial research to building visual languages and analyzing data. Giving back to the community is also very important to me. I’m on the board for AIGA Orlando, mentor designers who are new to the industry, and regularly speak about UX, design, leadership, and culture at conferences and meetups.</p>
-  <a href="#" class="btn btn-linkedin">LinkedIn<span></span></a>
-  <div class="list-group">
-    <img src="#" alt="">
-    <img src="#" alt="">
-    <img src="#" alt="">
-    <img src="#" alt="">
-    <img src="#" alt="">
-    <img src="#" alt="">
+  <div class="row d-flex justify-content-center">
+    <div class="col-sm-10 col-lg-8 col-xl-6">
+      <h2>About</h2>
+      <p>I help people create human-centered products that users love. I have over fifteen years of experience in the design field and have worked with the U.S. Army, Infor, Code School, and Electronic Arts to name a few. I enjoy every stage of the design process from initial research to building visual languages and analyzing data. Giving back to the community is also very important to me. I’m on the board for AIGA Orlando, mentor designers who are new to the industry, and regularly speak about UX, design, leadership, and culture at conferences and meetups.</p>
+      <a class="btn btn-linkedin" href="https://www.linkedin.com/in/paulhershey/" target="_blank">LinkedIn<span></span></a>
+
+      <div class="logo-list ~ row">
+        <div class="col-4 col-md-2">
+          {% include svg.html name="EA" %}
+        </div>
+        <div class="col-4 col-md-2">
+          {% include svg.html name="Pluralsight" %}
+        </div>
+        <div class="col-4 col-md-2">
+          {% include svg.html name="CodeSchool" %}
+        </div>
+        <div class="col-4 col-md-2">
+          {% include svg.html name="Southwest" %}
+        </div>
+        <div class="col-4 col-md-2">
+          {% include svg.html name="infor" %}
+        </div>
+        <div class="col-4 col-md-2">
+          {% include svg.html name="Gannett" %}
+        </div>
+      </div>
+    </div>
   </div>
+
 </section>
 
-<section class="case-studies ~ container">
-  <div class="d-flex flex-row">
-    <div class="col-6">
-      <img src="" alt="">
-    </div>
-    <div class="col-6">
-      <span>Product Design</span>
-      <h3>Flux</h3>
-      <p>Electronic Arts needed a new way to empower its writers. The solution was Flux, a custom publishing platform.</p>
-      <a class="btn btn-secondary" href="#">Learn more<span></span></a>
-    </div>
-  </div>
-  <div class="d-flex flex-row-reverse">
-    <div class="col-6">
-      <img src="" alt="">
-    </div>
-    <div class="col-6">
-      <span>Branding</span>
-      <h3>Bisk Rebrand</h3>
-      <p>With 45+ years of experience in the education space, Bisk was looking for a brand reboot to better express its values.</p>
-      <a class="btn btn-secondary" href="#">Learn more<span></span></a>
-    </div>
-  </div>
-  <div class="d-flex flex-row">
-    <div class="col-6">
-      <img src="" alt="">
-    </div>
-    <div class="col-6">
-      <span>Art Direction</span>
-      <h3>Gategroup</h3>
-      <p>Gategroup, which delivers training to students 39,000 ft. in the air, needed to improve the effectiveness of its courses.</p>
-      <a class="btn btn-secondary" href="#">Learn more<span></span></a>
-    </div>
-  </div>
-  <div class="d-flex flex-row-reverse">
-    <div class="col-6">
-      <img src="" alt="">
-    </div>
-    <div class="col-6">
-      <span>Education</span>
-      <h3>Code School</h3>
-      <p>The Elements of Web Design is a UX course aimed at teaching developers the fundamentals of user-centered design.</p>
-      <a class="btn btn-secondary" href="#">Learn more<span></span></a>
-    </div>
-  </div>
-  <div class="">
-    <a class="btn btn-dribbble" href="#">Dribbble<span></span></a>
-    <a class="btn btn-behance" href="#">Behance<span></span></a>
+<section id="casestudies" class="case-studies ~ container">
+
+  {%- include casestudy.html
+    category="Product Design"
+    title="Flux"
+    body="Electronic Arts needed a new way to empower its writers. The solution was Flux, a custom publishing platform."
+    image="flux-pic"
+    url="#" -%}
+
+  {%- include casestudy.html
+    direction="reverse"
+    category="Branding"
+    title="Bisk Rebrand"
+    body="With 45+ years of experience in the education space, Bisk was looking for a brand reboot to better express its values."
+    image="bisk-pic"
+    url="#" -%}
+
+  {%- include casestudy.html
+    category="Art Direction"
+    title="Gategroup"
+    body="Gategroup, which delivers training to students 39,000 ft. in the air, needed to improve the effectiveness of its courses."
+    image="gate-pic"
+    url="#" -%}
+
+  {%- include casestudy.html
+    direction="reverse"
+    category="Education"
+    title="Code School"
+    body="The Elements of Web Design is a UX course aimed at teaching developers the fundamentals of user-centered design."
+    image="code-school-pic"
+    url="#" -%}
+
+  <div class="external-links ~ text-center">
+    <a class="btn btn-dribbble" href="https://dribbble.com/paulhershey" target="_blank">Dribbble<span></span></a>
+    <a class="btn btn-behance" href="https://www.behance.net/paulhershey" target="_blank">Behance<span></span></a>
   </div>
 </section>
 
@@ -88,11 +93,9 @@ title: Paul Hershey
 
         <div class="content">
           <picture>
-            <source srcset="{{ "img/home/lg/illo1@2x.png" | relative_url }}"
-                    media="(min-width: 960px)">
-            <source srcset="{{ "img/home/xl/illo1@2x.png" | relative_url }}"
-                    media="(min-width: 1376px)">
-            <img src="{{ "img/home/lg/illo1@2x.png" | relative_url }}" class="img-fluid" alt="">
+            <source media="(min-width: 1024px)" srcset="img/home/lg/illo1@2x.png">
+            <source media="(min-width: 1440px)" srcset="img/home/xl/illo1@2x.png">
+            <img src="img/home/lg/illo1@2x.png" class="img-fluid" alt="">
           </picture>
 
           <h3>Start with a conversation.</h3>
@@ -101,11 +104,9 @@ title: Paul Hershey
 
         <div class="content">
           <picture>
-            <source srcset="{{ "img/home/lg/illo2@2x.png" | relative_url }}"
-                    media="(min-width: 960px)">
-            <source srcset="{{ "img/home/xl/illo2@2x.png" | relative_url }}"
-                    media="(min-width: 1376px)">
-            <img src="{{ "img/home/lg/illo2@2x.png" | relative_url }}" class="img-fluid" alt="">
+            <source media="(min-width: 1440px)" srcset="img/home/xl/illo2@2x.png">
+            <source media="(min-width: 1024px)" srcset="img/home/lg/illo2@2x.png">
+            <img src="img/home/lg/illo2@2x.png" class="img-fluid" alt="">
           </picture>
           <h3>Identify challenges &mdash; and opportunities.</h3>
           <p>Once I converge on the findings and define my areas of focus, I can identify underlying themes. This will reveal challenges and opportunities for ideation. This phase allows for an understanding of the customer’s motivations and helps to empathize with their needs. I can begin to reframe the problems, create hypotheses, and consider possible solutions.</p>
@@ -113,11 +114,9 @@ title: Paul Hershey
 
         <div class="content">
           <picture>
-            <source srcset="{{ "img/home/lg/illo3@2x.png" | relative_url }}"
-                    media="(min-width: 960px)">
-            <source srcset="{{ "img/home/xl/illo3@2x.png" | relative_url }}"
-                    media="(min-width: 1376px)">
-            <img src="{{ "img/home/lg/illo3@2x.png" | relative_url }}" class="img-fluid" alt="">
+            <source media="(min-width: 1440px)" srcset="img/home/xl/illo3@2x.png">
+            <source media="(min-width: 1024px)" srcset="img/home/lg/illo3@2x.png">
+            <img src="img/home/lg/illo3@2x.png" class="img-fluid" alt="">
           </picture>
           <h3>Pitch multiple solutions.</h3>
           <p>Once I have a thorough understanding of the customer’s motivations, I can start pitching solutions. This is the point where I really get to flex my creative muscles. Through ideation sessions — and team workshops whenever possible — I am able to zero in on a handful of ideas to validate with real users.</p>
@@ -125,11 +124,9 @@ title: Paul Hershey
 
         <div class="content">
           <picture>
-            <source srcset="{{ "img/home/lg/illo4@2x.png" | relative_url }}"
-                    media="(min-width: 960px)">
-            <source srcset="{{ "img/home/xl/illo4@2x.png" | relative_url }}"
-                    media="(min-width: 1376px)">
-            <img src="{{ "img/home/lg/illo4@2x.png" | relative_url }}" class="img-fluid" alt="">
+            <source media="(min-width: 1440px)" srcset="img/home/xl/illo4@2x.png">
+            <source media="(min-width: 1024px)" srcset="img/home/lg/illo4@2x.png">
+            <img src="img/home/lg/illo4@2x.png" class="img-fluid" alt="">
           </picture>
           <h3>Build, test, analyze, and repeat.</h3>
           <p>Once an initial set of ideas has been established, I enter the testing and validation phase. I’ll build interactive prototypes, experiment with different interaction models, and design out animations. My job is to test, learn, iterate, and repeat. I continue this while increasing the fidelity of the prototypes until I feel I have one or two solutions worth developing.</p>
@@ -154,61 +151,27 @@ title: Paul Hershey
     </div>
     <div class="row d-flex flex-column flex-lg-row align-items-center align-items-lg-stretch">
       <div class="col-sm-10 col-md-7 col-lg-4">
-        <a class="box" href="https://medium.com/looks-good-feels-good/user-experience-for-product-designers-e9fa621ce3bc">
-          <div class="body">
-            <h4>UX for Product Designers</h4>
-            <b>Read More</b>
-            <picture>
-              <source srcset="{{ "img/home/sm/article-card-1@2x.png" | relative_url }}"
-                      media="(min-width: 576px)">
-              <source srcset="{{ "img/home/md/article-card-1@2x.png" | relative_url }}"
-                      media="(min-width: 768px)">
-              <source srcset="{{ "img/home/lg/article-card-1@2x.png" | relative_url }}"
-                      media="(min-width: 960px)">
-              <source srcset="{{ "img/home/xl/article-card-1@2x.png" | relative_url }}"
-                      media="(min-width: 1376px)">
-              <img src="{{ "img/home/sm/article-card-1@2x.png" | relative_url }}" class="img-contain" alt="User Centered Designers">
-            </picture>
-          </div>
-        </a>
+        {%- include writing.html
+          title="UX for Product Designers"
+          image="article-card-1"
+          url="https://medium.com/looks-good-feels-good/user-experience-for-product-designers-e9fa621ce3bc" -%}
       </div>
       <div class="col-sm-10 col-md-7 col-lg-4">
-        <a class="box" href="https://uxdesign.cc/why-every-developer-should-understand-user-centered-design-7f34e5a32240">
-          <h4>User Centered Designers</h4>
-          <b>Read More</b>
-          <picture>
-            <source srcset="{{ "img/home/sm/article-card-2@2x.png" | relative_url }}"
-                    media="(min-width: 576px)">
-            <source srcset="{{ "img/home/md/article-card-2@2x.png" | relative_url }}"
-                    media="(min-width: 768px)">
-            <source srcset="{{ "img/home/lg/article-card-2@2x.png" | relative_url }}"
-                    media="(min-width: 960px)">
-            <source srcset="{{ "img/home/xl/article-card-2@2x.png" | relative_url }}"
-                    media="(min-width: 1376px)">
-            <img src="{{ "img/home/sm/article-card-2@2x.png" | relative_url }}" class="img-contain" alt="User Centered Designers">
-          </picture>
-        </a>
+        {%- include writing.html
+          title="User Centered Designers"
+          image="article-card-2"
+          url="https://uxdesign.cc/why-every-developer-should-understand-user-centered-design-7f34e5a32240" -%}
       </div>
       <div class="col-sm-10 col-md-7 col-lg-4">
-        <a class="box" href="https://blog.prototypr.io/the-pizza-method-b0c6c6618b27">
-          <div class="body">
-            <h4>The Pizza Method</h4>
-            <b>Read More</b>
-            <picture>
-              <source srcset="{{ "img/home/sm/article-card-3@2x.png" | relative_url }}"
-                      media="(min-width: 576px)">
-              <source srcset="{{ "img/home/md/article-card-3@2x.png" | relative_url }}"
-                      media="(min-width: 768px)">
-              <source srcset="{{ "img/home/lg/article-card-3@2x.png" | relative_url }}"
-                      media="(min-width: 960px)">
-              <source srcset="{{ "img/home/xl/article-card-3@2x.png" | relative_url }}"
-                      media="(min-width: 1376px)">
-              <img src="{{ "img/home/sm/article-card-3@2x.png" | relative_url }}" class="img-contain" alt="User Centered Designers">
-            </picture>
-          </div>
-        </a>
+        {%- include writing.html
+          title="The Pizza Method"
+          image="article-card-3"
+          url="https://blog.prototypr.io/the-pizza-method-b0c6c6618b27" -%}
       </div>
     </div>
-    <a class="btn btn-medium" href="https://medium.com/@paulhershey">Medium<span></span></a>
+
+    <div class="text-center">
+      <a class="btn btn-medium" href="https://medium.com/@paulhershey">Medium<span></span></a>
+    </div>
   </div>
 </section>

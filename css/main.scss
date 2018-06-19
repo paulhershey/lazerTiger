@@ -5,6 +5,7 @@
 @import "vendor/bootstrap";
 @import "mixins";
 @import "fonts";
+@import "svgsprite";
 
 //Page Components
 @import "base";
@@ -13,6 +14,8 @@
 @import "buttons";
 
 // Home Page
+@import "about";
+@import "casestudies";
 @import "process";
 @import "writing";
 @import "contact";

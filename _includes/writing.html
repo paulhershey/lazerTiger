@@ -1,0 +1,14 @@
+<a class="box ~ d-flex align-items-stretch" href="{{ include.url }}">
+  <div class="body">
+    <h4>{{ include.title }}</h4>
+    <b>Read More</b>
+    <picture>
+      <source media="(min-width: 1440px)" srcset="img/home/xl/{{include.image}}@2x.png">
+      <source media="(min-width: 1025px)"srcset="img/home/lg/{{include.image}}@2x.png">
+      <source media="(min-width: 768px)" srcset="img/home/md/{{include.image}}@2x.png">
+      <source media="(min-width: 576px)" srcset="img/home/sm/{{include.image}}@2x.png">
+      <img src="img/home/sm/{{include.image}}@2x.png" class="img-contain"
+           alt="{{ include.title }}">
+    </picture>
+  </div>
+</a>

@@ -1,25 +1,25 @@
 .writing {
   background: $black;
   color: $white;
-  padding-top: map-get($spacers, 6);
-  padding-bottom: map-get($spacers, 6);
+  padding-top: map-get($spacers, 7);
+  padding-bottom: map-get($spacers, 7);
 
   @include media-breakpoint-up(lg) {
-    padding-top: map-get($spacers, 8);
-    padding-bottom: map-get($spacers, 8);
+    padding-top: map-get($spacers, 10);
+    padding-bottom: map-get($spacers, 10);
   }
 
   @include media-breakpoint-up(xl) {
-    padding-top: map-get($spacers, 9);
-    padding-bottom: map-get($spacers, 9);
+    padding-top: map-get($spacers, 11);
+    padding-bottom: map-get($spacers, 11);
   }
 
   .title {
-    margin-bottom: map-get($spacers, 5);
+    margin-bottom: map-get($spacers, 6);
   }
 
   [class^="col"] {
-    margin-bottom: map-get($spacers, 5);
+    margin-bottom: map-get($spacers, 6);
   }
 
   .box {

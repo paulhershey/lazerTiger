@@ -1,21 +1,21 @@
 .process {
   background: $black;
   color: $white;
-  padding-top: map-get($spacers, 6);
+  padding-top: map-get($spacers, 7);
 
   @include media-breakpoint-up(lg) {
-    padding-top: map-get($spacers, 8);
+    padding-top: map-get($spacers, 10);
   }
 
   @include media-breakpoint-up(xl) {
-    padding-top: map-get($spacers, 9);
+    padding-top: map-get($spacers, 11);
   }
 
   .content {
-    margin-bottom: map-get($spacers, 7);
+    margin-bottom: map-get($spacers, 8);
 
     img {
-      margin-bottom: map-get($spacers, 5);
+      margin-bottom: map-get($spacers, 6);
     }
   }
 }

@@ -3,12 +3,21 @@ layout: default
 title: Paul Hershey
 ---
 
-<section class="hero ~ container">
-  <div class="jumbotron">
-    {% include svg.html name="logo" %}
-    <h1>Product Designer</h1>
-    <p>Research / Interaction Design / FE Design</p>
-    <a class="btn btn-primary" href="#casestudies">Case Studies<span></span></a>
+<section class="hero">
+  <div class="hero-container ~ row align-items-center">
+    <div class="content ~ col-7">
+      {% include svg.html name="logo" %}
+      <h1 class="display-1">Product Designer</h1>
+      <p>Research / Interaction Design / FE Design</p>
+      <a class="btn btn-primary" data-scroll href="#casestudies">Case Studies<span></span></a>
+    </div>
+    <div class="video-wrapper">
+      <video class="player" width="428" height="710" autoplay preload poster="/img/home/lg/PaulHershey.png">
+        <source src="/img/home/header-video/PaulHershey.webmhd.webm" type="video/webm">
+        <source src="/img/home/header-video/PaulHershey.oggtheora.ogv" type="video/ogg">
+        <source src="/img/home/header-video/PaulHershey.mp4.mp4" type="video/mp4">
+      </video>
+    </div>
   </div>
 </section>
 

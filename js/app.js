@@ -1,6 +1,9 @@
 'use strict';
 (function() {
   jQuery(document).ready(function($) {
+
+    initScrollToThis();
+
     var $messages = $('div[data-type="message"]');
     var $form = $('#mc-embedded-subscribe-form');
 
@@ -104,4 +107,18 @@
     });
     $("[href='#']").click(function(){return false});
   });
+
+  // Scroll to animate
+  function initScrollToThis() {
+    $('[data-scroll]').on('click', function(evt) {
+      if (this.hash !== '') {
+        evt.preventDefault();
+        var $target = this.getAttribute('href');
+        $('html, body').animate({
+          scrollTop: $($target).offset().top
+        }, 1000);
+        return false
+      }
+    });
+  }
 })();

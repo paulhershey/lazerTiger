@@ -1,0 +1,38 @@
+{%- capture image_folder -%}{{ page.title | replace: ' ', '-' | downcase }}{%- endcapture -%}
+{%- capture image_list -%}
+{{include.image_name_1}}, {{include.image_name_2}}, {{include.image_name_3}}, {{include.image_name_4}}
+{%- endcapture -%}
+{% assign media = include.media | default: 'sm, md, lg, xl' | split: ', ' %}
+{% assign images = image_list | split: ', ' %}
+{% assign list_size = images | size %}
+
+<section class="image-shuffle section-{{ include.background_color | default: default }}">
+  <div class="container">
+    <div class="row">
+
+      {%- for image in images -%}
+        <div class="shuffle-item-{{ forloop.index }} ~ col-md-{{ 12 | divided_by: list_size }} d-flex justify-content-center mb-3 mb-md-0">
+
+          <picture>
+            {%- for size in media reversed -%}
+              {% case size %}
+                {% when 'xl' %}{% assign min_width = "1440px" %}
+                {% when 'lg' %}{% assign min_width = "1025px" %}
+                {% when 'md' %}{% assign min_width = "767px" %}
+                {% when 'sm' %}{% assign min_width = "576px" %}
+                {% else %}
+                {% assign min_width = "576px" %}
+              {% endcase %}
+              <source media="(min-width: {{ min_width }})"
+                      srcset="/img/{{ image_folder }}/{{ size }}/{{ image }}">
+            {%- endfor -%}
+            <img src="/img/{{ image_folder }}/{{ media | first }}/{{ image }}"
+                  class="img-fluid" alt="{{ include.title }}">
+          </picture>
+
+        </div>
+      {%- endfor -%}
+
+    </div>
+  </div>
+</section>

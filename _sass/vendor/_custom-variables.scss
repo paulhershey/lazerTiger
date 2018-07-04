@@ -89,10 +89,10 @@ $spacers: map-merge((
   2: ($spacer * .5),   // 8px
   3: $spacer,          // 16px Default
   4: ($spacer * 2),    // 32px
-  5: ($spacer * 3),    // 48px *
+  5: ($spacer * 3),    // 48px
   6: ($spacer * 4),    // 64px
   7: ($spacer * 8),    // 128px
-  8: ($spacer * 9),  // 144px
+  8: ($spacer * 9),    // 144px
   9: ($spacer * 10),   // 160px
   10: ($spacer * 14),   // 224px
   11: ($spacer * 16)   // 256px
@@ -188,7 +188,7 @@ $font-family-sans-serif:      "Trade Gothic LT W01 Roman", Roboto, "Helvetica Ne
 
 $font-size-base:              1rem; // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.25);
-$font-size-sm:                ($font-size-base * .75);
+$font-size-sm:                ($font-size-base * .9);
 
 $line-height-base:            1.5;
 

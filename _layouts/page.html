@@ -1,0 +1,105 @@
+---
+layout: default
+---
+
+{%- capture image_folder -%}{{ page.title | replace: ' ', '-' | downcase }}{%- endcapture -%}
+
+<div class="page-template">
+
+  <section class="header-img">
+    <div class="content pt-6 pt-md-8 pb-4 pb-md-6 px-4 px-lg-0">
+      <h1>{{ page.title }}</h1>
+      <p>{{ page.description }}</p>
+    </div>
+    <div class="media">
+      <picture>
+        <source media="(min-width: 1440px)"
+                srcset="/img/{{ image_folder }}/xl/{{ page.image.name }}@2x.png">
+        <source media="(min-width: 1024px)"
+                srcset="/img/{{ image_folder }}/lg/{{ page.image.name }}@2x.png">
+        <source media="(min-width: 736px)"
+                srcset="/img/{{ image_folder }}/md/{{ page.image.name }}@2x.png">
+        <source media="(min-width: 576px)"
+                srcset="/img/{{ image_folder }}/sm/{{ page.image.name }}@2x.png">
+        <img src="/img/{{ image_folder }}/sm/{{ page.image.name }}@2x.png" class="img-fluid">
+      </picture>
+    </div>
+
+    <div class="bkg-top"></div>
+    <div class="bkg-bottom"></div>
+
+  </section>
+
+
+
+  <section class="goals ~ py-6 py-md-7">
+    <div class="container">
+      <div class="row justify-content-center pb-md-7">
+        <div class="col-md-8">
+          <h4>Project Goals</h4>
+          <p>{{ page.goals.text }}</p>
+        </div>
+      </div>
+      <div class="d-none d-md-block">
+        <div class="row">
+          {%- for stat in page.goals.stats -%}
+            <div class="col-4">
+              <span class="h1">{{ stat.metric }}</span>
+              <p class="lead">{{ stat.title }}</p>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="strategy ~ py-6 py-md-7">
+    <div class="container">
+      <div class="row justify-content-center pb-md-7">
+        <div class="col-md-10 col-lg-8 col-xl-6">
+          <h4>Project Strategy</h4>
+          <p>{{ page.strategy.text }}</p>
+        </div>
+      </div>
+      <div class="d-none d-md-block">
+        <div class="row justify-content-center">
+          <div class="col-xl-9">
+            <div class="diagram ~ row align-items-lg-center">
+              {%- for ven in page.strategy.diagram -%}
+                <div class="ven-{{ forloop.index }} col-4">
+                  <h5>{{ ven.title }}</h5>
+                  {{ ven.text | newline_to_br | markdownify }}
+                </div>
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="container py-6 py-md-7 py-xl-6">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-6">
+          <blockquote>
+            {{ page.quote.text }}
+          </blockquote>
+          <cite>{{ page.quote.cite | newline_to_br }}</cite>
+        </div>
+      </div>
+    </div>
+    <picture>
+      <source media="(min-width: 1440px)"
+              srcset="/img/{{ image_folder }}/xl/{{ page.quote.image }}@2x.png">
+      <source media="(min-width: 1024px)"
+              srcset="/img/{{ image_folder }}/lg/{{ page.quote.image }}@2x.png">
+      <source media="(min-width: 736px)"
+              srcset="/img/{{ image_folder }}/md/{{ page.quote.image }}@2x.png">
+      <img src="/img/{{ image_folder }}/sm/{{ page.quote.image }}@2x.png" class="img-fluid">
+    </picture>
+  </section>
+
+  {{ content }}
+
+</div>

@@ -1,0 +1,115 @@
+.section {
+  &-default {
+    background-color: transparent;
+  }
+  &-inverted {
+    background-color: $black;
+    color: $white;
+    hr { border-color: $gray-800; }
+  }
+  &-gray {
+    background-color: $gray-200;
+  }
+}
+
+
+.header-img {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto;
+    grid-template-areas: "c" "m";
+
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: repeat(12, 10%);
+      grid-template-areas:
+        ". . c c c c c . . . ."
+        "t t m m m m m m m m m"
+        "b b m m m m m m m m m";
+    }
+
+    @include media-breakpoint-up(xl) {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas:
+        ". c c . . ."
+        "t m m m m m"
+        "b m m m m m";
+    }
+
+    > .content {
+      grid-area: c;
+    }
+    > .media {
+      grid-area: m;
+    }
+    > .bkg-top {
+      grid-area: t;
+      // background: tomato;
+    }
+    > .bkg-bottom {
+      background: $black;
+      grid-area: b;
+    }
+  }
+
+.goals {
+  background-color: $black;
+  color: $white;
+
+  @include media-breakpoint-up(md) {
+    text-align: center;
+  }
+}
+
+.strategy {
+  @include media-breakpoint-up(md) {
+    text-align: center;
+  }
+
+  .diagram {
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+      .ven-1, .ven-2, .ven-3 {
+        padding-top: 10%;
+        padding-bottom: 10%;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          width: 350px;
+          height: 350px;
+          border: solid 1px $gray-500;
+          border-radius: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      .ven-2 {
+        padding-top: 10%;
+        padding-bottom: 10%;
+
+        &::before {
+          width: 450px;
+          height: 450px;
+        }
+      }
+    }
+  }
+}
+
+.quote {
+  overflow: hidden;
+  position: relative;
+  color: $white;
+
+  blockquote {
+    font-family: $font-family-heading;
+    font-size: $h5-font-size;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+}

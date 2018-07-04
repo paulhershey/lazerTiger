@@ -1,0 +1,57 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "g1"
+    "i1"
+    "g2";
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: 50% 50%;
+    grid-template-rows:
+      map-get($spacers, 7) 1fr
+      map-get($spacers, 7) 1fr
+      map-get($spacers, 7);
+    grid-template-areas:
+      "g1 i2"
+      "i1 i2"
+      "i1 i4"
+      "i3 i4"
+      "i3 g2";
+  }
+
+  .grid-start {
+    grid-area: g1;
+    align-self: stretch;
+    > p { font-size: $font-size-sm; }
+  }
+  .grid-end {
+    grid-area: g2;
+    > p { font-size: $font-size-sm; }
+  }
+
+  .grid-start,
+  .grid-end {
+    &.inverted {
+      background: $black;
+      color: $white;
+    }
+    &.gray {
+      background: $gray-200;
+    }
+  }
+
+  @for $i from 1 through 4 {
+    .img-#{$i} { grid-area: i#{$i}; }
+  }
+}
+
+.image-shuffle {
+  @for $i from 1 through 4 {
+    .shuffle-item-#{$i} {
+      @include media-breakpoint-up(md) {
+        padding-top: ($i * 124px);
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<section class="section-{{ include.background_color | default: default }}">
+  <div class="container">
+    <div class="row justify-content-center {{ include.spacing | default: 'py-7'}}">
+      <div class="col-md-10 col-lg-8 col-xl-6">
+        {%- unless include.heading.blank? -%}
+          <h3>{{ include.heading }}</h3>
+        {%- endunless -%}
+
+        {%- unless include.heading_5.blank? -%}
+          <h5>{{ include.heading_5 }}</h5>
+        {%- endunless -%}
+
+        {%- if include.text != '' -%}
+          {{ include.text | markdownify }}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>

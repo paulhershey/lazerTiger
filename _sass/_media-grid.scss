@@ -1,0 +1,23 @@
+.section-media-grid {
+  display: grid;
+  .codeschool-video {
+    display: grid;
+    // grid-column-gap: $grid-gutter-width;
+    grid-template-rows: 1fr 1fr 64px;
+    grid-template-columns: repeat(12, minmax(20px, 8.33333333333%));
+    grid-template-areas:
+      ". . . v v v v v v . . ."
+      ". . . v v v v v v r r r"
+      ". . . . . . b b b b b b";
+
+    > .cs-video { grid-area: v; }
+    > .grid-offset-right,
+      .grid-offset-bottom-right { background: $gray-200; }
+    > .grid-offset-right { grid-area: r; }
+    > .grid-offset-bottom-right {
+        grid-area: b;
+        color: $black;
+        padding: map-get($spacers, 5);
+      }
+  }
+}

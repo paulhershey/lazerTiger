@@ -1,0 +1,44 @@
+{%- capture image_folder -%}{{ page.title | replace: ' ', '-' | downcase }}{%- endcapture -%}
+{% assign media = include.media | default: 'sm, md, lg, xl' | split: ', ' %}
+<section class="section-{{ include.background_color | default: default }}">
+  <div class="container-fluid px-0">
+    <div class="row no-gutters">
+      <div class="section-{{ include.left_column_color | default: default }} ~ col-md-6 d-flex justify-content-center {{ include.spacing }}">
+        <picture>
+          {%- for size in media reversed -%}
+            {% case size %}
+              {% when 'xl' %}{% assign min_width = "1440px" %}
+              {% when 'lg' %}{% assign min_width = "1025px" %}
+              {% when 'md' %}{% assign min_width = "767px" %}
+              {% when 'sm' %}{% assign min_width = "576px" %}
+              {% else %}
+              {% assign min_width = "576px" %}
+            {% endcase %}
+            <source media="(min-width: {{ min_width }})"
+                    srcset="/img/{{ image_folder }}/{{ size }}/{{ include.image_name_1 }}">
+          {%- endfor -%}
+          <img src="/img/{{ image_folder }}/{{ media | first }}/{{ include.image_name_1 }}"
+                class="img-fluid" alt="{{ include.title }}">
+        </picture>
+      </div>
+      <div class="section-{{ include.right_column_color | default: default }} ~ col-md-6 d-flex justify-content-center {{ include.spacing }}">
+        <picture>
+          {%- for size in media reversed -%}
+            {% case size %}
+              {% when 'xl' %}{% assign min_width = "1440px" %}
+              {% when 'lg' %}{% assign min_width = "1025px" %}
+              {% when 'md' %}{% assign min_width = "767px" %}
+              {% when 'sm' %}{% assign min_width = "576px" %}
+              {% else %}
+              {% assign min_width = "576px" %}
+            {% endcase %}
+            <source media="(min-width: {{ min_width }})"
+                    srcset="/img/{{ image_folder }}/{{ size }}/{{ include.image_name_2 }}">
+          {%- endfor -%}
+          <img src="/img/{{ image_folder }}/{{ media | first }}/{{ include.image_name_2 }}"
+                class="img-fluid" alt="{{ include.title }}">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>

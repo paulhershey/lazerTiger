@@ -6,15 +6,30 @@ description: 'Write your description here for you website SEO.
 
 '
 url:
-author: Paul Hershey
 twitter:
-  username:
+  username: paulhershey
   card: summary
 social:
-  name: Paul Hershey
   links:
     - https://twitter.com/paulhershey
 baseurl:
+collections:
+  pages:
+    output: true
+    permalink: "/:path/"
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+    title: ''
+    description: ''
+    image:
+      name: ''
+      path: ''
+      width: ''
+      height: ''
 plugins:
 - jekyll-sitemap
 - jekyll-seo-tag

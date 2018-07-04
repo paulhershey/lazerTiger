@@ -3,6 +3,7 @@
   jQuery(document).ready(function($) {
 
     initScrollToThis();
+    responsiveVideos();
 
     var $messages = $('div[data-type="message"]');
     var $form = $('#mc-embedded-subscribe-form');
@@ -118,6 +119,23 @@
           scrollTop: $($target).offset().top
         }, 1000);
         return false
+      }
+    });
+  }
+
+  function responsiveVideos() {
+    // Cycle through all videos on the page
+    $('video').each(function(index) {
+      // Gather their data-source
+      var videoSrc = $(this).data('source');
+
+      if (!videoSrc) { return false }
+      // Add video source on large screens and up
+      // Smaller devices won't download assets
+      if ($(window).width() > 1024 ) {
+        $(this).append("<source type='video/mp4' src='"+ videoSrc +".mp4.mp4'>");
+        $(this).append("<source type='video/webm' src='"+ videoSrc +".webmhd.webm'>");
+        $(this).append("<source type='video/ogg' src='"+ videoSrc +".oggtheora.ogv'>");
       }
     });
   }

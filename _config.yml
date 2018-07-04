@@ -12,7 +12,7 @@ twitter:
 social:
   links:
     - https://twitter.com/paulhershey
-baseurl:
+baseurl: 'lazerTiger'
 collections:
   pages:
     output: true

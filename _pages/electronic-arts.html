@@ -1,0 +1,617 @@
+---
+title: 'Electronic Arts'
+description: 'Electronic Arts needed a new way to empower its writers. The solution was Flux, a custom publishing platform.'
+image:
+  name: header-image
+  path: /img/electronic-arts/md/header-image@2x.png
+  width: 1424
+  height: 1536
+goals:
+  text: 'To create a distributed authoring model that would allow EA’s writing staff to quickly and easily publish content across all of its platforms. We also set out to improve the experience from the player’s point of view by creating features like bookmarking, social sharing, read times, and author bios.'
+  stats:
+    - title: Improvement in Publishing Speed
+      metric: 79%
+    - title: Increased Number of Content Creators
+      metric: 54
+    - title: Enhanced Consumer Experience
+      metric: 13%
+strategy:
+  text: 'By utilizing our in-house LMS (learning management system), my team and I would design a mobile learning environment with courseware that could hook into our API. We also needed to build an LRS (learner record store) that was SCORM compliant and could surface learner results to a dashboard that would track the progress and effectiveness of the training.'
+  diagram:
+    - title: Strategy
+      text: |
+        Business Workshop
+        Brand Partnership
+        Technical Architecture
+    - title: Experience
+      text: |
+        Journey Maps
+        Empathy Maps
+        Proto-personas
+        Task Analysis
+    - title: Design
+      text: |
+        Style Guide
+        Mobile Courseware
+        Desktop LMS
+quote:
+  image: quotebkgd
+  text: '“I just need a way to get content to players fast. It takes so long to publish content and there are a lot of opportunities we’re missing out on because of it.”'
+  cite: |
+    Carmen Dukes
+    Editor in Chief
+---
+
+{%- include section-text.html
+            heading="Project Kickoff"
+            text="
+The editorial team was struggling to get timely content onto EA’s network of sites at scale. The tool they had been using was overly complex and not mobile-friendly. I was asked to create a tool to solve the issues facing this newly formed business unit. With limited data and a lot of unanswered questions, I set out to define a product strategy, understand the needs of the people using the tool, and conduct ideation sessions with the end users to ensure we created a tool they understood and would enjoy using on a daily basis.
+
+What we ultimately created was a product called Flux — a flexible, mobile-friendly tool that not only solved the initial issues the team was facing but also changed the way the business unit worked as a whole. Below is a sample of the branding that was developed for the product." -%}
+
+<section>
+  <h1>Image Row (Missing)</h1>
+</section>
+
+{%- include section-text.html
+            background_color="inverted"
+            heading="Color Study"
+            text="
+Because the product could be used on an iPad at places like conferences or outdoor gaming events, we wanted it to have minimal colors and high contrast. We also created a simple colorsystem that would only be used for primary actions, notifications, and an illustration framework." -%}
+
+{%- include section-image.html
+            background_color="inverted"
+            spacing="pb-7"
+            image_name="colors.svg" -%}
+
+{%- include section-image-row.html
+            spacing="py-6"
+            left_column_color="inverted"
+            image_name_1="light-ui.svg"
+            image_name_2="dark-ui.svg" -%}
+
+{%- include section-text.html
+            heading="Typography"
+            text="
+We decided to use Ysobel Pro for headers and accents and Harmonia Sans for body copy to meet our editorial needs. The fonts would only be used in the content creation tool. All the typography in the tool was mapped to the design system to ensure proper styling across all branded experiences." -%}
+
+{%- include section-image.html
+            spacing="pb-7"
+            image_name="brandon.svg" -%}
+
+{%- include section-image.html
+            spacing="pb-7"
+            image_name="avenir.svg" -%}
+
+{%- include section-image.html
+            spacing="pb-7"
+            image_name="freight.svg" -%}
+
+{%- include section-separator.html -%}
+
+{%- include section-text.html
+            heading="By the Numbers"
+            text="
+We started our research by mining for quantitative data collected by our Digital Intelligence team. Although we were not collecting user data on internal tools, we did have a great deal of data on how players were interacting with our news content. We learned that the news content on our sites had by far the most traffic at over 3M uniques at points in campaign cycles. We also learned that we had a high bounce rate in an area of the site that should encourage higher session rates. Lastly, we discovered that people liked sharing news content, and this was a behavior we knew we wanted to encourage." -%}
+
+<section class="mb-6">
+  <div class="container">
+    <div class="row">
+      <div class="d-none d-lg-flex flex-column align-items-center col-lg-4 mb-lg-6">
+        <h5 class="w-100 mb-5">News</h5>
+        <picture>
+          <source media="(min-width: 1440px)"
+                  srcset="/img/electronic-arts/xl/news-graphs.svg">
+          <source media="(min-width: 1025px)"
+                  srcset="/img/electronic-arts/lg/news-graphs.svg">
+          <img src="/img/electronic-arts/lg/news-graphs.svg"
+                class="img-fluid" alt="{{ include.title }}">
+        </picture>
+      </div>
+      <div class="d-none d-md-flex flex-column align-items-center col-md-6 col-lg-4">
+        <h5 class="w-100 mb-5">Home</h5>
+        <picture>
+          <source media="(min-width: 1440px)"
+                  srcset="/img/electronic-arts/xl/home-graphs.svg">
+          <source media="(min-width: 1025px)"
+                  srcset="/img/electronic-arts/lg/home-graphs.svg">
+          <source media="(min-width: 767px)"
+                  srcset="/img/electronic-arts/md/home-graphs.svg">
+          <img src="/img/electronic-arts/md/home-graphs.svg"
+                class="img-fluid" alt="{{ include.title }}">
+        </picture>
+      </div>
+      <div class="d-flex flex-column align-items-center col-12 col-md-6 col-lg-4">
+        <h5 class="w-100 mb-5">Forums</h5>
+        <picture>
+          <source media="(min-width: 1440px)"
+                  srcset="/img/electronic-arts/xl/forum-graphs.svg">
+          <source media="(min-width: 1025px)"
+                  srcset="/img/electronic-arts/lg/forum-graphs.svg">
+          <source media="(min-width: 767px)"
+                  srcset="/img/electronic-arts/md/forum-graphs.svg">
+          <source media="(min-width: 576px)"
+                  srcset="/img/electronic-arts/sm/forum-graphs.svg">
+          <img src="/img/electronic-arts/md/forum-graphs.svg"
+                class="img-fluid" alt="{{ include.title }}">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-text.html
+            background_color="gray"
+            heading="Competitive Assessments"
+            text="
+Our UXR team assisted us in running competitive assessments. We created a rubric to better understand the usability by running task-based assessments with actual users. We also conducted heuristic evaluations and created feature lists. This information helped us understand how to approach creating tools and the mental models of how people relate to different features in a content creation tool. Some of the products we reviewed were Blocs, Keynote, Medium, WordPress, Google Sites, Ghost, and Squarespace." -%}
+
+<section class="section-gray">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="row">
+          <div class="col-6 col-md-3 mb-4">
+            <picture>
+              <source media="(min-width: 1025px)"
+                      srcset="/img/electronic-arts/lg/blocs@2x.png">
+              <source media="(min-width: 767px)"
+                      srcset="/img/electronic-arts/md/blocs@2x.png">
+              <source media="(min-width: 576px)"
+                      srcset="/img/electronic-arts/sm/blocs@2x.png">
+              <img src="/img/electronic-arts/md/blocs@2x.png"
+                    class="img-fluid" alt="Blocs">
+            </picture>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <picture>
+              <source media="(min-width: 1025px)"
+                      srcset="/img/electronic-arts/lg/keynote@2x.png">
+              <source media="(min-width: 767px)"
+                      srcset="/img/electronic-arts/md/keynote@2x.png">
+              <source media="(min-width: 576px)"
+                      srcset="/img/electronic-arts/sm/keynote@2x.png">
+              <img src="/img/electronic-arts/md/keynote@2x.png"
+                    class="img-fluid" alt="Keynote">
+            </picture>
+          </div>
+          <div class="d-none d-md-block col-md-3 mb-4">
+            <picture>
+              <source media="(min-width: 1025px)"
+                      srcset="/img/electronic-arts/lg/medium@2x.png">
+              <source media="(min-width: 767px)"
+                      srcset="/img/electronic-arts/md/medium@2x.png">
+              <img src="/img/electronic-arts/md/medium@2x.png"
+                    class="img-fluid" alt="Medium">
+            </picture>
+          </div>
+          <div class="d-none d-md-block col-md-3 mb-4">
+            <picture>
+              <source media="(min-width: 1025px)"
+                      srcset="/img/electronic-arts/lg/wordpress@2x.png">
+              <source media="(min-width: 767px)"
+                      srcset="/img/electronic-arts/md/wordpress@2x.png">
+              <img src="/img/electronic-arts/md/wordpress@2x.png"
+                    class="img-fluid" alt="Wordpress">
+            </picture>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <picture>
+              <source media="(min-width: 1025px)"
+                      srcset="/img/electronic-arts/lg/google@2x.png">
+              <source media="(min-width: 767px)"
+                      srcset="/img/electronic-arts/md/google@2x.png">
+              <source media="(min-width: 576px)"
+                      srcset="/img/electronic-arts/sm/google@2x.png">
+              <img src="/img/electronic-arts/md/google@2x.png"
+                    class="img-fluid" alt="Google">
+            </picture>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <picture>
+              <source media="(min-width: 1025px)"
+                      srcset="/img/electronic-arts/lg/ghost@2x.png">
+              <source media="(min-width: 767px)"
+                      srcset="/img/electronic-arts/md/ghost@2x.png">
+              <source media="(min-width: 576px)"
+                      srcset="/img/electronic-arts/sm/ghost@2x.png">
+              <img src="/img/electronic-arts/md/ghost@2x.png"
+                    class="img-fluid" alt="Ghost">
+            </picture>
+          </div>
+          <div class="d-none d-md-block col-md-3 mb-4">
+            <picture>
+              <source media="(min-width: 1025px)"
+                      srcset="/img/electronic-arts/lg/square@2x.png">
+              <source media="(min-width: 767px)"
+                      srcset="/img/electronic-arts/md/square@2x.png">
+              <img src="/img/electronic-arts/md/square@2x.png"
+                    class="img-fluid" alt="Squarespace">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-separator.html
+            background_color="gray" -%}
+
+{%- include section-text.html
+            background_color="gray"
+            heading="Journey Map"
+            text="
+First, I entered a discovery phase. I conducted multiple stakeholder and user interviews in order to gather a large pile of unstructured data. I was able to identify some basic themes around scheduling, instant publishing, and localization. This information, paired with a heuristic evaluation of the current tool and a competitive assessment of similar tools, gave me plenty of data that I could synthesize into useable information." -%}
+
+<section>
+  <h1>Image Split BG Flush Right</h1>
+</section>
+
+{%- include section-separator.html
+            background_color="inverted" -%}
+
+{%- include section-text.html
+            background_color="inverted"
+            heading="The Right Tool for the Right Job"
+            text="
+After reviewing the journey and speaking with stakeholders about the business needs, we realized we needed two independent work streams. One would be for custom articles that would have custom elements and not syndicate outside of the web. The other, which would be for standard articles, would be focused on timely news that didn’t require extensive approvals and could be syndicated to the web, native apps, and console systems." -%}
+
+<section class="section-inverted">
+  <div class="container">
+    <div class="row pb-6">
+      <div class="col-lg-6 offset-lg-2 col-xl-5 offset-xl-3">
+        <h4>Custom Articles</h4>
+        <p>These long-form pieces of content are scheduled to specific beats in a campaign. They require more approvals and are generally scheduled with the strategy team before a campaign activation.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 offset-lg-2 col-xl-5 offset-xl-3">
+        <h4>Standard Articles</h4>
+        <p>These are timely pieces that require fewer approvals. These articles can be released as breaking news and typically consist of event-based reporting.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-separator.html
+            spacing="pt-7"
+            background_color="inverted" -%}
+
+{%- include section-text.html
+            background_color="inverted"
+            heading="Understanding Needs and Limitations"
+            text="
+After reviewing our data we sat down with the engineering team and business stakeholders to identify what key features were needed, which content types could be distributed in our data model, and what technical limitations we were facing. We came out of this meeting with a good understanding of the technical architecture and business needs and were able to start ideating on design opportunities." -%}
+
+{% comment %}
+{%- include section-image-flush.html
+            background_color="inverted"
+            offset_amount="-13%"
+            image_name="flow-dark@2x.png" -%}
+{% endcomment %}
+
+{%- include section-separator.html
+            background_color="inverted" -%}
+
+{%- include section-text.html
+            background_color="inverted"
+            heading="Design Sprint Ideation and Hypothesis"
+            text="
+We pulled designers from various teams to ideate on designs for different features. We shared the quantitative and qualitative findings from the research sessions to ensure everyone was context set. We created user stories, ran Crazy Eights, created storyboards, and voted collectively on the ideas. We came out of this multi-day exercise with some refined ideas on features that we could prototype and start testing with the writing staff." -%}
+
+
+{%- include section-image-grid.html
+            start_color="inverted"
+            image_name="sprint-img" -%}
+
+{%- include section-text.html
+            heading="Design Concepts and Organizing Features"
+            text="
+Once we had hypothesized on features and key pain points, we started sketching possible UI views and workflows to share with the writing team. We ran some CPTs (customer preference tests) to see which options made the most sense for their team. We learned a lot in this phase, and with low investment in design we were able to cycle through a lot of ideas. From here we could start to prototype and test ideas at higher fidelity." -%}
+
+{%- include section-image-shuffle.html
+            image_name_1="ui-sketch-1@2x.png"
+            image_name_2="ui-sketch-2@2x.png" -%}
+
+{%- include section-separator.html
+            spacing="pt-7" -%}
+
+{%- include section-text.html
+            heading="Testing the Prototype and Refining the Design"
+            text="
+Below is one of the prototypes we created for testing. We created eight prototypes that were clustered around different user needs and features. This testing enabled us to refine to the final designs, which we ultimately shared with the developers." -%}
+
+
+{%- include section-image.html
+            image_name="notebook@2x.png" -%}
+
+<section class="pt-4 pb-7">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 offset-md-1">
+        <small>Below is one of the prototypes we created for testing. We created eight prototypes that were clustered around different user needs and features.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-image-grid.html
+            end_color="inverted"
+            image_name="testing-img" -%}
+
+{%- include section-text.html
+            background_color="inverted"
+            heading="Choosing the Final Designs"
+            text="
+Below is a clickable prototype that closely resembles the final product. This flow was designed for writers to preference test the experience of working from an iPad, logging into their account, creating an article, adding content and media, and publishing the article. This flow made the most sense for everyone and became the design we used to guide our more complex interaction designs for the final product." -%}
+
+<section class="section-inverted pb-7">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <iframe src="https://projects.invisionapp.com/share/R3FIYHFTUCF#/screens/269385249" width="960px" height="720px"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-text.html
+            heading="An Adaptable <br> Stream Component"
+            text="
+With the limited space available on an iPad, we needed to create an easy way for writers to quickly look through their content. The organization of content needed to be stateful and prioritized in a meaningful way. Below is an example of how this component worked." -%}
+
+<section class="section-default">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <video class="embed-responsive d-none d-lg-block" width="1128"
+          autoplay loop
+          data-source="/img/electronic-arts/lg-component-videos/stream"
+          poster="/img/electronic-arts/lg/stream@2x.png">
+        </video>
+        <picture>
+          <source media="(min-width: 767px)"
+                  srcset="/img/electronic-arts/md/stream@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/electronic-arts/sm/stream@2x.png">
+          <img src="/img/electronic-arts/md/stream@2x.png"
+                class="img-fluid d-lg-none" alt="Adaptable stream component">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-separator.html
+            spacing="pt-7" -%}
+
+{%- include section-text.html
+            heading="Predefined <br> Templates"
+            text="
+Previously, writers spent a lot of time building content from scratch and sifting through unnecessary components. After learning more about the content they wanted to create, we were able to remove the unneeded components, add in new ones, and organize everything into templates — giving them the right tools for the right job. This cleaned up the UI and improved cognitive load." -%}
+
+<section class="section-default">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <video class="embed-responsive d-none d-lg-block" width="1128"
+          autoplay loop
+          data-source="/img/electronic-arts/lg-component-videos/templates"
+          poster="/img/electronic-arts/lg/templates@2x.png">
+        </video>
+        <picture>
+          <source media="(min-width: 767px)"
+                  srcset="/img/electronic-arts/md/templates@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/electronic-arts/sm/templates@2x.png">
+          <img src="/img/electronic-arts/md/templates@2x.png"
+                class="img-fluid d-lg-none" alt="Predefined templates">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-separator.html
+            spacing="pt-7" -%}
+
+{%- include section-text.html
+            heading="Accessing and <br> Saving Media"
+            text="
+Working with media on the platform was important, but there were different workflows depending on when and where writers were applying it. We wanted to ensure accessing media was consistent across the platform so that users could develop a mental model, making complex actions feel a bit easier. We choose to use a modal and divide media into two main areas: content in our DAM and content on the user’s local device. Content added to an article from the camera roll is added to the DAM before publishing. Below is an example of previewing and selecting a piece of content from the DAM." -%}
+
+<section class="section-default">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <video class="embed-responsive d-none d-lg-block" width="1128"
+          autoplay loop
+          data-source="/img/electronic-arts/lg-component-videos/DAM"
+          poster="/img/electronic-arts/lg/group@2x.png">
+        </video>
+        <picture>
+          <source media="(min-width: 767px)"
+                  srcset="/img/electronic-arts/md/group@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/electronic-arts/sm/group@2x.png">
+          <img src="/img/electronic-arts/md/group@2x.png"
+                class="img-fluid d-lg-none" alt="Accessing and saving media">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-separator.html
+            spacing="pt-7" -%}
+
+{%- include section-text.html
+            heading="Prepping Key Art for Marketing Content"
+            text="
+Finding a way to easily crop images for article headers and social media posts was a fun challenge. Below is an example of the solution we landed on. Each crop is saved to its corresponding tab. The crop frame and image always maintain their aspect ratio to ensure there is no distortion or stretching of the media." -%}
+
+<section class="section-default">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <video class="embed-responsive d-none d-lg-block" width="1128"
+          autoplay loop
+          data-source="/img/electronic-arts/lg-component-videos/social-crop"
+          poster="/img/electronic-arts/lg/social-crop@2x.png">
+        </video>
+        <picture>
+          <source media="(min-width: 767px)"
+                  srcset="/img/electronic-arts/md/social-crop@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/electronic-arts/sm/social-crop@2x.png">
+          <img src="/img/electronic-arts/md/social-crop@2x.png"
+                class="img-fluid d-lg-none" alt="Prepping key art for marketing">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-separator.html
+            spacing="pt-7" -%}
+
+{%- include section-text.html
+            heading="Adjusting Images <br> on the Fly"
+            text="
+With Flux, there are three main options for adding images to an article: one full-width image (centered across eight columns), two side-by-side images (each spanning six columns), or three side-by-side images (each spanning four columns). When adjusting using the crop tool, images snap to the predefined widths while allowing the height to be flexible to the content creator’s discretion. If an image is added across six or fewer columns, the writer receives a cue to add additional images, which need to be added before the article can be published. Below is an example of the workflow for adding two images to an article." -%}
+
+<section class="section-default">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <video class="embed-responsive d-none d-lg-block" width="1128"
+          autoplay loop
+          data-source="/img/electronic-arts/lg-component-videos/add-image"
+          poster="/img/electronic-arts/lg/add-image@2x.png">
+        </video>
+        <picture>
+          <source media="(min-width: 767px)"
+                  srcset="/img/electronic-arts/md/add-image@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/electronic-arts/sm/add-image@2x.png">
+          <img src="/img/electronic-arts/md/add-image@2x.png"
+                class="img-fluid d-lg-none" alt="Adjusting Images">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-separator.html
+            spacing="pt-7" -%}
+
+{%- include section-text.html
+            heading="Quick Tools at <br> the Ready"
+            text="
+There were some tools writers kept coming back to over and over again. We created a quick-select tool to make it a bit easier and more ergonomic to access these components." -%}
+
+<section class="section-default">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <video class="embed-responsive d-none d-lg-block" width="1128"
+          autoplay loop
+          data-source="/img/electronic-arts/lg-component-videos/quick-select"
+          poster="/img/electronic-arts/lg/quick-select@2x.png">
+        </video>
+        <picture>
+          <source media="(min-width: 767px)"
+                  srcset="/img/electronic-arts/md/quick-select@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/electronic-arts/sm/quick-select@2x.png">
+          <img src="/img/electronic-arts/md/quick-select@2x.png"
+                class="img-fluid d-lg-none" alt="Adjusting Images">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-separator.html
+            spacing="pt-7" -%}
+
+{%- include section-text.html
+            heading="Useful Tools for Typography"
+            text="
+A good type tool is essential in the content creation process. We designed ours to be as useful as possible when working on a mobile device, while also building on known and proven designs that people are accustomed to using." -%}
+
+<section class="section-default">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <video class="embed-responsive d-none d-lg-block" width="1128"
+          autoplay loop
+          data-source="/img/electronic-arts/lg-component-videos/type"
+          poster="/img/electronic-arts/lg/type-tool@2x.png">
+        </video>
+        <picture>
+          <source media="(min-width: 767px)"
+                  srcset="/img/electronic-arts/md/type-tool@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/electronic-arts/sm/type-tool@2x.png">
+          <img src="/img/electronic-arts/md/type-tool@2x.png"
+                class="img-fluid d-lg-none" alt="Adjusting Images">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-separator.html
+            spacing="pt-7" -%}
+
+{%- include section-text.html
+            heading="Launching the Story at the Right Place"
+            text="
+Content can be delivered on any of EA’s 24 sites inside its online content network. Once a piece of content is ready to be delivered, writers can add social media descriptions, meta descriptions, and meta tags for our internal search engines. Writers can also schedule or send an article to their editors as well as as pick the platforms on which to publish. Below is an example of choosing multiple publishing platforms and changing the publish time. This is the final step in the content creation process." -%}
+
+<section class="section-default">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <video class="embed-responsive d-none d-lg-block" width="1128"
+          autoplay loop
+          data-source="/img/electronic-arts/lg-component-videos/scheduling"
+          poster="/img/electronic-arts/lg/platform@2x.png">
+        </video>
+        <picture>
+          <source media="(min-width: 767px)"
+                  srcset="/img/electronic-arts/md/platform@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/electronic-arts/sm/platform@2x.png">
+          <img src="/img/electronic-arts/md/platform@2x.png"
+                class="img-fluid d-lg-none" alt="Adjusting Images">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-separator.html
+            spacing="pt-7" -%}
+
+{%- include section-text.html
+            heading="Final <br> Thoughts"
+            text="
+Working on this project was a great opportunity. Having the chance to solve problems for people and make their day-to-day lives a little better is why I do this kind of work. Working with the talented staff at EA was an amazing experience. I walked away from the project knowing I made a real difference, and also picked up some new skills to take with me to my next project." -%}
+
+<section>
+  <picture>
+    <source media="(min-width: 1440px)"
+            srcset="/img/electronic-arts/xl/ipads@2x.png">
+    <source media="(min-width: 1025px)"
+            srcset="/img/electronic-arts/lg/ipads@2x.png">
+    <source media="(min-width: 767px)"
+            srcset="/img/electronic-arts/md/ipads@2x.png">
+    <source media="(min-width: 576px)"
+            srcset="/img/electronic-arts/sm/ipads@2x.png">
+    <img src="/img/electronic-arts/md/ipads@2x.png"
+          class="img-fluid" alt="{{ include.title }}">
+  </picture>
+</section>

@@ -1,0 +1,576 @@
+---
+title: 'Gategroup'
+description: 'Gategroup, which delivers training to students 39,000 ft. in the air, needed to improve the effectiveness of its courses.'
+image:
+  name: header-image
+  path: /img/gategroup/md/header-image@2x.png
+  width: 1424
+  height: 1536
+goals:
+  text: 'To streamline and improve the quality of courses provided by Gate Retail Onboard (GRO), a member of Gategroup. GRO had been conducting onsite training for its employees, but this proved to be a costly and inefficient endeavor. To help, my team and I set out to create an effective, easily accessible mobile learning environment.'
+  stats:
+    - title: Courses
+      metric: 56
+    - title: Learners
+      metric: 12,087
+    - title: Airlines
+      metric: 24
+strategy:
+  text: 'By utilizing our in-house LMS (learning management system), my team and I would design a mobile learning environment with courseware that could hook into our API. We also needed to build an LRS (learner record store) that was SCORM compliant and could surface learner results to a dashboard that would track the progress and effectiveness of the training.'
+  diagram:
+    - title: Strategy
+      text: |
+        Business Workshop
+        Brand Partnership
+        Technical Architecture
+    - title: Experience
+      text: |
+        Journey Maps
+        Empathy Maps
+        Proto-personas
+        Task Analysis
+    - title: Design
+      text: |
+        Style Guide
+        Mobile Courseware
+        Desktop LMS
+quote:
+  image: quotebkgd
+  text: '“I have great relationships with the learners, but I need a way to teach and inspire them that doesn’t require me to physically be there.”'
+  cite: |
+    Baden Frosen
+    A remark that made me realize this product needed a soul.
+---
+
+{%- include section-text.html
+            heading="Data <br> Collection"
+            text="
+Baden Frösén, my client at Gategroup, had just one week with my team in Orlando — so we needed to maximize our time with him. All the project leads came together prior to his arrival to discuss the aspects of the project we needed clarity on. We created a five-day agenda that allowed each of us to focus on specific aspects of the project. The design team was focused on collecting logos, guidelines, photos, fonts, and illustrations from the Gategroup brand team. We also collected user demographics and analytics from the BI team. On the last day we set KPIs and made sure everyone was aligned on the business needs and limitations." -%}
+
+{%- include section-separator.html -%}
+
+{%- include section-text.html
+            heading="User <br> Research"
+            text="
+Fortunately, we had a lot of great data about the learners based on employee documents and survey data from the in-person courses. We synthesized this data into proto-personas and validated them through learner interviews. Once we felt confident in the findings, we created four empathy maps to reference when developing journey maps and ideating on the interface." -%}
+
+<section>
+  <h1>Elaborate Image Text</h1>
+</section>
+
+{%- include section-text.html
+            background_color="inverted"
+            heading="Technical <br> Structure"
+            text="
+Understanding the technical structure was important for us. This information would help us better understand the business rules around SCORM compliance as well as understand the data points we could surface through xAPI. We used this information as reference when creating journey maps and sketching UIs." -%}
+
+{%- include section-image.html
+            background_color="inverted"
+            spacing="pb-7"
+            image_name="tech-spec@2x.png" -%}
+
+{%- include section-text.html
+            background_color="gray"
+            heading="Gategroup <br> Branding"
+            text="
+Gategroup had a mature brand guide that was great for branding, print, and course assets, but they had nothing for UI and digital guidelines. Our first step was to work with their brand team and extend the brand guide to an interface style guide. Below are some of the assets we used as a foundation for the UI style guide." -%}
+
+<section class="section-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-1 col-xl-5 offset-3">
+        <h5>Brandmark</h5>
+      </div>
+    </div>
+  </div>
+</section>
+{%- include section-image-row.html
+            background_color="gray"
+            spacing="py-6"
+            image_name_1="logo.svg"
+            image_name_2="brandmark.svg" -%}
+
+{%- include section-separator.html
+            spacing="py-7"
+            background_color="gray" -%}
+
+<section class="section-gray">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-6">
+        <h5>Brand Colors</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-image-shuffle.html
+            background_color="gray"
+            image_name_1="purple.svg"
+            image_name_2="red.svg"
+            image_name_3="green.svg" -%}
+
+{%- include section-separator.html
+            spacing="pt-7"
+            background_color="gray" -%}
+
+{%- include section-text.html
+            background_color="gray"
+            heading="Color <br> Grading"
+            text="
+We started with expanding the color ranges using the step blend option in Illustrator. We set a high and low tint, then step blended the colors to get a balanced set of light and dark options to choose from. We presented multiple options and landed on the options below." -%}
+
+{%- include section-image.html
+            background_color="gray"
+            image_name="colors.svg" -%}
+
+<section class="section-gray py-6">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-lg-6 offset-lg-1 col-xl-4 offset-xl-3">
+        <small>*The large circles became color tokens in the design system and the ones with white dots are original colors from the brand guide.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-separator.html
+            spacing="pb-6"
+            background_color="gray" -%}
+
+{%- include section-text.html
+            background_color="gray"
+            spacing="py-0"
+            heading_5="New Colors" -%}
+
+{%- include section-image-shuffle.html
+            background_color="gray"
+            image_name_1="primary.svg"
+            image_name_2="secondary.svg"
+            image_name_3="tertiary.svg"
+            image_name_4="quaternary.svg" -%}
+
+
+{%- include section-text.html
+            background_color="gray"
+            spacing="py-0"
+            heading_5="Gradients" -%}
+
+{%- include section-image-shuffle.html
+            background_color="gray"
+            image_name_1="primary-grade.svg"
+            image_name_2="secondary-grade.svg"
+            image_name_3="tertiary-grade.svg"
+            image_name_4="quaternary-grade.svg" -%}
+
+{%- include section-text.html
+            background_color="gray"
+            spacing="py-0"
+            heading_5="Utility Colors" -%}
+
+{%- include section-image-shuffle.html
+            background_color="gray"
+            image_name_1="primary-grade.svg"
+            image_name_2="secondary-grade.svg"
+            image_name_3="tertiary-grade.svg"
+            image_name_4="quaternary-grade.svg" -%}
+
+{%- include section-separator.html
+            background_color="gray" -%}
+
+{%- include section-text.html
+            background_color="gray"
+            heading="Typography Choices"
+            text="
+We knew the product would exist as a web app and as a native app on Android and iOS products. Apple products use the font San Francisco and Android uses Roboto. Both fonts are neoclassical, so we wanted something similar for the web. We landed on Univers, a neoclassical font with over 20 weights that was adaptable to all our needs."-%}
+
+{%- include section-image.html
+            background_color="gray"
+            spacing="pb-7"
+            image_name="web-univers.svg" -%}
+
+{%- include section-image.html
+            background_color="gray"
+            spacing="pb-7"
+            image_name="san-fran.svg" -%}
+
+{%- include section-image.html
+            background_color="gray"
+            spacing="pb-7"
+            image_name="roboto.svg" -%}
+
+{%- include section-separator.html
+            background_color="gray" -%}
+
+{%- include section-text.html
+            background_color="gray"
+            heading="Mapping the Typography"
+            text="
+After deciding on our font stack, we started mapping them to our components. We created 12 type variables and mapped the styles to the different devices and breakpoints we supported. We defined type sizes, line heights, and kerning for each variable in each device. Then, we created tokens to apply to our components."-%}
+
+
+{%- include section-image.html
+            background_color="gray"
+            image_name="type-stack.svg" -%}
+
+<section class="section-gray py-6">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-lg-6 offset-lg-1 col-xl-4 offset-xl-3">
+        <small>*Above is an example of the type styles for iPhone 8 Plus.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-separator.html
+            background_color="gray" -%}
+
+{%- include section-text.html
+            background_color="gray"
+            heading="Atoms and <br> Molecules"
+            text="
+While focused on our research we also started work on the design system. We took an atomic approach by building up a set of atoms and molecules that would serve as a foundation on which to build our components and templates. While looking at our data structure we could set rules around how to visualize information contextually, with device awareness in mind. " -%}
+
+<section class="section-gray pb-7">
+  <div class="container">
+    <div class="row">
+      <h5>Input Fields</h5>
+    </div>
+    <div class="row text-center align-items-center">
+      <div class="d-none d-lg-flex flex-column justify-content-center col-lg-3 mb-6">
+        <picture>
+          <source media="(min-width: 1440px)"
+                  srcset="/img/gategroup/xl/input-filled@2x.png">
+          <source media="(min-width: 1025px)"
+                  srcset="/img/gategroup/lg/input-filled@2x.png">
+          <img src="/img/gategroup/lg/input-filled@2x.png"
+                class="img-fluid" width="127" alt="Input filled">
+        </picture>
+        <small class="mt-3">Input filled</small>
+      </div>
+      <div class="d-flex align-items-center flex-column col-md-4 col-lg-3 mb-6">
+        <picture>
+          <source media="(min-width: 1440px)"
+                  srcset="/img/gategroup/xl/input-active@2x.png">
+          <source media="(min-width: 1025px)"
+                  srcset="/img/gategroup/lg/input-active@2x.png">
+          <source media="(min-width: 767px)"
+                  srcset="/img/gategroup/md/input-active@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/gategroup/sm/input-active@2x.png">
+          <img src="/img/gategroup/md/input-active@2x.png"
+                class="img-fluid" width="205" alt="Input active">
+        </picture>
+        <p><small>Input field active</small></p>
+      </div>
+      <div class="col-md-4 col-lg-3 mb-6">
+        <picture>
+          <source media="(min-width: 1440px)"
+                  srcset="/img/gategroup/xl/input-error@2x.png">
+          <source media="(min-width: 1025px)"
+                  srcset="/img/gategroup/lg/input-error@2x.png">
+          <source media="(min-width: 767px)"
+                  srcset="/img/gategroup/md/input-error@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/gategroup/sm/input-error@2x.png">
+          <img src="/img/gategroup/md/input-error@2x.png"
+                class="img-fluid" width="205" alt="Input Error">
+        </picture>
+        <p><small>Input field Error</small></p>
+      </div>
+      <div class="d-flex flex-column justify-content-center col-md-4 col-lg-3 mb-6">
+        <picture>
+          <source media="(min-width: 1440px)"
+                  srcset="/img/gategroup/xl/input-success@2x.png">
+          <source media="(min-width: 1025px)"
+                  srcset="/img/gategroup/lg/input-success@2x.png">
+          <source media="(min-width: 767px)"
+                  srcset="/img/gategroup/md/input-success@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/gategroup/sm/input-success@2x.png">
+          <img src="/img/gategroup/md/input-success@2x.png"
+                class="img-fluid" width="203" alt="Input Success">
+        </picture>
+        <small class="mt-3">Input field Success</small>
+      </div>
+    </div>
+    <div class="row">
+      <h5>CTAs</h5>
+    </div>
+    <div class="row text-center align-items-baseline">
+      <div class="col-md-4 col-lg-3 mb-6">
+        <picture>
+          <source media="(min-width: 1440px)"
+                  srcset="/img/gategroup/xl/primary-cta@2x.png">
+          <source media="(min-width: 1025px)"
+                  srcset="/img/gategroup/lg/primary-cta@2x.png">
+          <source media="(min-width: 767px)"
+                  srcset="/img/gategroup/md/primary-cta@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/gategroup/sm/primary-cta@2x.png">
+          <img src="/img/gategroup/md/primary-cta@2x.png"
+                class="img-fluid" width="270" alt="Primary CTA">
+        </picture>
+        <p><small>Primary CTA</small>  </p>
+      </div>
+      <div class="col-md-4 col-lg-3 mb-6">
+        <picture>
+          <source media="(min-width: 1440px)"
+                  srcset="/img/gategroup/xl/video-cta@2x.png">
+          <source media="(min-width: 1025px)"
+                  srcset="/img/gategroup/lg/video-cta@2x.png">
+          <source media="(min-width: 767px)"
+                  srcset="/img/gategroup/md/video-cta@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/gategroup/sm/video-cta@2x.png">
+          <img src="/img/gategroup/md/video-cta@2x.png"
+                class="img-fluid" width="237" alt="Video CTA">
+        </picture>
+        <p><small>Video CTA</small></p>
+      </div>
+      <div class="col-md-4 col-lg-3 mb-6">
+        <picture>
+          <source media="(min-width: 1440px)"
+                  srcset="/img/gategroup/xl/secondary-cta@2x.png">
+          <source media="(min-width: 1025px)"
+                  srcset="/img/gategroup/lg/secondary-cta@2x.png">
+          <source media="(min-width: 767px)"
+                  srcset="/img/gategroup/md/secondary-cta@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/gategroup/sm/secondary-cta@2x.png">
+          <img src="/img/gategroup/md/secondary-cta@2x.png"
+                class="img-fluid" width="169" alt="Secondary CTA">
+        </picture>
+        <p class="mt-3"><small>Secondary CTA with icon</small></p>
+      </div>
+      <div class="d-none d-lg-block col-lg-3">
+        <picture>
+          <source media="(min-width: 1440px)"
+                  srcset="/img/gategroup/xl/icon-cta@2x.png">
+          <source media="(min-width: 1025px)"
+                  srcset="/img/gategroup/lg/icon-cta@2x.png">
+          <img src="/img/gategroup/lg/icon-cta@2x.png"
+                class="img-fluid" width="64" alt="Icon CTA">
+        </picture>
+        <p><small>Icon CTA</small></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 offset-lg-2">
+        <small>*This is a subset of atoms and molecules from the design system.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-text.html
+            heading="Sketching the Courseware"
+            text="
+As we conducted our research we also started conceptualizing feature flows and the overall design. We began with the learner app experience and worked back to the course development tools. Features were tested at every step of the design process, from sketching with learners to conducting full interactive task-based analysis." -%}
+
+{%- include section-image-shuffle.html
+            image_name_1="sketch-1@2x.png"
+            image_name_2="sketch-2@2x.png"
+            image_name_3="sketch-3@2x.png" -%}
+
+{%- include section-separator.html
+            spacing="pt-7"-%}
+
+{%- include section-text.html
+            heading="User <br> Flows"
+            text="
+As our hypotheses were being proven through user testing, we starting looking at the design on a macro level. We developed user flows for how a learner would move through the product feature by feature. This helped us define contextual animations and opportunities for delight." -%}
+
+{%- include section-image.html
+            image_name="flow@2x.png" -%}
+
+{%- include section-separator.html
+            spacing="pt-7" -%}
+
+{%- include section-text.html
+            heading="Injecting <br> Personality"
+            text="
+Beyond adding delight, illustrations help visual learners retain information. We knew we needed something fun and bright that we could build at scale. There would be a lot of spot illustrations needed in the courses and we would need non-artistic designers to help generate them. We created a simple framework of basic rules and colors as well as Pinterest boards for inspiration. After some quick training, the designers sat with content creators to devise illustrations that paired well with the course content. All illustrations passed through me for art direction and consistency." -%}
+
+{%- include section-image-shuffle.html
+            image_name_1="illustration-1@2x.png"
+            image_name_2="illustration-2@2x.png"
+            image_name_3="illustration-3@2x.png" -%}
+
+<section class="mt-6">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-6">
+        <small>*Here are a few I created to define the direction.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-separator.html
+            spacing="py-7"-%}
+
+<section>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h3>Engaging With Content</h3>
+        <p>The learner dashboard was designed to be purposeful and actionable. Because the app is an educational tool, we needed to make sure learners clearly understand how to find new courses and start taking them within moments of opening the app.</p>
+      </div>
+      <div class="col-lg-6">
+        <video class="embed-responsive d-none d-lg-block" width="1104"
+          autoplay loop
+          data-source="/img/gategroup/md-mobile-videos/Mobile-Course-Launch-Flow"
+          poster="/img/gategroup/lg/mobile-img-1@2x.png">
+        </video>
+        <picture>
+          <source media="(min-width: 767px)"
+                  srcset="/img/gategroup/md/mobile-img-1@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/gategroup/sm/mobile-img-1@2x.png">
+          <img src="/img/gategroup/md/mobile-img-1@2x.png"
+                class="img-fluid d-lg-none" alt="Engaging With Content">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row flex-row-reverse align-items-center">
+      <div class="col-lg-6">
+        <h3>Data Collection</h3>
+        <p>Data is an important and complex tool that drives learner engagement, and it is accessible and contextual throughout the app. It is used to answer questions for the learner and provide feedback for course creators.</p>
+      </div>
+      <div class="col-lg-6">
+        <video class="embed-responsive d-none d-lg-block" width="1104"
+          autoplay loop
+          data-source="/img/gategroup/md-mobile-videos/Mobile-Course-Data"
+          poster="/img/gategroup/lg/mobile-img-2@2x.png">
+        </video>
+        <picture>
+          <source media="(min-width: 767px)"
+                  srcset="/img/gategroup/md/mobile-img-2@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/gategroup/sm/mobile-img-2@2x.png">
+          <img src="/img/gategroup/md/mobile-img-2@2x.png"
+                class="img-fluid d-lg-none" alt="Data Collection">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h3>Flash Cards</h3>
+        <p>Course creators broke content down into smaller, digestible bites that were paired with illustrations. This format keeps the user concentrated on the lesson and reduces fluff in the content. Learners receive a max of 10 cards and are then tested on their ability to retain the information. If a flash card has a piece of info the learner feels is important, they can save the card to their profile.</p>
+      </div>
+      <div class="col-lg-6">
+        <video class="embed-responsive d-none d-lg-block" width="1104"
+          autoplay loop
+          data-source="/img/gategroup/md-mobile-videos/Mobile-Course-Flow"
+          poster="/img/gategroup/lg/mobile-img-3@2x.png">
+        </video>
+        <picture>
+          <source media="(min-width: 767px)"
+                  srcset="/img/gategroup/md/mobile-img-3@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/gategroup/sm/mobile-img-3@2x.png">
+          <img src="/img/gategroup/md/mobile-img-3@2x.png"
+                class="img-fluid d-lg-none" alt="Flash Cards">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row flex-row-reverse align-items-center">
+      <div class="col-lg-6">
+        <h3>Thought-Provoking Challenges</h3>
+        <p>Challenges were painstakingly designed. We wanted to create interesting, attention-grabbing interactions that were easy for learners to use. In the challenges, feedback is withheld until learners complete all challenges; this prevents them from getting discouraged if they are struggling. Animation is used to give the learner a clear understanding of the fast-paced transitions between course content and challenges throughout the lesson.</p>
+      </div>
+      <div class="col-lg-6">
+        <video class="embed-responsive d-none d-lg-block" width="1104"
+          autoplay loop
+          data-source="/img/gategroup/md-mobile-videos/Mobile-Challenges"
+          poster="/img/gategroup/lg/mobile-img-4@2x.png">
+        </video>
+        <picture>
+          <source media="(min-width: 767px)"
+                  srcset="/img/gategroup/md/mobile-img-4@2x.png">
+          <source media="(min-width: 576px)"
+                  srcset="/img/gategroup/sm/mobile-img-4@2x.png">
+          <img src="/img/gategroup/md/mobile-img-4@2x.png"
+                class="img-fluid d-lg-none" alt="Thought-Provoking Challenges">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- include section-text.html
+            background_color="gray"
+            heading="The Learner Management Tool"
+            text="
+Since Baden wouldn’t be training on location, he needed a tool that allowing him to create content and track its effectiveness remotely. Below is the scheduling view that displays when a course is released, what its window for completion is, how many learners have completed the course, and how well they are doing." -%}
+
+{%- include section-image.html
+            background_color="gray"
+            media="md, lg, xl"
+            image_name="topview@2x.png" -%}
+
+{%- include section-text.html
+            background_color="gray"
+            heading="A Snapshot of Courses in Flight"
+            text="
+The dashboard is used to get a high-level view of courses learners are taking and see how well they are doing. The course director can get feedback on the course from the learners and reach out to them if they are struggling. This allows the courses to retain that hands-on feel at scale." -%}
+
+<section class="section-gray">
+  <h1>Image Flush Right (mobile Left)(x-large text-left)</h1>
+</section>
+
+{%- include section-text.html
+            background_color="gray"
+            heading="Course <br> Creation"
+            text="
+Course creation is a critical part of the system. We created a drag-and-drop interface allowing course creators to outline the course into chapters. Each chapter has a lesson consisting of flash cards and an interactive challenge section. Challenge types can be mixed and matched and routed to allow for SCORM compliance and to prevent learners from memorizing answers." -%}
+
+<section class="section-gray">
+  <h1>Image Right Flush</h1>
+</section>
+
+{%- include section-text.html
+            background_color="gray"
+            heading="Editing <br> Modules"
+            text="
+Working with challenge modules can quickly become complex. We decided to allow course creators to lay out and route the challenge flow in the main area of the view that we called the grid. When the edit icon is pressed, a drawer opens in the right side of the view where categories, questions, and possible answers can be added." -%}
+
+<section class="section-gray">
+  <h1>Image Right Flush</h1>
+</section>
+
+{%- include section-text.html
+            background_color="gray"
+            heading="Learners in <br> Focus"
+            text="
+After speaking with Baden and the students, we knew the personal aspect of the training was important to everyone — so creating a remote system was a concern for us. However, by using data and rich learner profiles, we were able to give Baden and course creators the ability to be alerted when a learner is struggling or excelling so they can reach out and offer help or praise. This serves to keep learners engaged and gives them the sense that the training matters and someone cares about their progress." -%}
+
+<section class="section-gray">
+  <h1>Image Right Flush</h1>
+</section>
+
+{%- include section-separator.html
+            background_color="gray" -%}
+
+{%- include section-text.html
+            background_color="gray"
+            heading="Final <br> Thoughts"
+            text="
+In retrospect, I’m very proud of the work we did for Gategroup. I think spending time talking with the learners and ensuring we were creating something useful for them was critical to our success. I also think that sketching, prototyping, and testing the platform’s many complex interactions allowed us to take something that could have been daunting and instead make it simple and intuitive. " -%}

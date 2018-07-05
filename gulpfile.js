@@ -32,7 +32,7 @@ gulp.task('styles', function () {
 // });﻿
 
 gulp.task('svg', function () {
-  gulp.src('**/*.svg', { cwd: './img/home/sm/' })
+  gulp.src('**/*.svg', { cwd: '.{{ site.cloudinary }}/home/sm/' })
     .pipe(svgSprite({
       mode: {
         symbol: {
@@ -42,7 +42,7 @@ gulp.task('svg', function () {
         },
       }
     }))
-    .pipe(gulp.dest('./img/svg/'));
+    .pipe(gulp.dest('.{{ site.cloudinary }}/svg/'));
 });
 
 //Uglify Javascript Task

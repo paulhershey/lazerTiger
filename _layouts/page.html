@@ -14,14 +14,14 @@ layout: default
     <div class="media">
       <picture>
         <source media="(min-width: 1440px)"
-                srcset="/img/{{ image_folder }}/xl/{{ page.image.name }}@2x.png">
+                srcset="{{ site.cloudinary }}/{{ image_folder }}/xl/{{ page.image.name }}_2x.png">
         <source media="(min-width: 1024px)"
-                srcset="/img/{{ image_folder }}/lg/{{ page.image.name }}@2x.png">
+                srcset="{{ site.cloudinary }}/{{ image_folder }}/lg/{{ page.image.name }}_2x.png">
         <source media="(min-width: 736px)"
-                srcset="/img/{{ image_folder }}/md/{{ page.image.name }}@2x.png">
+                srcset="{{ site.cloudinary }}/{{ image_folder }}/md/{{ page.image.name }}_2x.png">
         <source media="(min-width: 576px)"
-                srcset="/img/{{ image_folder }}/sm/{{ page.image.name }}@2x.png">
-        <img src="/img/{{ image_folder }}/sm/{{ page.image.name }}@2x.png" class="img-fluid">
+                srcset="{{ site.cloudinary }}/{{ image_folder }}/sm/{{ page.image.name }}_2x.png">
+        <img src="{{ site.cloudinary }}/{{ image_folder }}/sm/{{ page.image.name }}_2x.png" class="img-fluid">
       </picture>
     </div>
 
@@ -91,12 +91,12 @@ layout: default
     </div>
     <picture>
       <source media="(min-width: 1440px)"
-              srcset="/img/{{ image_folder }}/xl/{{ page.quote.image }}@2x.png">
+              srcset="{{ site.cloudinary }}/{{ image_folder }}/xl/{{ page.quote.image }}_2x.png">
       <source media="(min-width: 1024px)"
-              srcset="/img/{{ image_folder }}/lg/{{ page.quote.image }}@2x.png">
+              srcset="{{ site.cloudinary }}/{{ image_folder }}/lg/{{ page.quote.image }}_2x.png">
       <source media="(min-width: 736px)"
-              srcset="/img/{{ image_folder }}/md/{{ page.quote.image }}@2x.png">
-      <img src="/img/{{ image_folder }}/sm/{{ page.quote.image }}@2x.png" class="img-fluid">
+              srcset="{{ site.cloudinary }}/{{ image_folder }}/md/{{ page.quote.image }}_2x.png">
+      <img src="{{ site.cloudinary }}/{{ image_folder }}/sm/{{ page.quote.image }}_2x.png" class="img-fluid">
     </picture>
   </section>
 

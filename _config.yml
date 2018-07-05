@@ -12,7 +12,8 @@ twitter:
 social:
   links:
     - https://twitter.com/paulhershey
-baseurl: 'lazerTiger'
+baseurl: /lazerTiger
+cloudinary: https://res.cloudinary.com/paulhershey/image/upload
 collections:
   pages:
     output: true

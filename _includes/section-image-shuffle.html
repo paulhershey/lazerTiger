@@ -24,9 +24,9 @@
                 {% assign min_width = "576px" %}
               {% endcase %}
               <source media="(min-width: {{ min_width }})"
-                      srcset="/img/{{ image_folder }}/{{ size }}/{{ image }}">
+                      srcset="{{ site.cloudinary }}/{{ image_folder }}/{{ size }}/{{ image }}">
             {%- endfor -%}
-            <img src="/img/{{ image_folder }}/{{ media | first }}/{{ image }}"
+            <img src="{{ site.cloudinary }}/{{ image_folder }}/{{ media | first }}/{{ image }}"
                   class="img-fluid" alt="{{ include.title }}">
           </picture>
 

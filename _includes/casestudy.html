@@ -15,7 +15,7 @@
           <span class="lead">{{ include.category }}</span>
           <h3>{{ include.title }}</h3>
           <p>{{ include.body }}</p>
-          <a class="btn btn-secondary" href="{{ include.url }}">Learn more<span></span></a>
+          <a class="btn btn-secondary" href="{{ include.url | relative_url }}">Learn more<span></span></a>
         </div>
       </div>
     </div>

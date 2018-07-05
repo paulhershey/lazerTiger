@@ -11,12 +11,10 @@
   "description": "",
   "dependencies": {
     "bootstrap": "^4.0.0",
-    "gulp-cloudinary-upload": "^1.0.0",
     "gulp-ruby-sass": "^3.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
-    "cloudinary-jquery": "^2.5.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-imagemin": "^4.1.0",

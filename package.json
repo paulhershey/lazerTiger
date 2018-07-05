@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "gulp-cloudinary-upload": "^1.0.0",
     "gulp-ruby-sass": "^3.0.0"
   },
   "devDependencies": {

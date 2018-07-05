@@ -15,9 +15,9 @@
               {% assign min_width = "576px" %}
             {% endcase %}
             <source media="(min-width: {{ min_width }})"
-                    srcset="/img/{{ image_folder }}/{{ size }}/{{ include.image_name_1 }}">
+                    srcset="{{ site.cloudinary }}/{{ image_folder }}/{{ size }}/{{ include.image_name_1 }}">
           {%- endfor -%}
-          <img src="/img/{{ image_folder }}/{{ media | first }}/{{ include.image_name_1 }}"
+          <img src="{{ site.cloudinary }}/{{ image_folder }}/{{ media | first }}/{{ include.image_name_1 }}"
                 class="img-fluid" alt="{{ include.title }}">
         </picture>
       </div>
@@ -33,9 +33,9 @@
               {% assign min_width = "576px" %}
             {% endcase %}
             <source media="(min-width: {{ min_width }})"
-                    srcset="/img/{{ image_folder }}/{{ size }}/{{ include.image_name_2 }}">
+                    srcset="{{ site.cloudinary }}/{{ image_folder }}/{{ size }}/{{ include.image_name_2 }}">
           {%- endfor -%}
-          <img src="/img/{{ image_folder }}/{{ media | first }}/{{ include.image_name_2 }}"
+          <img src="{{ site.cloudinary }}/{{ image_folder }}/{{ media | first }}/{{ include.image_name_2 }}"
                 class="img-fluid" alt="{{ include.title }}">
         </picture>
       </div>

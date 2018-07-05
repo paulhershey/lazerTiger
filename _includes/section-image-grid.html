@@ -9,16 +9,16 @@
     <div class='img-{{index}} ~ {% if index > 1 %}d-none d-md-flex{% endif %}'>
       <picture>
         <source media="(min-width: 1440px)"
-                srcset="/img/{{ image_folder }}/xl/{{include.image_name}}-{{index}}@2x.png">
+                srcset="{{ site.cloudinary }}/{{ image_folder }}/xl/{{include.image_name}}-{{index}}_2x.png">
         <source media="(min-width: 1025px)"
-                srcset="/img/{{ image_folder }}/lg/{{include.image_name}}-{{index}}@2x.png">
+                srcset="{{ site.cloudinary }}/{{ image_folder }}/lg/{{include.image_name}}-{{index}}_2x.png">
         <source media="(min-width: 767px)"
-                srcset="/img/{{ image_folder }}/md/{{include.image_name}}-{{index}}@2x.png">
+                srcset="{{ site.cloudinary }}/{{ image_folder }}/md/{{include.image_name}}-{{index}}_2x.png">
         {% if index == 1 %}
         <source media="(min-width: 576px)"
-                srcset="/img/{{ image_folder }}/sm/{{include.image_name}}-{{index}}@2x.png">
+                srcset="{{ site.cloudinary }}/{{ image_folder }}/sm/{{include.image_name}}-{{index}}_2x.png">
         {% endif %}
-        <img src="/img/{{ image_folder }}/md/{{include.image_name}}-{{index}}@2x.png"
+        <img src="{{ site.cloudinary }}/{{ image_folder }}/md/{{include.image_name}}-{{index}}_2x.png"
               class="img-fluid" alt="{{ include.title }}">
       </picture>
     </div>

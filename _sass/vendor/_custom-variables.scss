@@ -94,7 +94,7 @@ $spacers: map-merge((
   7: ($spacer * 8),    // 128px
   8: ($spacer * 9),    // 144px
   9: ($spacer * 10),   // 160px
-  10: ($spacer * 14),   // 224px
+  10: ($spacer * 14),  // 224px
   11: ($spacer * 16)   // 256px
 
 ), $spacers);

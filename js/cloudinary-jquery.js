@@ -4248,7 +4248,7 @@ var slice = [].slice,
       roundDpr = (ref4 = options['round_dpr']) != null ? ref4 : this.config('round_dpr');
       for (j = 0, len = elements.length; j < len; j++) {
         tag = elements[j];
-        if (!((ref5 = tag.tagName) != null ? ref5.match(/img/i) : void 0)) {
+        if (!((ref5 = tag.tagName) != null ? ref5.match({{ site.cloudinary }}/i) : void 0)) {
           continue;
         }
         setUrl = true;

@@ -2,9 +2,9 @@
   <div class="d-none d-lg-block col-6 col-xl-7">
     <div class="media">
       <picture>
-        <source media="(min-width: 1440px)" srcset="{{ site.cloudinary }}/home/xl/{{ include.image }}_2x.png">
-        <source media="(min-width: 1024px)" srcset="{{ site.cloudinary }}/home/lg/{{ include.image }}_2x.png">
-        <img src="{{ site.cloudinary }}/home/lg/{{ include.image }}_2x.png" class="img-fluid">
+        <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/{{ include.image }}_2x.png">
+        <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/{{ include.image }}_2x.png">
+        <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/{{ include.image }}_2x.png" class="img-fluid">
       </picture>
     </div>
   </div>

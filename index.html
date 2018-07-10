@@ -3,32 +3,31 @@ layout: default
 title: Paul Hershey
 ---
 
-<section class="hero">
-  <div class="hero-container ~ row align-items-center">
-    <div class="content ~ col-7">
+<section class="hero ~ conainer-fluid">
+  <div class="hero-container ~ row align-items-center justify-content-center justify-content-lg-start">
+    <div class="content ~ col-md-10 col-lg-7">
       {% include svg.html name="logo" %}
       <h1 class="display-1">Product Designer</h1>
       <p>Research / Interaction Design / FE Design</p>
       <a class="btn btn-primary" data-scroll href="#casestudies">Case Studies<span></span></a>
     </div>
-    <div class="video-wrapper">
-      <video class="player" width="428" height="710" autoplay preload poster="{{ site.cloudinary | append: '/image/upload' }}/home/lg/PaulHershey.png">
-        <source src="{{ site.cloudinary | append: '/video/upload' }}/home/header-video/PaulHershey.mp4.mp4" type="video/mp4">
-        <source src="{{ site.cloudinary | append: '/video/upload' }}/home/header-video/PaulHershey.webmhd.webm" type="video/webm">
-        <source src="{{ site.cloudinary | append: '/video/upload' }}/home/header-video/PaulHershey.oggtheora.ogv" type="video/ogg">
+    <div class="video-wrapper d-none d-lg-block">
+      <video class="player" width="428" height="710" autoplay preload
+        data-source="{{ site.cloudinary | append: '/video/upload' }}/home/header-video/PaulHershey"
+        poster="{{ site.cloudinary | append: '/image/upload' }}/home/lg/PaulHershey.png">
       </video>
     </div>
   </div>
 </section>
 
-<section class="about ~ container text-center">
+<section class="about ~ container">
   <div class="row d-flex justify-content-center">
     <div class="col-sm-10 col-lg-8 col-xl-6">
       <h2>About</h2>
       <p>I help people create human-centered products that users love. I have over fifteen years of experience in the design field and have worked with the U.S. Army, Infor, Code School, and Electronic Arts to name a few. I enjoy every stage of the design process from initial research to building visual languages and analyzing data. Giving back to the community is also very important to me. I’m on the board for AIGA Orlando, mentor designers who are new to the industry, and regularly speak about UX, design, leadership, and culture at conferences and meetups.</p>
       <a class="btn btn-linkedin" href="https://www.linkedin.com/in/paulhershey/" target="_blank">LinkedIn<span></span></a>
 
-      <div class="logo-list ~ row">
+      <div class="logo-list ~ row align-items-center text-center">
         <div class="col-4 col-md-2">
           {% include svg.html name="EA" %}
         </div>
@@ -91,63 +90,74 @@ title: Paul Hershey
   </div>
 </section>
 
-<section class="process ~ text-center">
+<section class="process">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-6">
-        <div class="content">
-          <h2>Process</h2>
-          <p>For me, good design requires three fundamental things: a thorough understanding of people, a desire to empathize with their needs, and the ability to align those needs with their business goals. This is the core of my professional career and what I set out to hone every day.</p>
-        </div>
-
-        <div class="content">
-          <picture>
-            <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo1_2x.png">
-            <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo1_2x.png">
-            <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo1_2x.png" class="img-fluid" alt="">
-          </picture>
-
-          <h3>Start with a conversation.</h3>
-          <p>The first step is a discovery phase. During this phase, I identify key areas of the business on which to focus by creating problem statements and job stories, which I then cluster into actionable groupings. From here, I can diverge into primary and secondary research and start building a base of qualitative and quantitative data. This phase should produce a large pile of unstructured findings that can be synthesized.</p>
-        </div>
-
-        <div class="content">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo2_2x.png">
-            <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo2_2x.png">
-            <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo2_2x.png" class="img-fluid" alt="">
-          </picture>
-          <h3>Identify challenges &mdash; and opportunities.</h3>
-          <p>Once I converge on the findings and define my areas of focus, I can identify underlying themes. This will reveal challenges and opportunities for ideation. This phase allows for an understanding of the customer’s motivations and helps to empathize with their needs. I can begin to reframe the problems, create hypotheses, and consider possible solutions.</p>
-        </div>
-
-        <div class="content">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo3_2x.png">
-            <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo3_2x.png">
-            <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo3_2x.png" class="img-fluid" alt="">
-          </picture>
-          <h3>Pitch multiple solutions.</h3>
-          <p>Once I have a thorough understanding of the customer’s motivations, I can start pitching solutions. This is the point where I really get to flex my creative muscles. Through ideation sessions — and team workshops whenever possible — I am able to zero in on a handful of ideas to validate with real users.</p>
-        </div>
-
-        <div class="content">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo4_2x.png">
-            <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo4_2x.png">
-            <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo4_2x.png" class="img-fluid" alt="">
-          </picture>
-          <h3>Build, test, analyze, and repeat.</h3>
-          <p>Once an initial set of ideas has been established, I enter the testing and validation phase. I’ll build interactive prototypes, experiment with different interaction models, and design out animations. My job is to test, learn, iterate, and repeat. I continue this while increasing the fidelity of the prototypes until I feel I have one or two solutions worth developing.</p>
-        </div>
-
-        <div class="">
-          <h3>Learning is a habit and I love it.</h3>
-          <p>To design a product people truly love, you have to include them in the design process. Everyone is creative and has creative ideas. I always try to involve potential users in the design process early and often. This keeps me focused on the right problems and ensures I’m creating the best possible experience for the end user.</p>
-        </div>
+      <div class="col-md-10 col-lg-8 col-xl-6 mb-8">
+        <h2>Process</h2>
+        <p>For me, good design requires three fundamental things: a thorough understanding of people, a desire to empathize with their needs, and the ability to align those needs with their business goals. This is the core of my professional career and what I set out to hone every day.</p>
+      </div>
+    </div>
+    <div class="content ~ row flex-column flex-xl-row-reverse align-items-center justify-content-center">
+      <div class="d-none d-lg-block col-lg-8 col-xl-6 mb-7">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo1_2x.png">
+          <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo1_2x.png">
+          <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo1_2x.png" class="img-fluid" alt="">
+        </picture>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-4 mb-7">
+        <h3>Start with a conversation.</h3>
+        <p>The first step is a discovery phase. During this phase, I identify key areas of the business on which to focus by creating problem statements and job stories, which I then cluster into actionable groupings. From here, I can diverge into primary and secondary research and start building a base of qualitative and quantitative data. This phase should produce a large pile of unstructured findings that can be synthesized.</p>
+      </div>
+    </div>
+    <div class="content ~ row flex-column flex-xl-row align-items-center justify-content-center">
+      <div class="d-none d-lg-block col-lg-8 col-xl-6 mb-7">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo2_2x.png">
+          <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo2_2x.png">
+          <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo2_2x.png" class="img-fluid" alt="">
+        </picture>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-4 mb-7">
+        <h3>Identify challenges &mdash; and opportunities.</h3>
+        <p>Once I converge on the findings and define my areas of focus, I can identify underlying themes. This will reveal challenges and opportunities for ideation. This phase allows for an understanding of the customer’s motivations and helps to empathize with their needs. I can begin to reframe the problems, create hypotheses, and consider possible solutions.</p>
+      </div>
+    </div>
+    <div class="content ~ row flex-column flex-xl-row-reverse align-items-center justify-content-center">
+      <div class="d-none d-lg-block col-lg-8 col-xl-6 mb-7">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo3_2x.png">
+          <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo3_2x.png">
+          <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo3_2x.png" class="img-fluid" alt="">
+        </picture>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-4 mb-7">
+        <h3>Pitch multiple solutions.</h3>
+        <p>Once I have a thorough understanding of the customer’s motivations, I can start pitching solutions. This is the point where I really get to flex my creative muscles. Through ideation sessions — and team workshops whenever possible — I am able to zero in on a handful of ideas to validate with real users.</p>
       </div>
     </div>
 
+    <div class="content ~ row flex-column flex-xl-row align-items-center justify-content-center">
+      <div class="d-none d-lg-block col-lg-8 col-xl-6 mb-7">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo4_2x.png">
+          <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo4_2x.png">
+          <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo4_2x.png" class="img-fluid" alt="">
+        </picture>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-4 mb-7">
+        <h3>Build, test, analyze, and repeat.</h3>
+        <p>Once an initial set of ideas has been established, I enter the testing and validation phase. I’ll build interactive prototypes, experiment with different interaction models, and design out animations. My job is to test, learn, iterate, and repeat. I continue this while increasing the fidelity of the prototypes until I feel I have one or two solutions worth developing.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-6 mb-7">
+        <h3>Learning is a habit and I love it.</h3>
+        <p>To design a product people truly love, you have to include them in the design process. Everyone is creative and has creative ideas. I always try to involve potential users in the design process early and often. This keeps me focused on the right problems and ensures I’m creating the best possible experience for the end user.</p>
+      </div>
+    </div>
   </div>
 </section>
 

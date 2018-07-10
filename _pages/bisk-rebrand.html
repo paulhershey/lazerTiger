@@ -55,22 +55,52 @@ To me, brand is about understanding how your audience sees you and how you want 
             text="
 With access to 45+ years’ worth of enrollment data, my team and I had the fortune to dig through some great demographic information. We also gained insights from conducting our own user research on Bisk’s product and competitors’ products, which we paired with market projections from Bisk’s BI team and third-party research from Forrester. With this information, we were able to create our first round of data-driven personas and were one step closer to creating a user-centered culture." -%}
 
-<section>
-  <h1>Image Split</h1>
+<section class="section-media-grid">
+  <div class="bisk-audience">
+    <div class="ba-image">
+      <picture>
+        <source media="(min-width: 1440px)"
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/bisk/xl/Proto-Photo_2x.png">
+        <source media="(min-width: 1025px)"
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/bisk/lg/Proto-Photo_2x.png">
+        <source media="(min-width: 767px)"
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/bisk/md/Proto-Photo_2x.png">
+        <img src="{{ site.cloudinary | append: '/image/upload' }}/bisk/md/Proto-Photo_2x.png"
+              class="img-fluid" alt="{{ include.title }}">
+      </picture>
+    </div>
+    <div class="ba-offset-bottom-left d-flex align-items-center">
+      <div class="row d-none d-xl-flex justify-content-center">
+        <div class="col-10">
+          <p>Nick Jacobs</p>
+          <h6 class="mb-6">“I want to focus on my education but feel I never have enough time.”</h6>
+          <table width="100%">
+            <tr><td>Age</td><td>23</td></tr>
+            <tr><td>Location</td><td>Lansing, Michigan</td></tr>
+            <tr><td>Job</td><td>Server</td></tr>
+            <tr><td>Salary</td><td>&lt;20k</td></tr>
+            <tr><td>Status</td><td>Single, one child</td></tr>
+            <tr><td>Course</td><td>Sport Coaching &amp; Leadership</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="ba-offset-bottom-right"></div>
+  </div>
 </section>
 
 <section class="section-inverted">
   <div class="container">
     <div class="row pt-6">
-      <div class="col-4 pb-7">
+      <div class="col-md-4 pb-4 pb-md-7">
         <p class="lead">Goals</p>
         <p>I want to feel like I’m getting the same education I would get if I were on campus. I want to feel connected to my classmates and comfortable reaching out to them if I need help.</p>
       </div>
-      <div class="col-4 pb-7">
+      <div class="col-md-4 pb-4 pb-md-7">
         <p class="lead">Concerns</p>
         <p>Between work and family, I don’t have a lot of time for school. When I sit down to focus on my classes I want to ensure the time spent is useful and impactful.</p>
       </div>
-      <div class="col-4 pb-7">
+      <div class="col-md-4 pb-4 pb-md-7">
         <p class="lead">Environment</p>
         <p>Nick* is a tech native and typically does class work from home in the living room and occasionally from work at a table in a quiet area of a restaurant.</p>
       </div>
@@ -319,13 +349,30 @@ Our team created top-notch guidelines to help outline a voice for the brand. For
             text="
 We built out a roadmap with each deliverable being categorized into a design sprint. The first sprint we embarked on revolved around the logo. Our team worked closely with the president and his father, the founder of Bisk. This allowed us to pinpoint elements that were important to the brand while discussing Bisk’s history and origin story. After card sorting with the president, we found that the new brand would revolve around three key words: bold, authentic, and imaginative."-%}
 
-<section>
-  <h1>Image Split</h1>
+<section class="section-media-grid">
+  <div class="bisk-logos">
+    <div class="bl-image">
+      <picture>
+        <source media="(min-width: 1440px)"
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/bisk/xl/Logos_2x.png">
+        <source media="(min-width: 1025px)"
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/bisk/lg/Logos_2x.png">
+        <source media="(min-width: 767px)"
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/bisk/md/Logos_2x.png">
+        <img src="{{ site.cloudinary | append: '/image/upload' }}/bisk/md/Logos_2x.png"
+              class="img-fluid" alt="">
+      </picture>
+    </div>
+    <div class="bl-offset-left"></div>
+    <div class="bl-offset-right"></div>
+  </div>
 </section>
 
 {%- include section-image-row.html
             background_color="inverted"
-            spacing="py-6"
+            spacing="py-6 pt-lg-8 pb-lg-6"
+            caption_1="mono"
+            caption_2="full color"
             image_name_1="bisk-logo-light.svg"
             image_name_2="bisk-logo-color.svg" -%}
 
@@ -400,6 +447,21 @@ After running the sprints and finalizing the brand elements, we built out a mast
             offset_amount="-16%"
             image_name="website_2x.png" -%}
             {% endcomment %}
+
+<section class="section-gray image-flush flush-none flush-md-right py-4 py-md-7">
+  <div class="img-container">
+    <picture>
+      <source media="(min-width: 1440px)"
+              srcset="{{ site.cloudinary | append: '/image/upload' }}/bisk/xl/website_2x.png">
+      <source media="(min-width: 1025px)"
+              srcset="{{ site.cloudinary | append: '/image/upload' }}/bisk/lg/website_2x.png">
+      <source media="(min-width: 767px)"
+              srcset="{{ site.cloudinary | append: '/image/upload' }}/bisk/md/website_2x.png">
+      <img src="{{ site.cloudinary | append: '/image/upload' }}/bisk/md/website_2x.png"
+            class="img-fluid bisk-website" alt="">
+    </picture>
+  </div>
+</section>
 
 {%- include section-separator.html
             background_color="gray" -%}

@@ -1,9 +1,9 @@
 {%- capture image_folder -%}{{ page.title | replace: ' ', '-' | downcase }}{%- endcapture -%}
 {% assign media = include.media | default: 'sm, md, lg, xl' | split: ', ' %}
-<section class="section-{{ include.background_color | default: default }}">
+<section class="section-{{ include.background_color | default: 'default' }}">
   <div class="container-fluid px-0">
     <div class="row no-gutters">
-      <div class="section-{{ include.left_column_color | default: default }} ~ col-md-6 d-flex justify-content-center {{ include.spacing }}">
+      <div class="section-{{ include.left_column_color | default: 'default' }} ~ col-md-6 d-flex flex-column align-items-center {{ include.spacing }}">
         <picture>
           {%- for size in media reversed -%}
             {% case size %}
@@ -20,8 +20,13 @@
           <img src="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/{{ media | first }}/{{ include.image_name_1 }}"
                 class="img-fluid" alt="{{ include.title }}">
         </picture>
+        {%- unless include.caption_1.blank? -%}
+          <div class="w-50 mt-3">
+            <b>{{ include.caption_1 }}</b>
+          </div>
+        {%- endunless -%}
       </div>
-      <div class="section-{{ include.right_column_color | default: default }} ~ col-md-6 d-flex justify-content-center {{ include.spacing }}">
+      <div class="section-{{ include.right_column_color | default: 'default' }} ~ col-md-6 d-flex flex-column  align-items-center {{ include.spacing }}">
         <picture>
           {%- for size in media reversed -%}
             {% case size %}
@@ -38,6 +43,11 @@
           <img src="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/{{ media | first }}/{{ include.image_name_2 }}"
                 class="img-fluid" alt="{{ include.title }}">
         </picture>
+        {%- unless include.caption_2.blank? -%}
+          <div class="w-50 mt-3">
+            <b>{{ include.caption_2 }}</b>
+          </div>
+        {%- endunless -%}
       </div>
     </div>
   </div>

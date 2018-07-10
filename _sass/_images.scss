@@ -1,3 +1,5 @@
+// GRID
+//====================
 .image-grid {
   display: grid;
   grid-template-columns: 100%;
@@ -46,6 +48,8 @@
   }
 }
 
+// SHUFFLE
+//======================
 .image-shuffle {
   @for $i from 1 through 4 {
     .shuffle-item-#{$i} {
@@ -54,4 +58,30 @@
       }
     }
   }
+}
+
+// FLUSH
+//======================
+.image-flush {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(20px, 8.33333333333%));
+  overflow: hidden;
+
+  .img-container { grid-area: u; }
+  img { position: relative; }
+
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      &.flush#{$infix}-right { grid-template-areas: ". u u u u u u u u u u u u"; }
+      &.flush#{$infix}-left { grid-template-areas:  "u u u u u u u u u u u u ." }
+      &.flush#{$infix}-none { grid-template-areas:  ". u u u u u u u u u u u ." }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .bisk-website { right: -16%; }
+  }
+
 }

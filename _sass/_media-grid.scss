@@ -1,8 +1,63 @@
 .section-media-grid {
   display: grid;
+
+  .bisk-audience {
+    display: grid;
+    grid-template-areas: "a";
+
+    @include media-breakpoint-up(md) {
+      grid-template-rows: 160px 1fr;
+      grid-template-columns: repeat(12, minmax(20px, 8.33333333333%));
+      grid-template-areas:
+      ". . a a a a a a a a a a"
+      "l l a a a a a a a a a a";
+    }
+
+    @include media-breakpoint-up(xl) {
+      grid-template-columns: 2% repeat(12, minmax(20px, 8.33333333333%)) 2%;
+      grid-template-areas:
+      ". . . . . a a a a a a a a ."
+      "l l l l l a a a a a a a a r";
+    }
+
+    > .ba-image { grid-area: a; }
+    > .ba-offset-bottom-left {
+        grid-area: l;
+        color: $white;
+        background: $black;
+      }
+    > .ba-offset-bottom-right {
+        grid-area: r;
+        background: $black;
+      }
+  }
+
+  .bisk-logos {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: repeat(12, minmax(20px, 8.33333333333%));
+      grid-template-areas:
+        ". a a a a a a a a a a ."
+        "l a a a a a a a a a a r";
+
+      > .bl-image { grid-area: a;}
+      > .bl-offset-left { grid-area: l;}
+      > .bl-offset-right { grid-area: r; }
+      > .bl-offset-left,
+      > .bl-offset-right { background: $black; }
+    }
+
+    @include media-breakpoint-up(lg) {
+      grid-template-rows: 1fr 156px;
+      grid-template-columns: repeat(12, minmax(20px, 8.33333333333%));
+    }
+  }
+
   .codeschool-video {
     display: grid;
-    // grid-column-gap: $grid-gutter-width;
     grid-template-rows: 1fr 1fr 64px;
     grid-template-columns: repeat(12, minmax(20px, 8.33333333333%));
     grid-template-areas:

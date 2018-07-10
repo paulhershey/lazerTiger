@@ -6,7 +6,7 @@
 {% assign images = image_list | split: ', ' %}
 {% assign list_size = images | size %}
 
-<section class="image-shuffle section-{{ include.background_color | default: default }}">
+<section class="image-shuffle section-{{ include.background_color | default: 'default' }}">
   <div class="container">
     <div class="row">
 

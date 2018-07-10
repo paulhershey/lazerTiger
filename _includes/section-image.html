@@ -12,7 +12,7 @@
   {% capture show %}{% unless size == 'sm' %}d-none d-{{size}}-flex{% endunless %}
   {% endcapture %}
 {%- endfor -%}
-<section class="section-{{ include.background_color | default: default }} ~ {{ include.spacing }} {{ show }}">
+<section class="section-{{ include.background_color | default: 'default' }} ~ {{ include.spacing }} {{ show }}">
   <div class="container">
     <div class="row">
       <div class="col-12 d-flex justify-content-center">

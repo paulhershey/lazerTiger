@@ -85,3 +85,22 @@
   }
 
 }
+
+.img-overflow {
+  width: 130%;
+  &.flow-left { transform: translateX(-35%); }
+
+  @include media-breakpoint-up(md) {
+    width: 140%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 150%;
+    &.flow-left { transform: translateX(0); }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &.flow-xl-left { transform: translateX(-35%); }
+  }
+
+}

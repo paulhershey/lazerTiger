@@ -1,14 +1,17 @@
 .section {
   &-default {
     background-color: transparent;
+    overflow: hidden;
   }
   &-inverted {
     background-color: $black;
     color: $white;
+    overflow: hidden;
     hr { border-color: $gray-800; }
   }
   &-gray {
     background-color: $gray-200;
+    overflow: hidden;
   }
 }
 

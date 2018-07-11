@@ -75,4 +75,40 @@
         padding: map-get($spacers, 5);
       }
   }
+
+  .ea-journey {
+    display: none;
+    
+    @include media-breakpoint-up(md) {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: repeat(6, minmax(40px, 16.66666666667%));
+      grid-template-areas:
+      ". a a a a a"
+      "b a a a a a";
+    }
+
+    @include media-breakpoint-up(xl) {
+      grid-template-columns: repeat(12, minmax(20px, 8.33333333333%));
+      grid-template-areas:
+      ". . . a a a a a a a a a"
+      "b b b a a a a a a a a a";
+    }
+
+    > .ea-image {
+      grid-area: a;
+
+      @include media-breakpoint-up(md) {
+        .img-overflow { width: 200%; }
+      }
+
+      @include media-breakpoint-up(xl) {
+        .img-overflow { width: 250%; }
+      }
+    }
+    > .ea-offset-bottom {
+        grid-area: b;
+        background: $black;
+      }
+  }
 }

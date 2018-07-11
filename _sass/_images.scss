@@ -101,6 +101,7 @@
 
   @include media-breakpoint-up(xl) {
     &.flow-xl-left { transform: translateX(-35%); }
+    &.flow-xl-none { width: 100%; transform: translateX(0);}
   }
 
 }

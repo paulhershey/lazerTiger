@@ -49,9 +49,11 @@ The editorial team was struggling to get timely content onto EA’s network of s
 
 What we ultimately created was a product called Flux — a flexible, mobile-friendly tool that not only solved the initial issues the team was facing but also changed the way the business unit worked as a whole. Below is a sample of the branding that was developed for the product." -%}
 
-<section>
-  <h1>Image Row (Missing)</h1>
-</section>
+{%- include section-image-row.html
+            spacing="py-7"
+            class_2="d-flex bg-dark"
+            image_name_1="logo-light.svg"
+            image_name_2="logo-dark.svg" -%}
 
 {%- include section-text.html
             background_color="inverted"
@@ -244,11 +246,35 @@ Our UXR team assisted us in running competitive assessments. We created a rubric
             text="
 First, I entered a discovery phase. I conducted multiple stakeholder and user interviews in order to gather a large pile of unstructured data. I was able to identify some basic themes around scheduling, instant publishing, and localization. This information, paired with a heuristic evaluation of the current tool and a competitive assessment of similar tools, gave me plenty of data that I could synthesize into useable information." -%}
 
-<section>
-  <h1>Image Split BG Flush Right</h1>
+<section class="section-media-grid section-gray">
+  <div class="ea-journey">
+    <div class="ea-image">
+      <picture>
+        <source media="(min-width: 1440px)"
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/xl/writer-journey_2x.png">
+        <source media="(min-width: 1025px)"
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/lg/writer-journey_2x.png">
+        <source media="(min-width: 767px)"
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/md/writer-journey_2x.png">
+        <img src="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/md/writer-journey_2x.png"
+              class="img-overflow" alt="">
+      </picture>
+    </div>
+    <div class="ea-offset-bottom">
+      <div class="container d-none d-xl-block">
+        <div class="row py-4 text-white">
+          <div class="col-9 offset-3">
+            <p><a href="https://paulhershey.github.io/lazerTiger/pdf/Flux-Journey.pdf">Click Here</a></p>
+            <p>To see the complete journey map.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 {%- include section-separator.html
+            spacing="pt-7"
             background_color="inverted" -%}
 
 {%- include section-text.html
@@ -284,12 +310,24 @@ After reviewing the journey and speaking with stakeholders about the business ne
             text="
 After reviewing our data we sat down with the engineering team and business stakeholders to identify what key features were needed, which content types could be distributed in our data model, and what technical limitations we were facing. We came out of this meeting with a good understanding of the technical architecture and business needs and were able to start ideating on design opportunities." -%}
 
-{% comment %}
-{%- include section-image-flush.html
-            background_color="inverted"
-            offset_amount="-13%"
-            image_name="flow-dark_2x.png" -%}
-{% endcomment %}
+<section class="section-inverted d-none d-md-block">
+  <div class="container">
+    <div class="row justify-content-center pb-7">
+      <div class="col-12 col-xl-10">
+        <picture>
+          <source media="(min-width: 1440px)"
+                  srcset="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/xl/flow-dark_2x.png">
+          <source media="(min-width: 1025px)"
+                  srcset="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/lg/flow-dark_2x.png">
+          <source media="(min-width: 767px)"
+                  srcset="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/md/flow-dark_2x.png">
+          <img src="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/md/flow-dark_2x.png"
+                class="img-overflow flow-xl-none" alt="">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
 
 {%- include section-separator.html
             background_color="inverted" -%}

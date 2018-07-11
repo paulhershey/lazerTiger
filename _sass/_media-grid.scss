@@ -76,9 +76,56 @@
       }
   }
 
+  .codeschool-docs {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: minmax(20px, 4%) repeat(12, minmax(20px, 8.33333333333%)) minmax(20px, 4%);
+
+    grid-template-areas:
+      "l a a a a a a a a a a a r ."
+      "l a a a a a a a a a a a x x";
+
+    @include media-breakpoint-up(md) {
+      grid-template-areas:
+        "l a a a a a a a a a r r r ."
+        "l a a a a a a a a a x x x x";
+    }
+
+    > .cd-image {
+      grid-area: a;
+      background: linear-gradient($white, $white, $black, $black);
+      img { transform: scale(1.11); }
+
+      @include media-breakpoint-up(md) {
+        img { transform: scale(1.063); }
+      }
+
+      @include media-breakpoint-up(lg) {
+        img { transform: scale(1.049); }
+      }
+
+      @include media-breakpoint-up(xl) {
+        img { transform: scale(1.039); }
+      }
+    }
+    > .cd-offset-left {
+      grid-area: l;
+      background: $white;
+    }
+    > .cd-offset-top-right {
+      grid-area: r;
+      background: $white;
+    }
+    > .cd-offset-bottom-right {
+      grid-area: x;
+      background: $black;
+    }
+
+  }
+
   .ea-journey {
     display: none;
-    
+
     @include media-breakpoint-up(md) {
       display: grid;
       grid-template-rows: 1fr 1fr;

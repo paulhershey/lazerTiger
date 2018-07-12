@@ -7,6 +7,7 @@
 .navbar-light {
   background: $white;
   .navbar-nav {
+
     .nav-link {
       display: inline-block;
       position: relative;
@@ -24,12 +25,15 @@
     }
     .active {
       position: relative;
+
       > .nav-link {
-        color: $primary;
+        display: inline-block;
+        color: $pink;
         -webkit-background-clip: text;
          background-clip: text;
         -webkit-text-fill-color: transparent;
          background-image: linear-gradient(243deg, $pink, $red);
+
         &:after {
           border-top-color: $primary;
         }

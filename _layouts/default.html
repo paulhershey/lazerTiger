@@ -44,15 +44,22 @@
   </head>
   <body itemscope itemtype="http://schema.org/WebPage">
 
-    {%- include header.html -%}
+    <div class="main">
+      <div class="index main-content">
+        {%- include header.html -%}
 
-    <main role="main">
-      {{ content }}
-    </main>
+        <main role="main">
+          {{ content }}
+        </main>
 
-    {%- include contact.html
-                title="Let's work together."
-                text="Send me your email and I'll send you my \"Getting Started\" PDF. From there, we can schedule a time to meet." -%}
+        {%- include contact.html
+                    title="Let's work together."
+                    text="Send me your email and I'll send you my \"Getting Started\" PDF. From there, we can schedule a time to meet." -%}
+      </div>
+    </div>
+
+    <div class="cover-layer"></div>
+    <div class="loading-bar"></div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

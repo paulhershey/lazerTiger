@@ -4,6 +4,11 @@
   <div class="container-fluid px-0">
     <div class="row no-gutters">
       <div class="section-{{ include.left_column_color | default: 'default' }} ~ col-md-6 {{ include.class_1 | default: 'd-flex' }} flex-column align-items-center {{ include.spacing }}">
+        {%- unless include.caption_top_1.blank? -%}
+          <div class="w-50 mb-3">
+            <b>{{ include.caption_top_1 }}</b>
+          </div>
+        {%- endunless -%}
         <picture>
           {%- for size in media reversed -%}
             {% case size %}
@@ -27,6 +32,11 @@
         {%- endunless -%}
       </div>
       <div class="section-{{ include.right_column_color | default: 'default' }} ~ col-md-6 {{ include.class_2 | default: 'd-flex' }} flex-column  align-items-center {{ include.spacing }}">
+        {%- unless include.caption_top_2.blank? -%}
+          <div class="w-50 mb-3">
+            <b>{{ include.caption_top_2 }}</b>
+          </div>
+        {%- endunless -%}
         <picture>
           {%- for size in media reversed -%}
             {% case size %}

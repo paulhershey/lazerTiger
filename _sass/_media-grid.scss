@@ -61,9 +61,23 @@
     grid-template-rows: 1fr 1fr 64px;
     grid-template-columns: repeat(12, minmax(20px, 8.33333333333%));
     grid-template-areas:
-      ". . . v v v v v v . . ."
-      ". . . v v v v v v r r r"
+      ". v v v v v v v v v v ."
+      ". v v v v v v v v v v r"
       ". . . . . . b b b b b b";
+
+    @include media-breakpoint-up(lg) {
+      grid-template-areas:
+        ". . v v v v v v v v . ."
+        ". . v v v v v v v v r r"
+        ". . . . . . b b b b b b";
+    }
+
+    @include media-breakpoint-up(lg) {
+      grid-template-areas:
+        ". . . v v v v v v . . ."
+        ". . . v v v v v v r r r"
+        ". . . . . . b b b b b b";
+    }
 
     > .cs-video { grid-area: v; }
     > .grid-offset-right,
@@ -72,7 +86,20 @@
     > .grid-offset-bottom-right {
         grid-area: b;
         color: $black;
-        padding: map-get($spacers, 5);
+
+        padding-top: map-get($spacers, 3);
+        padding-left: map-get($spacers, 4);
+        padding-right: map-get($spacers, 4);
+
+        @include media-breakpoint-up(lg) {
+          padding-top: map-get($spacers, 5);
+          padding-left: map-get($spacers, 7);
+          padding-right: map-get($spacers, 7);
+        }
+        small {
+          display: block;
+          max-width: 450px;
+        }
       }
   }
 

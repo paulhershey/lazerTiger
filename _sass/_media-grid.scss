@@ -4,13 +4,20 @@
   .bisk-audience {
     display: grid;
     grid-template-areas: "a";
+    grid-template-columns: repeat(12, minmax(20px, 8.33333333333%));
 
     @include media-breakpoint-up(md) {
       grid-template-rows: 160px 1fr;
-      grid-template-columns: repeat(12, minmax(20px, 8.33333333333%));
       grid-template-areas:
-      ". . a a a a a a a a a a"
-      "l l a a a a a a a a a a";
+      ". a a a a a a a a a a a"
+      "l a a a a a a a a a a a";
+    }
+
+    @include media-breakpoint-up(lg) {
+      grid-template-rows: 160px 1fr;
+      grid-template-areas:
+      ". . . . a a a a a a a a"
+      "l l l l a a a a a a a a";
     }
 
     @include media-breakpoint-up(xl) {

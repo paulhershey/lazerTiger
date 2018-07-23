@@ -1,5 +1,6 @@
 .hero {
   width: 100%;
+  box-sizing: border-box;
 
   @include media-breakpoint-up(md) {
     padding-left: map-get($spacers, 5);
@@ -9,7 +10,10 @@
   .hero-container {
     position: relative;
     height: 592px;
+    width: 100%;
     margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
     background-color: #ffffff;
     padding: 0 4%;
 

@@ -2,9 +2,10 @@ body::after, body::before {
   // these are the 2 half blocks which cover the content once the animation is triggered
   content: '';
   height: 50vh;
-  width: 100%;
+  // width: 100%;
   position: fixed;
   left: 0;
+  right: 0;
   background-color: #ffffff;
   z-index: 1040;
   // Force Hardware Acceleration

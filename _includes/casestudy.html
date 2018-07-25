@@ -2,20 +2,20 @@
   <div class="d-none d-lg-block col-6 col-xl-7">
     <div class="media">
       <picture>
-        <source media="(min-width: 1440px)" srcset="{{ site.cloudinary }}/home/xl/{{ include.image }}_2x.png">
-        <source media="(min-width: 1024px)" srcset="{{ site.cloudinary }}/home/lg/{{ include.image }}_2x.png">
-        <img src="{{ site.cloudinary }}/home/lg/{{ include.image }}_2x.png" class="img-fluid">
+        <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/{{ include.image }}_2x.png">
+        <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/{{ include.image }}_2x.png">
+        <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/{{ include.image }}_2x.png" class="img-fluid">
       </picture>
     </div>
   </div>
   <div class="col col-md-8 col-lg-6 col-xl-5">
     <div class="box ~ d-flex align-items-stretch">
       <div class="row justify-content-center align-items-center text-center">
-        <div class="col-6">
+        <div class="col-10 col-md-6">
           <span class="lead">{{ include.category }}</span>
           <h3>{{ include.title }}</h3>
           <p>{{ include.body }}</p>
-          <a class="btn btn-secondary" href="{{ include.url | relative_url }}">Learn more<span></span></a>
+          <a class="btn btn-secondary" href="{{ include.url | relative_url }}" data-type="page-transition">Learn more<span></span></a>
         </div>
       </div>
     </div>

@@ -1,0 +1,107 @@
+// GRID
+//====================
+.image-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "g1"
+    "i1"
+    "g2";
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: 50% 50%;
+    grid-template-rows:
+      map-get($spacers, 7) 1fr
+      map-get($spacers, 7) 1fr
+      map-get($spacers, 7);
+    grid-template-areas:
+      "g1 i2"
+      "i1 i2"
+      "i1 i4"
+      "i3 i4"
+      "i3 g2";
+  }
+
+  .grid-start {
+    grid-area: g1;
+    align-self: stretch;
+    > p { font-size: $font-size-sm; }
+  }
+  .grid-end {
+    grid-area: g2;
+    > p { font-size: $font-size-sm; }
+  }
+
+  .grid-start,
+  .grid-end {
+    &.inverted {
+      background: $black;
+      color: $white;
+    }
+    &.gray {
+      background: $gray-200;
+    }
+  }
+
+  @for $i from 1 through 4 {
+    .img-#{$i} { grid-area: i#{$i}; }
+  }
+}
+
+// SHUFFLE
+//======================
+.image-shuffle {
+  @for $i from 1 through 4 {
+    .shuffle-item-#{$i} {
+      @include media-breakpoint-up(md) {
+        padding-top: ($i * 124px);
+      }
+    }
+  }
+}
+
+// FLUSH
+//======================
+.image-flush {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(20px, 8.33333333333%));
+  overflow: hidden;
+
+  .img-container { grid-area: u; }
+  img { position: relative; }
+
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      &.flush#{$infix}-right { grid-template-areas: ". u u u u u u u u u u u u"; }
+      &.flush#{$infix}-left { grid-template-areas:  "u u u u u u u u u u u u ." }
+      &.flush#{$infix}-none { grid-template-areas:  ". u u u u u u u u u u u ." }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .bisk-website { right: -16%; }
+  }
+
+}
+
+.img-overflow {
+  width: 130%;
+  &.flow-left { transform: translateX(-35%); }
+
+  @include media-breakpoint-up(md) {
+    width: 140%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 150%;
+    &.flow-left { transform: translateX(0); }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &.flow-xl-left { transform: translateX(-35%); }
+    &.flow-xl-none { width: 100%; transform: translateX(0);}
+  }
+
+}

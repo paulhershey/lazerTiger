@@ -35,7 +35,7 @@
     <link rel="icon" type="image/png" sizes="16x16"
       href="{{ "img/favicons/favicon-16x16.png" | relative_url }}">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="{{ img/favicons/ms-icon-144x144.png | relative_url }}">
+    <meta name="msapplication-TileImage" content="{{ "img/favicons/ms-icon-144x144.png" | relative_url }}">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Styles -->
@@ -43,14 +43,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage">
+    {%- include sprite.svg -%}
+    
+    <div class="main">
+      <div class="index main-content">
+        {%- include header.html -%}
 
-    {%- include header.html -%}
+        <main role="main">
+          {{ content }}
+        </main>
 
-    <main role="main">
-      {{ content }}
-    </main>
+        {%- include contact.html
+                    title="Let's work together."
+                    text="Send me your email and I'll send you my \"Getting Started\" PDF. From there, we can schedule a time to meet." -%}
+      </div>
+    </div>
 
-    {%- include contact.html -%}
+    <div class="cover-layer"></div>
+    <div class="loading-bar"></div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

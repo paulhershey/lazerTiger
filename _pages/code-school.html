@@ -57,8 +57,36 @@ The kick-off meeting is a fun first step Code School takes with all their course
             text="
 When creating the outline, I started by listing out all areas of UX I wanted to cover — everything from user interviews and journey maps to task-based analysis. When I brought my outline to Gregg Pollock, the founder of Code School, he said it was great but too in-depth. This was supposed to be a UX primer course for developers. “Of course,” I thought, after going back and reflecting on my own UX skills. I then wrote a new outline that made sense for a developer who may be working on a side project and wants to take basic steps towards creating a better product for their end user. After a few rounds of revisions and sharing the outline with developers in the office, we landed on the final version."-%}
 
-<section>
-  <h1>Image Split (Quarter Grid)</h1>
+<section class="section-media-grid">
+  <div class="codeschool-docs">
+    <div class="cd-image">
+      <picture>
+        <source media="(min-width: 1440px)"
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/code-school/xl/docs_2x.png">
+        <source media="(min-width: 1025px)"
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/code-school/lg/docs_2x.png">
+        <source media="(min-width: 767px)"
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/code-school/md/docs_2x.png">
+        <source media="(min-width: 576px)"
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/code-school/sm/docs_2x.png">
+        <img src="{{ site.cloudinary | append: '/image/upload' }}/code-school/sm/docs_2x.png"
+              class="img-fluid" alt="">
+      </picture>
+    </div>
+    <div class="cd-offset-left"></div>
+    <div class="cd-offset-top-right d-flex align-items-end">
+      <div class="container d-none d-lg-flex">
+        <div class="row justify-content-center">
+          <div class="col-10 mb-3">
+            <small>*This is a screenshot of a Google Doc we were working on to design the challenges for the course.</small>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="cd-offset-bottom-right"></div>
+  </div>
 </section>
 
 {%- include section-text.html
@@ -77,7 +105,7 @@ As we worked through the content and challenges, we ideated on what would have t
             text="
 We also wanted to make sure the course played well with others. We knew this was only meant to be a primer course, and we already had a great design course on the platform. Making sure these courses fit together was important."-%}
 
-<section class="section-inverted section-media-grid">
+<section class="section-inverted section-media-grid" style="overflow: inherit;">
   <div class="codeschool-video">
     <div class="cs-video ~ embed-responsive embed-responsive-16by9">
       <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/lVnQXwTar18" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

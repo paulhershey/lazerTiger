@@ -7,21 +7,21 @@ layout: default
 <div class="page-template">
 
   <section class="header-img">
-    <div class="content pt-6 pt-md-8 pb-4 pb-md-6 px-4 px-lg-0">
+    <div class="content pt-6 pt-md-8 pb-4 pb-md-6 px-3 px-lg-0">
       <h1>{{ page.title }}</h1>
       <p>{{ page.description }}</p>
     </div>
     <div class="media">
       <picture>
         <source media="(min-width: 1440px)"
-                srcset="{{ site.cloudinary }}/{{ image_folder }}/xl/{{ page.image.name }}_2x.png">
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/xl/{{ page.image.name }}_2x.png">
         <source media="(min-width: 1024px)"
-                srcset="{{ site.cloudinary }}/{{ image_folder }}/lg/{{ page.image.name }}_2x.png">
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/lg/{{ page.image.name }}_2x.png">
         <source media="(min-width: 736px)"
-                srcset="{{ site.cloudinary }}/{{ image_folder }}/md/{{ page.image.name }}_2x.png">
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/md/{{ page.image.name }}_2x.png">
         <source media="(min-width: 576px)"
-                srcset="{{ site.cloudinary }}/{{ image_folder }}/sm/{{ page.image.name }}_2x.png">
-        <img src="{{ site.cloudinary }}/{{ image_folder }}/sm/{{ page.image.name }}_2x.png" class="img-fluid">
+                srcset="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/sm/{{ page.image.name }}_2x.png">
+        <img src="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/sm/{{ page.image.name }}_2x.png" class="img-fluid">
       </picture>
     </div>
 
@@ -91,12 +91,12 @@ layout: default
     </div>
     <picture>
       <source media="(min-width: 1440px)"
-              srcset="{{ site.cloudinary }}/{{ image_folder }}/xl/{{ page.quote.image }}_2x.png">
+              srcset="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/xl/{{ page.quote.image }}_2x.png">
       <source media="(min-width: 1024px)"
-              srcset="{{ site.cloudinary }}/{{ image_folder }}/lg/{{ page.quote.image }}_2x.png">
+              srcset="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/lg/{{ page.quote.image }}_2x.png">
       <source media="(min-width: 736px)"
-              srcset="{{ site.cloudinary }}/{{ image_folder }}/md/{{ page.quote.image }}_2x.png">
-      <img src="{{ site.cloudinary }}/{{ image_folder }}/sm/{{ page.quote.image }}_2x.png" class="img-fluid">
+              srcset="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/md/{{ page.quote.image }}_2x.png">
+      <img src="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/sm/{{ page.quote.image }}_2x.png" class="img-fluid">
     </picture>
   </section>
 

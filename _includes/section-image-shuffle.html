@@ -6,12 +6,12 @@
 {% assign images = image_list | split: ', ' %}
 {% assign list_size = images | size %}
 
-<section class="image-shuffle section-{{ include.background_color | default: default }}">
+<section class="image-shuffle section-{{ include.background_color | default: 'default' }}">
   <div class="container">
     <div class="row">
 
       {%- for image in images -%}
-        <div class="shuffle-item-{{ forloop.index }} ~ col-md-{{ 12 | divided_by: list_size }} d-flex justify-content-center mb-3 mb-md-0">
+        <div class="shuffle-item-{{ forloop.index }} ~ col-md-{{ 12 | divided_by: list_size }} d-flex justify-content-center mb-4 mb-md-0">
 
           <picture>
             {%- for size in media reversed -%}
@@ -24,9 +24,9 @@
                 {% assign min_width = "576px" %}
               {% endcase %}
               <source media="(min-width: {{ min_width }})"
-                      srcset="{{ site.cloudinary }}/{{ image_folder }}/{{ size }}/{{ image }}">
+                      srcset="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/{{ size }}/{{ image }}">
             {%- endfor -%}
-            <img src="{{ site.cloudinary }}/{{ image_folder }}/{{ media | first }}/{{ image }}"
+            <img src="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/{{ media | first }}/{{ image }}"
                   class="img-fluid" alt="{{ include.title }}">
           </picture>
 

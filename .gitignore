@@ -6,4 +6,8 @@ _site
 .DS_Store
 img/.DS_Store
 img/gategroup/.DS_Store
+<<<<<<< HEAD
 img/gategroup/.DS_Store
+=======
+ssl
+>>>>>>> 2ec9e82cd74c493679b8a4ba4145317d54637037

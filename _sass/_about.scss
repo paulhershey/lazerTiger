@@ -1,9 +1,13 @@
 .about {
-  padding-top: map-get($spacers, 7);
-  text-align: left;
+  padding-top: map-get($spacers, 4);
+  text-align: center;
 
-  @include media-breakpoint-up(md) {
-    text-align: center;
+  @include media-breakpoint-up(lg) {
+    padding-top: map-get($spacers, 6);
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-top: map-get($spacers, 7);
   }
 
   .logo-list {

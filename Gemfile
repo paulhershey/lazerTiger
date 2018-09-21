@@ -9,7 +9,8 @@ source "https://rubygems.org"
 # Added at 2018-06-01 11:21:12 +0100 by Dustin:
 # gem "jekyll", "~> 3.8"
 gem 'github-pages', group: :jekyll_plugins
-# 
+gem 'jekyll-seo-tag'
+#
 # group :jekyll_plugins do
 #   gem 'jekyll-redirect-from'
 # end

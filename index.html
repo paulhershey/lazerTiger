@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Paul Hershey
+title: Paul Hershey, UX Designer, Orlando, FL
+description: I'm a UX designer based in Orlando, FL focusing on product design and user research.
 ---
 
 <section class="hero ~ conainer-fluid">
@@ -12,7 +13,7 @@ title: Paul Hershey
       <a class="btn btn-primary" data-scroll href="#casestudies">Case Studies<span></span></a>
     </div>
     <div class="video-wrapper d-none d-lg-block">
-      <video class="player" width="428" height="710" autoplay preload
+      <video class="player" width="428" height="710" autoplay preload muted
         data-source="{{ site.cloudinary | append: '/video/upload' }}/home/header-video/PaulHershey"
         poster="{{ site.cloudinary | append: '/image/upload' }}/home/lg/PaulHershey.png">
       </video>
@@ -24,7 +25,7 @@ title: Paul Hershey
   <div class="row d-flex justify-content-center">
     <div class="col-sm-10 col-lg-8 col-xl-6">
       <h2>About</h2>
-      <p>I help people create human-centered products that users love. I have over fifteen years of experience in the design field and have worked with the U.S. Army, Infor, Code School, and Electronic Arts to name a few. I enjoy every stage of the design process from initial research to building visual languages and analyzing data. Giving back to the community is also very important to me. I’m on the board for AIGA Orlando, mentor designers who are new to the industry, and regularly speak about UX, design, leadership, and culture at conferences and meetups.</p>
+      <p>I help people create human-centered products that users love. I have over fifteen years of experience in the design field and have worked with the U.S. Army, Infor, Code School, and Electronic Arts to name a few. I enjoy every stage of the design process from initial research to building visual languages and analyzing data. Giving back to the community is also very important to me. I’m on the board for AIGA Orlando, mentor designers new to the industry, and regularly speak about UX, design, leadership, and culture at conferences and meetups.</p>
       <a class="btn btn-linkedin" href="https://www.linkedin.com/in/paulhershey/" target="_blank">LinkedIn<span></span></a>
 
       <div class="logo-list ~ row align-items-center text-center">
@@ -59,6 +60,7 @@ title: Paul Hershey
     title="Flux"
     body="Electronic Arts needed a new way to empower its writers. The solution was Flux, a custom publishing platform."
     image="flux-pic"
+    alt="image of retro video games"
     url="/electronic-arts/" -%}
 
   {%- include casestudy.html
@@ -67,6 +69,7 @@ title: Paul Hershey
     title="Bisk Rebrand"
     body="With 45+ years of experience in the education space, Bisk was looking for a brand reboot to better express its values."
     image="bisk-pic"
+    alt="young man on his phone"
     url="/bisk-rebrand/" -%}
 
   {%- include casestudy.html
@@ -74,6 +77,7 @@ title: Paul Hershey
     title="Gategroup"
     body="Gategroup, which delivers training to students 39,000 ft. in the air, needed to improve the effectiveness of its courses."
     image="gate-pic"
+    alt="commercial airplane wing"
     url="/gategroup/" -%}
 
   {%- include casestudy.html
@@ -82,6 +86,7 @@ title: Paul Hershey
     title="Code School"
     body="The Elements of Web Design is a UX course aimed at teaching developers the fundamentals of user-centered design."
     image="code-school-pic"
+    alt="man learning on a computer"
     url="code-school" -%}
 
   <div class="external-links ~ text-center">
@@ -99,11 +104,12 @@ title: Paul Hershey
       </div>
     </div>
     <div class="content ~ row flex-column flex-xl-row-reverse align-items-center justify-content-center">
-      <div class="d-none d-lg-block col-lg-8 col-xl-6 mb-7">
+      <div class="d-none d-md-block col-md-8 mb-md-6 d-lg-block col-lg-6 mb-lg-6 col-xl-5 mb-xl-9 ml-xl-7">
         <picture>
+          <source media="(min-width: 768px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo1_2x.png">
           <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo1_2x.png">
           <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo1_2x.png">
-          <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo1_2x.png" class="img-fluid" alt="">
+          <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo1_2x.png" class="img-fluid" alt="the UX Process">
         </picture>
       </div>
       <div class="col-md-10 col-lg-8 col-xl-4 mb-7">
@@ -112,11 +118,12 @@ title: Paul Hershey
       </div>
     </div>
     <div class="content ~ row flex-column flex-xl-row align-items-center justify-content-center">
-      <div class="d-none d-lg-block col-lg-8 col-xl-6 mb-7">
+      <div class="d-none d-md-block col-md-8 mb-md-6 d-lg-block col-lg-6 mb-lg-6 col-xl-5 mb-xl-9 mr-xl-7">
         <picture>
+          <source media="(min-width: 768px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo2_2x.png">
           <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo2_2x.png">
           <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo2_2x.png">
-          <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo2_2x.png" class="img-fluid" alt="">
+          <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo2_2x.png" class="img-fluid" alt="Conversational UX">
         </picture>
       </div>
       <div class="col-md-10 col-lg-8 col-xl-4 mb-7">
@@ -125,11 +132,12 @@ title: Paul Hershey
       </div>
     </div>
     <div class="content ~ row flex-column flex-xl-row-reverse align-items-center justify-content-center">
-      <div class="d-none d-lg-block col-lg-8 col-xl-6 mb-7">
+      <div class="d-none d-md-block col-md-8 mb-md-6 d-lg-block col-lg-6 mb-lg-6 col-xl-5 mb-xl-9 ml-xl-7">
         <picture>
+          <source media="(min-width: 768px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo3_2x.png">
           <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo3_2x.png">
           <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo3_2x.png">
-          <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo3_2x.png" class="img-fluid" alt="">
+          <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo3_2x.png" class="img-fluid" alt="Product design opportunities">
         </picture>
       </div>
       <div class="col-md-10 col-lg-8 col-xl-4 mb-7">
@@ -139,11 +147,12 @@ title: Paul Hershey
     </div>
 
     <div class="content ~ row flex-column flex-xl-row align-items-center justify-content-center">
-      <div class="d-none d-lg-block col-lg-8 col-xl-6 mb-7">
+      <div class="d-none d-md-block col-md-8 mb-md-6 d-lg-block col-lg-6 mb-lg-6 col-xl-5 mb-xl-9 mr-xl-7">
         <picture>
+          <source media="(min-width: 768px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo4_2x.png">
           <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo4_2x.png">
           <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo4_2x.png">
-          <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo4_2x.png" class="img-fluid" alt="">
+          <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo4_2x.png" class="img-fluid" alt="Design sprints">
         </picture>
       </div>
       <div class="col-md-10 col-lg-8 col-xl-4 mb-7">
@@ -153,7 +162,7 @@ title: Paul Hershey
     </div>
 
     <div class="row justify-content-center">
-      <div class="col-md-10 col-lg-8 col-xl-6 mb-7">
+      <div class="col-md-10 col-lg-8 col-xl-6">
         <h3>Learning is a habit and I love it.</h3>
         <p>To design a product people truly love, you have to include them in the design process. Everyone is creative and has creative ideas. I always try to involve potential users in the design process early and often. This keeps me focused on the right problems and ensures I’m creating the best possible experience for the end user.</p>
       </div>
@@ -190,7 +199,7 @@ title: Paul Hershey
     </div>
 
     <div class="text-center">
-      <a class="btn btn-medium" href="https://medium.com/@paulhershey">Medium<span></span></a>
+      <a class="btn btn-medium" href="https://medium.com/@paulhershey" target="_blank">Medium<span></span></a>
     </div>
   </div>
 </section>

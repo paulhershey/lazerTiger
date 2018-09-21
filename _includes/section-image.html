@@ -1,7 +1,7 @@
 {%- capture image_folder -%}{{ page.title | replace: ' ', '-' | downcase }}{%- endcapture -%}
 {% assign media = include.media | default: 'sm, md, lg, xl' | split: ', ' %}
 
-<section class="section-{{ include.background_color | default: 'default' }} ~ {{ include.spacing }} {{ show }}">
+<section class="section-{{ include.background_color | default: 'default' }} ~ {{ include.spacing }} {{ show }} {{ include.class_2}}">
   <div class="container">
     <div class="row">
       <div class="col-12 d-flex justify-content-center">

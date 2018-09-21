@@ -2,9 +2,9 @@
 timezone: UTC
 title: Paul Hershey
 email: hersheypaul@gmail.com
-description: 'Write your description here for you website SEO.
 
-'
+description: 'I am a UX designer based in Orlando, FL focusing on product design and user research.'
+
 url:
 twitter:
   username: paulhershey
@@ -12,7 +12,14 @@ twitter:
 social:
   links:
     - https://twitter.com/paulhershey
+    - https://www.facebook.com/phershey
+    - https://www.linkedin.com/in/paulhershey/
+    - https://plus.google.com/u/1/+PaulHershey
+    - https://github.com/paulhershey
+    - https://dribbble.com/paulhershey
+    - https://www.behance.net/paulhershey
 baseurl: /lazerTiger
+#baseurl: /       ***remove the one above before going live***
 cloudinary: https://res.cloudinary.com/paulhershey
 collections:
   pages:
@@ -28,12 +35,13 @@ defaults:
     description: ''
     image:
       name: ''
-      path: ''
+      path: 'img/home/lg/PaulHershey.png'
       width: ''
       height: ''
 plugins:
 - jekyll-sitemap
 - jekyll-seo-tag
 permalink: "/articles/:title/"
+
 highlighter: rouge
 markdown: kramdown

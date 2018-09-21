@@ -9,22 +9,24 @@
     @include media-breakpoint-up(md) {
       grid-template-rows: 160px 1fr;
       grid-template-areas:
-      ". a a a a a a a a a a a"
-      "l a a a a a a a a a a a";
+      ". . . a a a a a a a a a"
+      "l l l a a a a a a a a a";
     }
 
     @include media-breakpoint-up(lg) {
       grid-template-rows: 160px 1fr;
       grid-template-areas:
-      ". . . . a a a a a a a a"
-      "l l l l a a a a a a a a";
+      ". . . . . . a a a a a a"
+      "l l l l l l a a a a a a";
     }
 
     @include media-breakpoint-up(xl) {
       grid-template-columns: 2% repeat(12, minmax(20px, 8.33333333333%)) 2%;
       grid-template-areas:
-      ". . . . . a a a a a a a a ."
-      "l l l l l a a a a a a a a r";
+      ". . . . . . . a a a a a . ."
+      "l l l l l l l a a a a a r r";
+      // ". . . . . a a a a a a a a ."
+      // "l l l l l a a a a a a a a r";
     }
 
     > .ba-image { grid-area: a; }

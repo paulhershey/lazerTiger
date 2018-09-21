@@ -4,16 +4,16 @@
       <picture>
         <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/{{ include.image }}_2x.png">
         <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/{{ include.image }}_2x.png">
-        <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/{{ include.image }}_2x.png" class="img-fluid">
+        <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/{{ include.image }}_2x.png" class="img-fluid" alt="{{ include.alt }}">
       </picture>
     </div>
   </div>
   <div class="col col-md-8 col-lg-6 col-xl-5">
     <div class="box ~ d-flex align-items-stretch">
       <div class="row justify-content-center align-items-center text-center">
-        <div class="col-10 col-md-6">
+        <div class="col-10 col-md-8 col-xl-6">
           <span class="lead">{{ include.category }}</span>
-          <h3>{{ include.title }}</h3>
+          <h3 style="margin-bottom: 1rem;">{{ include.title }}</h3>
           <p>{{ include.body }}</p>
           <a class="btn btn-secondary" href="{{ include.url | relative_url }}" data-type="page-transition">Learn more<span></span></a>
         </div>

@@ -4,6 +4,7 @@ description: 'With 45+ years of experience in the education space, Bisk was look
 image:
   name: header-image
   path: /bisk/md/header-image_2x.png
+  alt: 'Photo from Bisk the design and branding efforts'
   width: 1424
   height: 1536
 goals:
@@ -51,11 +52,11 @@ To me, brand is about understanding how your audience sees you and how you want 
 {%- include section-separator.html -%}
 
 {%- include section-text.html
-            heading="Understanding Our <br> Audience"
+            heading="Understanding <br> Our Audience"
             text="
 With access to 45+ years’ worth of enrollment data, my team and I had the fortune to dig through some great demographic information. We also gained insights from conducting our own user research on Bisk’s product and competitors’ products, which we paired with market projections from Bisk’s BI team and third-party research from Forrester. With this information, we were able to create our first round of data-driven personas and were one step closer to creating a user-centered culture." -%}
 
-<section class="section-media-grid">
+<!-- <section class="section-media-grid">
   <div class="bisk-audience">
     <div class="ba-image">
       <picture>
@@ -71,7 +72,7 @@ With access to 45+ years’ worth of enrollment data, my team and I had the fort
     </div>
     <div class="ba-offset-bottom-left d-flex align-items-center">
       <div class="row d-none d-lg-flex justify-content-center">
-        <div class="col-10">
+        <div class="col-lg-8 offset-lg-0 col-xl-8 offset-xl-0">
           <p>Nick Jacobs</p>
           <h6 class="mb-6">“I want to focus on my education but feel I never have enough time.”</h6>
           <table width="100%">
@@ -87,11 +88,45 @@ With access to 45+ years’ worth of enrollment data, my team and I had the fort
     </div>
     <div class="ba-offset-bottom-right"></div>
   </div>
+</section> -->
+
+<section class="section-inverted">
+  <div class="container">
+    <div class="row d-flex align-items-center">
+
+      <div class="d-none d-md-block col-md-6 col-lg-5">
+        <p>Nick Jacobs</p>
+        <h6 class="mb-6">“I want to focus on my education but feel I never have enough time.”</h6>
+        <table width="100%">
+          <tr><td>Age</td><td>23</td></tr>
+          <tr><td>Location</td><td>Lansing, Michigan</td></tr>
+          <tr><td>Job</td><td>Server</td></tr>
+          <tr><td>Salary</td><td>&lt;20k</td></tr>
+          <tr><td>Status</td><td>Single, one child</td></tr>
+          <tr><td>Course</td><td>Sport Coaching &amp; Leadership</td></tr>
+        </table>
+      </div>
+
+      <div class="col-md-6 col-lg-7">
+        <picture>
+          <source media="(min-width: 1440px)"
+                  srcset="{{ site.cloudinary | append: '/image/upload' }}/bisk/xl/Proto-Photo_2x.png">
+          <source media="(min-width: 1025px)"
+                  srcset="{{ site.cloudinary | append: '/image/upload' }}/bisk/lg/Proto-Photo_2x.png">
+          <source media="(min-width: 767px)"
+                  srcset="{{ site.cloudinary | append: '/image/upload' }}/bisk/md/Proto-Photo_2x.png">
+          <img src="{{ site.cloudinary | append: '/image/upload' }}/bisk/md/Proto-Photo_2x.png"
+                class="img-fluid" alt="{{ include.title }}">
+        </picture>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <section class="section-inverted">
   <div class="container">
-    <div class="row pt-6">
+    <div class="row pt-7">
       <div class="col-md-4 pb-4 pb-md-7">
         <p class="lead">Goals</p>
         <p>I want to feel like I’m getting the same education I would get if I were on campus. I want to feel connected to my classmates and comfortable reaching out to them if I need help.</p>
@@ -108,13 +143,19 @@ With access to 45+ years’ worth of enrollment data, my team and I had the fort
   </div>
 </section>
 
+<section class="section-gray">
+  <div class="container pt-2 pt-md-4">
+    <small>*This is a subset of the data from a persona.</small>
+  </div>
+</section>
+
 {%- include section-text.html
             background_color="gray"
             heading="Who Are We <br> Up Against?"
             text="
 Online education is a hundred-billion dollar industry. With students considering options across a vast landscape of providers, it's hard to find a niche market fit. We knew with so many options available to students we would need to widen our research to everything from consumer-based platforms to industry-specific platforms. We conducted brand audits, SWOT analysis research, and student interviews to develop a deeper understanding of student needs and better understand of our niche market fit."-%}
 
-<section class="section-gray">
+<section class="section-gray pb-7">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10">
@@ -266,7 +307,7 @@ In addition to the brand audit, we created a brand positioning map based on a ke
         <h3>Key Findings</h3>
       </div>
       <div class="col-md-5 offset-lg-1 pb-4 pb-md-6">
-        <p>In addition to the brand audit, we created a brand positioning map based on a key set of data points to visualize where we sat in context to key competitors. This, combined with the student research and business analytics, gave us a clear direction for success.</p>
+        <p>Traditional OPM leaders Wiley, Pearson, and Embanet are positioned as trusted partners within higher education, but newer entrants have evolved their positioning to differentiate themselves and extend their reach.</p>
       </div>
       <div class="col-md-5 pb-4 pb-md-6">
         <p>Despite a comparative operating model, 2U has succeeded in differentiating its brand from competitors by creating an emotional link to the end user with its tagline “No Back Row.” In doing so, they developed a strong connection with their learners.</p>
@@ -317,7 +358,7 @@ After three days of exploring everything from personal defining moments to mind 
 
 <section class="py-7 bg-dark text-white">
   <div class="container">
-    <div class="text-center mb-6">
+    <div class="text-center pb-5">
       <h3>Our Core Values</h3>
     </div>
     <div class="row">
@@ -338,7 +379,7 @@ After three days of exploring everything from personal defining moments to mind 
 </section>
 
 {%- include section-text.html
-            heading="When We <br> Speak"
+            heading="When <br> We Speak"
             text="
 Our team created top-notch guidelines to help outline a voice for the brand. For example: Bisk speaks with the voice of a person other people admire and enjoy being around. It’s warm, frank, and honest." -%}
 
@@ -360,7 +401,7 @@ We built out a roadmap with each deliverable being categorized into a design spr
         <source media="(min-width: 767px)"
                 srcset="{{ site.cloudinary | append: '/image/upload' }}/bisk/md/Logos_2x.png">
         <img src="{{ site.cloudinary | append: '/image/upload' }}/bisk/md/Logos_2x.png"
-              class="img-fluid" alt="">
+              class="img-fluid" alt="Bisk logo design sketches">
       </picture>
     </div>
     <div class="bl-offset-left"></div>
@@ -382,7 +423,7 @@ We built out a roadmap with each deliverable being categorized into a design spr
 The play button is a widely recognized icon that is approachable and inviting in nature. It’s an authentic homage to Bisk’s origin of delivering content on cassette tapes. The mark is imaginative by offering a new twist on the “B,” bold through its statement and message, and authentic in its history and honesty."-%}
 
 {%- include section-text.html
-            heading="Key Brand <br> Colors"
+            heading="Key <br> Brand Colors"
             text="
 The colors we chose for the Bisk brand are Amaranth and Navy Grey. Amaranth is a bold, modern, and energetic color. It excites creative emotions and is balanced by the base color, Navy Grey. The combination creates a simple palette that appeals to a wide demographic, provides a bright aesthetic, and builds a creative environment for the brand." -%}
 
@@ -391,7 +432,7 @@ The colors we chose for the Bisk brand are Amaranth and Navy Grey. Amaranth is a
             image_name_2="amaranth.svg" -%}
 
 {%- include section-text.html
-            heading="Secondary Brand Colors"
+            heading="Secondary <br> Brand Colors"
             text="
 The secondary colors were built as a supplemental palette for the brand. It consists of Cyan, Turquoise, and Blue Lavender. Cyan represents strength and dependability, Turquoise evokes emotions of growth and health, and Blue Lavender expresses innovation. The colors create a cohesive palette, offer their own unique look and feel, and allow the Bisk brand to be versatile and expansible."-%}
 
@@ -401,7 +442,7 @@ The secondary colors were built as a supplemental palette for the brand. It cons
             image_name_3="lavender.svg" -%}
 
 {%- include section-text.html
-            heading="Marketing Typography"
+            heading="Marketing <br> Typography"
             text="
 The type stack we created consists of Brandon Grotesque, Avenir Next, and Freight Text Pro. Brandon Grotesque is the same typeface that the Bisk logo was built upon, which provides consistency and a bold aesthetic for headers and titles. Avenir Next is a great pairing for lead text, subtitles, and captions. Freight Text Pro is an elegant and readable typeface for body text." -%}
 
@@ -420,7 +461,7 @@ The type stack we created consists of Brandon Grotesque, Avenir Next, and Freigh
 {%- include section-separator.html -%}
 
 {%- include section-text.html
-            heading="The Students Are the Stars"
+            heading="The Students <br> Are the Stars"
             text="
 It was important for us to differentiate ourselves from our competitors while humanizing the brand and letting our personality shine through. Photography provided us with a great opportunity to do this. We worked with photographer Patrick Michael Chin to portray our students in their natural environment and in the most honest way possible. The result was stunning and had a huge impact on our marketing content." -%}
 
@@ -451,7 +492,7 @@ After running the sprints and finalizing the brand elements, we built out a mast
       <source media="(min-width: 767px)"
               srcset="{{ site.cloudinary | append: '/image/upload' }}/bisk/md/website_2x.png">
       <img src="{{ site.cloudinary | append: '/image/upload' }}/bisk/md/website_2x.png"
-            class="img-fluid bisk-website" alt="">
+            class="img-fluid bisk-website" alt="Final webdesign of the Bisk site">
     </picture>
   </div>
 </section>

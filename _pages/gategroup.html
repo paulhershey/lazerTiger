@@ -4,6 +4,7 @@ description: 'Gategroup, which delivers training to students 39,000 ft. in the a
 image:
   name: header-image
   path: /gategroup/md/header-image_2x.png
+  alt: 'Gategroup product design and design system development'
   width: 1424
   height: 1536
 goals:
@@ -68,6 +69,7 @@ Understanding the technical structure was important for us. This information wou
 {%- include section-image.html
             background_color="inverted"
             spacing="pb-7"
+            class_2="d-none d-md-flex"
             image_name="tech-spec_2x.png" -%}
 
 {%- include section-text.html
@@ -85,10 +87,13 @@ Gategroup had a mature brand guide that was great for branding, print, and cours
     </div>
   </div>
 </section>
+
 {%- include section-image-row.html
             background_color="gray"
-            spacing="py-6"
+            spacing="py-1 py-md-7"
             class_2="d-none d-md-flex"
+            caption_1="Wordmark"
+            caption_2="Brandmark"
             image_name_1="logo.svg"
             image_name_2="brandmark.svg" -%}
 
@@ -112,9 +117,11 @@ Gategroup had a mature brand guide that was great for branding, print, and cours
             image_name_2="red.svg"
             image_name_3="green.svg" -%}
 
+
 {%- include section-separator.html
             spacing="pt-7"
             background_color="gray" -%}
+
 
 {%- include section-text.html
             background_color="gray"
@@ -122,15 +129,16 @@ Gategroup had a mature brand guide that was great for branding, print, and cours
             text="
 We started with expanding the color ranges using the step blend option in Illustrator. We set a high and low tint, then step blended the colors to get a balanced set of light and dark options to choose from. We presented multiple options and landed on the options below." -%}
 
+
 {%- include section-image.html
             background_color="gray"
             image_name="colors.svg" -%}
 
 <section class="section-gray py-6">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-lg-6 offset-lg-1 col-xl-4 offset-xl-3">
-        <small>*The large circles became color tokens in the design system and the ones with white dots are original colors from the brand guide.</small>
+  <div class="container d-flex justify-content-center col-md-8 col-lg-6 col-xl-4">
+    <div>
+      <div>
+        <small>*The large circles became color tokens in the design system and the ones with black circles around them are original colors from the brand guide.</small>
       </div>
     </div>
   </div>
@@ -152,7 +160,6 @@ We started with expanding the color ranges using the step blend option in Illust
             image_name_3="tertiary.svg"
             image_name_4="quaternary.svg" -%}
 
-
 {%- include section-text.html
             background_color="gray"
             spacing="py-0"
@@ -172,17 +179,17 @@ We started with expanding the color ranges using the step blend option in Illust
 
 {%- include section-image-shuffle.html
             background_color="gray"
-            image_name_1="primary-grade.svg"
-            image_name_2="secondary-grade.svg"
-            image_name_3="tertiary-grade.svg"
-            image_name_4="quaternary-grade.svg" -%}
+            spacing="mb-7"
+            image_name_1="utility-1.svg"
+            image_name_2="utility-2.svg" -%}
 
 {%- include section-separator.html
+            spacing="pt-7"
             background_color="gray" -%}
 
 {%- include section-text.html
             background_color="gray"
-            heading="Typography Choices"
+            heading="Typography <br> Choices"
             text="
 We knew the product would exist as a web app and as a native app on Android and iOS products. Apple products use the font San Francisco and Android uses Roboto. Both fonts are neoclassical, so we wanted something similar for the web. We landed on Univers, a neoclassical font with over 20 weights that was adaptable to all our needs."-%}
 
@@ -206,19 +213,20 @@ We knew the product would exist as a web app and as a native app on Android and 
 
 {%- include section-text.html
             background_color="gray"
-            heading="Mapping the Typography"
+            heading="Mapping the <br> Typography"
             text="
 After deciding on our font stack, we started mapping them to our components. We created 12 type variables and mapped the styles to the different devices and breakpoints we supported. We defined type sizes, line heights, and kerning for each variable in each device. Then, we created tokens to apply to our components."-%}
 
-
+<section class="d-none d-md-block">
 {%- include section-image.html
             background_color="gray"
             image_name="type-stack.svg" -%}
+</section>
 
-<section class="section-gray py-6">
-  <div class="container">
+<section class="section-gray d-none d-md-block py-6">
+  <div class="container d-flex justify-content-center">
     <div class="row">
-      <div class="col-md-8 col-lg-6 offset-lg-1 col-xl-4 offset-xl-3">
+      <div>
         <small>*Above is an example of the type styles for iPhone 8 Plus.</small>
       </div>
     </div>
@@ -230,13 +238,13 @@ After deciding on our font stack, we started mapping them to our components. We 
 
 {%- include section-text.html
             background_color="gray"
-            heading="Atoms and <br> Molecules"
+            heading="Atoms &amp; <br> Molecules"
             text="
-While focused on our research we also started work on the design system. We took an atomic approach by building up a set of atoms and molecules that would serve as a foundation on which to build our components and templates. While looking at our data structure we could set rules around how to visualize information contextually, with device awareness in mind. " -%}
+While focused on our research we also started work on the design system. We took an atomic approach by building up a set of atoms and molecules that would serve as a foundation on which to build our components and templates. While looking at our data structure we could set rules around how to visualize information contextually, with device awareness in mind." -%}
 
 <section class="section-gray pb-7">
   <div class="container">
-    <div class="row">
+    <div class="py-6">
       <h5>Input Fields</h5>
     </div>
     <div class="row text-center align-items-center">
@@ -297,7 +305,7 @@ While focused on our research we also started work on the design system. We took
         <small class="mt-3">Input field Success</small>
       </div>
     </div>
-    <div class="row">
+    <div class="py-6">
       <h5>CTAs</h5>
     </div>
     <div class="row text-center align-items-baseline">
@@ -358,8 +366,8 @@ While focused on our research we also started work on the design system. We took
         <p><small>Icon CTA</small></p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-6 offset-lg-2">
+    <div class="row container d-flex justify-content-center">
+      <div>
         <small>*This is a subset of atoms and molecules from the design system.</small>
       </div>
     </div>
@@ -367,7 +375,7 @@ While focused on our research we also started work on the design system. We took
 </section>
 
 {%- include section-text.html
-            heading="Sketching the Courseware"
+            heading="Sketching <br> the Courseware"
             text="
 As we conducted our research we also started conceptualizing feature flows and the overall design. We began with the learner app experience and worked back to the course development tools. Features were tested at every step of the design process, from sketching with learners to conducting full interactive task-based analysis." -%}
 
@@ -385,10 +393,11 @@ As we conducted our research we also started conceptualizing feature flows and t
 As our hypotheses were being proven through user testing, we starting looking at the design on a macro level. We developed user flows for how a learner would move through the product feature by feature. This helped us define contextual animations and opportunities for delight." -%}
 
 {%- include section-image.html
+            class_2="d-none d-md-flex"
             image_name="flow_2x.png" -%}
 
 {%- include section-separator.html
-            spacing="pt-7" -%}
+            spacing="pt-0 pt-md-7" -%}
 
 {%- include section-text.html
             heading="Injecting <br> Personality"
@@ -401,9 +410,9 @@ Beyond adding delight, illustrations help visual learners retain information. We
             image_name_3="illustration-3_2x.png" -%}
 
 <section class="mt-6">
-  <div class="container">
+  <div class="container d-flex justify-content-center">
     <div class="row justify-content-center">
-      <div class="col-md-10 col-lg-8 col-xl-6">
+      <div>
         <small>*Here are a few I created to define the direction.</small>
       </div>
     </div>
@@ -415,12 +424,12 @@ Beyond adding delight, illustrations help visual learners retain information. We
 
 <section>
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <h3>Engaging With Content</h3>
+    <div class="row justify-content-md-center align-items-center">
+      <div class="col-md-10 col-lg-6 pr-xl-9">
+        <h3>Engaging <br> With Content</h3>
         <p>The learner dashboard was designed to be purposeful and actionable. Because the app is an educational tool, we needed to make sure learners clearly understand how to find new courses and start taking them within moments of opening the app.</p>
       </div>
-      <div class="col-lg-6">
+      <div class="col-md-8 col-lg-6">
         <video class="embed-responsive d-none d-lg-block" width="1104"
           autoplay loop
           data-source="{{ site.cloudinary | append: '/video/upload' }}/gategroup/md-mobile-videos/Mobile-Course-Launch-Flow"
@@ -441,12 +450,12 @@ Beyond adding delight, illustrations help visual learners retain information. We
 
 <section>
   <div class="container">
-    <div class="row flex-row-reverse align-items-center">
-      <div class="col-lg-6">
-        <h3>Data Collection</h3>
+    <div class="row justify-content-md-center flex-row-reverse align-items-center">
+      <div class="col-md-10 col-lg-6 pr-xl-9">
+        <h3>Data <br> Collection</h3>
         <p>Data is an important and complex tool that drives learner engagement, and it is accessible and contextual throughout the app. It is used to answer questions for the learner and provide feedback for course creators.</p>
       </div>
-      <div class="col-lg-6">
+      <div class="col-md-8 col-lg-6">
         <video class="embed-responsive d-none d-lg-block" width="1104"
           autoplay loop
           data-source="{{ site.cloudinary | append: '/video/upload' }}/gategroup/md-mobile-videos/Mobile-Course-Data"
@@ -467,12 +476,12 @@ Beyond adding delight, illustrations help visual learners retain information. We
 
 <section>
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <h3>Flash Cards</h3>
+    <div class="row justify-content-md-center align-items-center">
+      <div class="col-md-10 col-lg-6 pr-xl-9">
+        <h3>Flash <br> Cards</h3>
         <p>Course creators broke content down into smaller, digestible bites that were paired with illustrations. This format keeps the user concentrated on the lesson and reduces fluff in the content. Learners receive a max of 10 cards and are then tested on their ability to retain the information. If a flash card has a piece of info the learner feels is important, they can save the card to their profile.</p>
       </div>
-      <div class="col-lg-6">
+      <div class="col-md-8 col-lg-6">
         <video class="embed-responsive d-none d-lg-block" width="1104"
           autoplay loop
           data-source="{{ site.cloudinary | append: '/video/upload' }}/gategroup/md-mobile-videos/Mobile-Course-Flow"
@@ -493,12 +502,12 @@ Beyond adding delight, illustrations help visual learners retain information. We
 
 <section>
   <div class="container">
-    <div class="row flex-row-reverse align-items-center">
-      <div class="col-lg-6">
-        <h3>Thought-Provoking Challenges</h3>
+    <div class="row justify-content-md-center flex-row-reverse align-items-center">
+      <div class="col-md-10 col-lg-6 pr-xl-9">
+        <h3>Thought-Provoking <br> Challenges</h3>
         <p>Challenges were painstakingly designed. We wanted to create interesting, attention-grabbing interactions that were easy for learners to use. In the challenges, feedback is withheld until learners complete all challenges; this prevents them from getting discouraged if they are struggling. Animation is used to give the learner a clear understanding of the fast-paced transitions between course content and challenges throughout the lesson.</p>
       </div>
-      <div class="col-lg-6">
+      <div class="col-md-8 col-lg-6">
         <video class="embed-responsive d-none d-lg-block" width="1104"
           autoplay loop
           data-source="{{ site.cloudinary | append: '/video/upload' }}/gategroup/md-mobile-videos/Mobile-Challenges"
@@ -519,12 +528,13 @@ Beyond adding delight, illustrations help visual learners retain information. We
 
 {%- include section-text.html
             background_color="gray"
-            heading="The Learner Management Tool"
+            heading="The Learner <br> Management Tool"
             text="
 Since Baden wouldn’t be training on location, he needed a tool that allowing him to create content and track its effectiveness remotely. Below is the scheduling view that displays when a course is released, what its window for completion is, how many learners have completed the course, and how well they are doing." -%}
 
 {%- include section-image.html
             background_color="gray"
+            class_2="d-none d-md-flex"
             media="md, lg, xl"
             image_name="topview_2x.png" -%}
 
@@ -532,10 +542,10 @@ Since Baden wouldn’t be training on location, he needed a tool that allowing h
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-10 col-lg-8 col-xl-5 pb-5 pt-xl-8">
-        <h3>A Snapshot of Courses in Flight</h3>
+        <h3>A Snapshot of <br> Courses in Flight</h3>
         <p>The dashboard is used to get a high-level view of courses learners are taking and see how well they are doing. The course director can get feedback on the course from the learners and reach out to them if they are struggling. This allows the courses to retain that hands-on feel at scale.</p>
       </div>
-      <div class="col-12 col-xl-7">
+      <div class="col-xl-7">
         <picture>
           <source media="(min-width: 1440px)"
                   srcset="{{ site.cloudinary | append: '/image/upload' }}/gategroup/xl/dash_2x.png">
@@ -544,7 +554,7 @@ Since Baden wouldn’t be training on location, he needed a tool that allowing h
           <source media="(min-width: 767px)"
                   srcset="{{ site.cloudinary | append: '/image/upload' }}/gategroup/md/dash_2x.png">
           <img src="{{ site.cloudinary | append: '/image/upload' }}/gategroup/md/dash_2x.png"
-                class="img-overflow flow-left" alt="">
+                class="img-overflow flow-xl-right" alt="View of the course management tool">
         </picture>
       </div>
     </div>
@@ -567,7 +577,7 @@ Since Baden wouldn’t be training on location, he needed a tool that allowing h
           <source media="(min-width: 767px)"
                   srcset="{{ site.cloudinary | append: '/image/upload' }}/gategroup/md/drag_2x.png">
           <img src="{{ site.cloudinary | append: '/image/upload' }}/gategroup/md/drag_2x.png"
-                class="img-overflow flow-xl-left" alt="">
+                class="img-overflow flow-xl-left" alt="View of the course creation tool">
         </picture>
       </div>
     </div>
@@ -590,7 +600,7 @@ Since Baden wouldn’t be training on location, he needed a tool that allowing h
           <source media="(min-width: 767px)"
                   srcset="{{ site.cloudinary | append: '/image/upload' }}/gategroup/md/edit_2x.png">
           <img src="{{ site.cloudinary | append: '/image/upload' }}/gategroup/md/edit_2x.png"
-                class="img-overflow flow-left" alt="">
+                class="img-overflow flow-xl-right" alt="Editing a course from the dashboard">
         </picture>
       </div>
     </div>
@@ -601,19 +611,19 @@ Since Baden wouldn’t be training on location, he needed a tool that allowing h
   <div class="container">
     <div class="row justify-content-center flex-row-reverse">
       <div class="col-md-10 col-lg-8 col-xl-5 pb-5 pt-xl-8">
-        <h3>Learners in <br> Focus</h3>
+        <h3>Learners <br> in Focus</h3>
         <p>After speaking with Baden and the students, we knew the personal aspect of the training was important to everyone — so creating a remote system was a concern for us. However, by using data and rich learner profiles, we were able to give Baden and course creators the ability to be alerted when a learner is struggling or excelling so they can reach out and offer help or praise. This serves to keep learners engaged and gives them the sense that the training matters and someone cares about their progress.</p>
       </div>
       <div class="col-xl-7">
         <picture>
           <source media="(min-width: 1440px)"
-                  srcset="{{ site.cloudinary | append: '/image/upload' }}/gategroup/xl/profiles_2x.png">
+                  srcset="{{ site.cloudinary | append: '/image/upload' }}/gategroup/lg/profiles_2x.png">
           <source media="(min-width: 1025px)"
                   srcset="{{ site.cloudinary | append: '/image/upload' }}/gategroup/lg/profiles_2x.png">
           <source media="(min-width: 767px)"
                   srcset="{{ site.cloudinary | append: '/image/upload' }}/gategroup/md/profiles_2x.png">
           <img src="{{ site.cloudinary | append: '/image/upload' }}/gategroup/md/profiles_2x.png"
-                width="img-overflow flow-xl-left"  alt="">
+                class="img-overflow flow-xl-left" alt="Learner card on the management tool">
         </picture>
       </div>
     </div>
@@ -627,4 +637,4 @@ Since Baden wouldn’t be training on location, he needed a tool that allowing h
             background_color="gray"
             heading="Final <br> Thoughts"
             text="
-In retrospect, I’m very proud of the work we did for Gategroup. I think spending time talking with the learners and ensuring we were creating something useful for them was critical to our success. I also think that sketching, prototyping, and testing the platform’s many complex interactions allowed us to take something that could have been daunting and instead make it simple and intuitive. " -%}
+In retrospect, I’m very proud of the work we did for Gategroup. I think spending time talking with the learners and ensuring we were creating something useful for them was critical to our success. I also think that sketching, prototyping, and testing the platform’s many complex interactions allowed us to take something that could have been daunting and instead make it simple and intuitive." -%}

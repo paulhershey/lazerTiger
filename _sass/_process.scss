@@ -3,6 +3,7 @@
   color: $white;
   padding-top: map-get($spacers, 7);
   text-align: left;
+  text-align: center;
 
   @include media-breakpoint-up(md) {
     text-align: center;
@@ -17,6 +18,8 @@
   }
 
   .content {
+    text-align: center;
+
     @include media-breakpoint-up(md) {
       text-align: center;
     }

@@ -21,7 +21,7 @@ layout: default
                 srcset="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/md/{{ page.image.name }}_2x.png">
         <source media="(min-width: 576px)"
                 srcset="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/sm/{{ page.image.name }}_2x.png">
-        <img src="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/sm/{{ page.image.name }}_2x.png" class="img-fluid">
+        <img src="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/sm/{{ page.image.name }}_2x.png" class="img-fluid" alt="{{ page.image.alt }}">
       </picture>
     </div>
 
@@ -35,7 +35,7 @@ layout: default
   <section class="goals ~ py-6 py-md-7">
     <div class="container">
       <div class="row justify-content-center pb-md-7">
-        <div class="col-md-8">
+        <div class="col-md-10 col-lg-8 col-xl-6">
           <h4>Project Goals</h4>
           <p>{{ page.goals.text }}</p>
         </div>
@@ -79,8 +79,8 @@ layout: default
   </section>
 
   <section class="quote">
-    <div class="container py-6 py-md-7 py-xl-6">
-      <div class="row justify-content-center">
+    <div class="container my-6 my-md-8 my-xl-9 pb-xl-5">
+      <div class="row justify-content-center ">
         <div class="col-md-10 col-lg-8 col-xl-6">
           <blockquote>
             {{ page.quote.text }}

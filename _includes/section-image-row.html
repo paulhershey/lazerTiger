@@ -26,7 +26,7 @@
                 class="img-fluid" alt="{{ include.title }}">
         </picture>
         {%- unless include.caption_1.blank? -%}
-          <div class="w-50 mt-3">
+          <div class="w-50 mt-3 d-flex justify-content-center">
             <b>{{ include.caption_1 }}</b>
           </div>
         {%- endunless -%}
@@ -54,7 +54,7 @@
                 class="img-fluid" alt="{{ include.title }}">
         </picture>
         {%- unless include.caption_2.blank? -%}
-          <div class="w-50 mt-3">
+          <div class="w-50 mt-3 d-flex justify-content-center">
             <b>{{ include.caption_2 }}</b>
           </div>
         {%- endunless -%}

@@ -1,6 +1,7 @@
 .hero {
   width: 100%;
   box-sizing: border-box;
+  padding-bottom: map-get($spacers, 7);
 
   @include media-breakpoint-up(md) {
     padding-left: map-get($spacers, 5);
@@ -55,6 +56,10 @@
     }
 
     > .content {
+
+      @include media-breakpoint-up(md) {
+        padding-left: map-get($spacers, 5);
+      }
 
       @include media-breakpoint-up(lg) {
         padding-left: map-get($spacers, 9);

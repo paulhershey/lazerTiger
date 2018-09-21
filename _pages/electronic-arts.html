@@ -4,6 +4,7 @@ description: 'Electronic Arts needed a new way to empower its writers. The solut
 image:
   name: header-image
   path: /electronic-arts/md/header-image_2x.png
+  alt: 'EA product design and UX research'
   width: 1424
   height: 1536
 goals:
@@ -16,7 +17,7 @@ goals:
     - title: Enhanced Consumer Experience
       metric: 13%
 strategy:
-  text: 'By utilizing our in-house LMS (learning management system), my team and I would design a mobile learning environment with courseware that could hook into our API. We also needed to build an LRS (learner record store) that was SCORM compliant and could surface learner results to a dashboard that would track the progress and effectiveness of the training.'
+  text: 'My team and I needed to create an MVP. We would conduct research to understand the current pain points, then prototype new concepts and preference test solutions with the writing staff. (The output would be documentation and components.)'
   diagram:
     - title: Strategy
       text: |
@@ -43,7 +44,7 @@ quote:
 ---
 
 {%- include section-text.html
-            heading="Project Kickoff"
+            heading="The Project <br> Kickoff"
             text="
 The editorial team was struggling to get timely content onto EA’s network of sites at scale. The tool they had been using was overly complex and not mobile-friendly. I was asked to create a tool to solve the issues facing this newly formed business unit. With limited data and a lot of unanswered questions, I set out to define a product strategy, understand the needs of the people using the tool, and conduct ideation sessions with the end users to ensure we created a tool they understood and would enjoy using on a daily basis.
 
@@ -57,7 +58,7 @@ What we ultimately created was a product called Flux — a flexible, mobile-frie
 
 {%- include section-text.html
             background_color="inverted"
-            heading="Color Study"
+            heading="Color <br> Study"
             text="
 Because the product could be used on an iPad at places like conferences or outdoor gaming events, we wanted it to have minimal colors and high contrast. We also created a simple colorsystem that would only be used for primary actions, notifications, and an illustration framework." -%}
 
@@ -69,13 +70,13 @@ Because the product could be used on an iPad at places like conferences or outdo
 {%- include section-image-row.html
             spacing="py-6"
             left_column_color="inverted"
-            caption_top_1="Light UI colors"
-            caption_top_2="Dark UI colors"
+            caption_1="Light UI colors"
+            caption_2="Dark UI colors"
             image_name_1="light-ui.svg"
             image_name_2="dark-ui.svg" -%}
 
 {%- include section-text.html
-            heading="Typography"
+            heading="Typography <br> Choices"
             text="
 We decided to use Ysobel Pro for headers and accents and Harmonia Sans for body copy to meet our editorial needs. The fonts would only be used in the content creation tool. All the typography in the tool was mapped to the design system to ensure proper styling across all branded experiences." -%}
 
@@ -94,14 +95,14 @@ We decided to use Ysobel Pro for headers and accents and Harmonia Sans for body 
 {%- include section-separator.html -%}
 
 {%- include section-text.html
-            heading="By the Numbers"
+            heading="By the <br> Numbers"
             text="
 We started our research by mining for quantitative data collected by our Digital Intelligence team. Although we were not collecting user data on internal tools, we did have a great deal of data on how players were interacting with our news content. We learned that the news content on our sites had by far the most traffic at over 3M uniques at points in campaign cycles. We also learned that we had a high bounce rate in an area of the site that should encourage higher session rates. Lastly, we discovered that people liked sharing news content, and this was a behavior we knew we wanted to encourage." -%}
 
 <section class="mb-6">
   <div class="container">
     <div class="row">
-      <div class="d-none d-lg-flex flex-column align-items-center col-lg-4 mb-lg-6">
+      <div class="d-none d-lg-flex flex-column align-items-center col-lg-4 mb-lg-7">
         <h5 class="w-100 mb-5">News</h5>
         <picture>
           <source media="(min-width: 1440px)"
@@ -145,8 +146,9 @@ We started our research by mining for quantitative data collected by our Digital
 </section>
 
 {%- include section-text.html
+            spacing="my-7"
             background_color="gray"
-            heading="Competitive Assessments"
+            heading="Competitive <br> Assessments"
             text="
 Our UXR team assisted us in running competitive assessments. We created a rubric to better understand the usability by running task-based assessments with actual users. We also conducted heuristic evaluations and created feature lists. This information helped us understand how to approach creating tools and the mental models of how people relate to different features in a content creation tool. Some of the products we reviewed were Blocs, Keynote, Medium, WordPress, Google Sites, Ghost, and Squarespace." -%}
 
@@ -199,7 +201,7 @@ Our UXR team assisted us in running competitive assessments. We created a rubric
                     class="img-fluid" alt="Wordpress">
             </picture>
           </div>
-          <div class="col-6 col-md-3 mb-4">
+          <div class="col-6 col-md-3 mb-7">
             <picture>
               <source media="(min-width: 1025px)"
                       srcset="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/lg/google_2x.png">
@@ -211,7 +213,7 @@ Our UXR team assisted us in running competitive assessments. We created a rubric
                     class="img-fluid" alt="Google">
             </picture>
           </div>
-          <div class="col-6 col-md-3 mb-4">
+          <div class="col-6 col-md-3 mb-7">
             <picture>
               <source media="(min-width: 1025px)"
                       srcset="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/lg/ghost_2x.png">
@@ -223,7 +225,7 @@ Our UXR team assisted us in running competitive assessments. We created a rubric
                     class="img-fluid" alt="Ghost">
             </picture>
           </div>
-          <div class="d-none d-md-block col-md-3 mb-4">
+          <div class="d-none d-md-block col-md-3 mb-7">
             <picture>
               <source media="(min-width: 1025px)"
                       srcset="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/lg/square_2x.png">
@@ -244,7 +246,7 @@ Our UXR team assisted us in running competitive assessments. We created a rubric
 
 {%- include section-text.html
             background_color="gray"
-            heading="Journey Map"
+            heading="The Journey <br> Map"
             text="
 First, I entered a discovery phase. I conducted multiple stakeholder and user interviews in order to gather a large pile of unstructured data. I was able to identify some basic themes around scheduling, instant publishing, and localization. This information, paired with a heuristic evaluation of the current tool and a competitive assessment of similar tools, gave me plenty of data that I could synthesize into useable information." -%}
 
@@ -259,7 +261,7 @@ First, I entered a discovery phase. I conducted multiple stakeholder and user in
         <source media="(min-width: 767px)"
                 srcset="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/md/writer-journey_2x.png">
         <img src="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/md/writer-journey_2x.png"
-              class="img-overflow" alt="">
+              class="img-overflow" alt="User experience journey map">
       </picture>
     </div>
     <div class="ea-offset-bottom">
@@ -275,28 +277,40 @@ First, I entered a discovery phase. I conducted multiple stakeholder and user in
   </div>
 </section>
 
+<section class="d-none d-md-block">
 {%- include section-separator.html
             spacing="pt-7"
             background_color="inverted" -%}
+</section>
 
 {%- include section-text.html
             background_color="inverted"
-            heading="The Right Tool for the Right Job"
+            heading="The Right Tool <br> for the Right Job"
             text="
 After reviewing the journey and speaking with stakeholders about the business needs, we realized we needed two independent work streams. One would be for custom articles that would have custom elements and not syndicate outside of the web. The other, which would be for standard articles, would be focused on timely news that didn’t require extensive approvals and could be syndicated to the web, native apps, and console systems." -%}
 
 <section class="section-inverted">
   <div class="container">
-    <div class="row pb-6">
-      <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-2 col-xl-5 offset-xl-3">
-        <h4>Custom Articles</h4>
-        <p>These long-form pieces of content are scheduled to specific beats in a campaign. They require more approvals and are generally scheduled with the strategy team before a campaign activation.</p>
-      </div>
-    </div>
     <div class="row">
-      <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-2 col-xl-5 offset-xl-3">
-        <h4>Standard Articles</h4>
-        <p>These are timely pieces that require fewer approvals. These articles can be released as breaking news and typically consist of event-based reporting.</p>
+      <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-4 offset-xl-1">
+        <div class="row pb-6 px-3">
+          <h4>Custom Articles</h4>
+          <p>These long-form pieces of content are scheduled to specific beats in a campaign. They require more approvals and are generally scheduled with the strategy team before a campaign activation.</p>
+        </div>
+        <div class="row px-3">
+          <h4>Standard Articles</h4>
+          <p>These are timely pieces that require fewer approvals. These articles can be released as breaking news and typically consist of event-based reporting.</p>
+        </div>
+      </div>
+      <div class="d-none d-xl-block col-xl-5 offset-xl-1">
+        <picture>
+          <source media="(min-width: 1440px)"
+                  srcset="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/xl/article-illustration_2x.png">
+          <source media="(min-width: 1025px)"
+                  srcset="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/xl/article-illustration_2x.png">
+          <img src="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/md/article-illustration_2x.png"
+                class="img-overflow" alt="abstract UX wireframe">
+        </picture>
       </div>
     </div>
   </div>
@@ -308,7 +322,7 @@ After reviewing the journey and speaking with stakeholders about the business ne
 
 {%- include section-text.html
             background_color="inverted"
-            heading="Understanding Needs and Limitations"
+            heading="Understanding <br> Needs &amp; Limitations"
             text="
 After reviewing our data we sat down with the engineering team and business stakeholders to identify what key features were needed, which content types could be distributed in our data model, and what technical limitations we were facing. We came out of this meeting with a good understanding of the technical architecture and business needs and were able to start ideating on design opportunities." -%}
 
@@ -324,7 +338,7 @@ After reviewing our data we sat down with the engineering team and business stak
           <source media="(min-width: 767px)"
                   srcset="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/md/flow-dark_2x.png">
           <img src="{{ site.cloudinary | append: '/image/upload' }}/electronic-arts/md/flow-dark_2x.png"
-                class="img-overflow flow-xl-none" alt="">
+                class="img-overflow flow-xl-none" alt="User flow of the UX wireframe">
         </picture>
       </div>
     </div>
@@ -336,7 +350,7 @@ After reviewing our data we sat down with the engineering team and business stak
 
 {%- include section-text.html
             background_color="inverted"
-            heading="Design Sprint Ideation and Hypothesis"
+            heading="Design Ideation <br> &amp; Hypothesis"
             text="
 We pulled designers from various teams to ideate on designs for different features. We shared the quantitative and qualitative findings from the research sessions to ensure everyone was context set. We created user stories, ran Crazy Eights, created storyboards, and voted collectively on the ideas. We came out of this multi-day exercise with some refined ideas on features that we could prototype and start testing with the writing staff." -%}
 
@@ -346,7 +360,8 @@ We pulled designers from various teams to ideate on designs for different featur
             image_name="sprint-img" -%}
 
 {%- include section-text.html
-            heading="Design Concepts and Organizing Features"
+            spacing="my-7"
+            heading="Design Concepts &amp; <br> Organizing Features"
             text="
 Once we had hypothesized on features and key pain points, we started sketching possible UI views and workflows to share with the writing team. We ran some CPTs (customer preference tests) to see which options made the most sense for their team. We learned a lot in this phase, and with low investment in design we were able to cycle through a lot of ideas. From here we could start to prototype and test ideas at higher fidelity." -%}
 
@@ -358,7 +373,7 @@ Once we had hypothesized on features and key pain points, we started sketching p
             spacing="pt-7" -%}
 
 {%- include section-text.html
-            heading="Testing the Prototype and Refining the Design"
+            heading="Testing &amp; Refining <br> the Design"
             text="
 Below is one of the prototypes we created for testing. We created eight prototypes that were clustered around different user needs and features. This testing enabled us to refine to the final designs, which we ultimately shared with the developers." -%}
 
@@ -366,11 +381,14 @@ Below is one of the prototypes we created for testing. We created eight prototyp
 {%- include section-image.html
             image_name="notebook_2x.png" -%}
 
+{%- include section-separator.html
+            spacing="py-7" -%}
+
 <section class="pt-4 pb-7">
   <div class="container">
     <div class="row">
       <div class="col-md-5 offset-md-1">
-        <small>Below is one of the prototypes we created for testing. We created eight prototypes that were clustered around different user needs and features.</small>
+        <small>Below is a group of people testing one of our prototypes. We created eight prototypes that were clustered around different user needs and features.</small>
       </div>
     </div>
   </div>
@@ -381,16 +399,24 @@ Below is one of the prototypes we created for testing. We created eight prototyp
             image_name="testing-img" -%}
 
 {%- include section-text.html
+            spacing="my-7"
             background_color="inverted"
-            heading="Choosing the Final Designs"
+            heading="Choosing the <br> Final Designs"
             text="
-Below is a clickable prototype that closely resembles the final product. This flow was designed for writers to preference test the experience of working from an iPad, logging into their account, creating an article, adding content and media, and publishing the article. This flow made the most sense for everyone and became the design we used to guide our more complex interaction designs for the final product." -%}
+This flow was designed for writers to preference test the experience of working from an iPad, logging into their account, creating an article, adding content and media, and publishing the article. This flow made the most sense for everyone and became the design we used to guide our more complex interaction designs for the final product." -%}
 
 <section class="section-inverted pb-7 d-none d-lg-block">
   <div class="container">
     <div class="row">
       <div class="col-12 d-flex justify-content-center">
         <iframe src="https://projects.invisionapp.com/share/R3FIYHFTUCF#/screens/269385249" width="960px" height="720px"></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="container d-flex justify-content-center">
+    <div class="row">
+      <div>
+        <small>Above is a clickable prototype that closely resembles the final product.</small>
       </div>
     </div>
   </div>
@@ -457,7 +483,7 @@ Previously, writers spent a lot of time building content from scratch and siftin
             spacing="pt-7" -%}
 
 {%- include section-text.html
-            heading="Accessing and <br> Saving Media"
+            heading="Accessing &amp; <br> Saving Media"
             text="
 Working with media on the platform was important, but there were different workflows depending on when and where writers were applying it. We wanted to ensure accessing media was consistent across the platform so that users could develop a mental model, making complex actions feel a bit easier. We choose to use a modal and divide media into two main areas: content in our DAM and content on the user’s local device. Content added to an article from the camera roll is added to the DAM before publishing. Below is an example of previewing and selecting a piece of content from the DAM." -%}
 
@@ -487,7 +513,7 @@ Working with media on the platform was important, but there were different workf
             spacing="pt-7" -%}
 
 {%- include section-text.html
-            heading="Prepping Key Art for Marketing Content"
+            heading="Prepping Key Art for <br> Marketing Content"
             text="
 Finding a way to easily crop images for article headers and social media posts was a fun challenge. Below is an example of the solution we landed on. Each crop is saved to its corresponding tab. The crop frame and image always maintain their aspect ratio to ensure there is no distortion or stretching of the media." -%}
 
@@ -577,7 +603,7 @@ There were some tools writers kept coming back to over and over again. We create
             spacing="pt-7" -%}
 
 {%- include section-text.html
-            heading="Useful Tools for Typography"
+            heading="Useful Tools <br> for Typography"
             text="
 A good type tool is essential in the content creation process. We designed ours to be as useful as possible when working on a mobile device, while also building on known and proven designs that people are accustomed to using." -%}
 
@@ -607,7 +633,7 @@ A good type tool is essential in the content creation process. We designed ours 
             spacing="pt-7" -%}
 
 {%- include section-text.html
-            heading="Launching the Story at the Right Place"
+            heading="Launching the Story <br> at the Right Place"
             text="
 Content can be delivered on any of EA’s 24 sites inside its online content network. Once a piece of content is ready to be delivered, writers can add social media descriptions, meta descriptions, and meta tags for our internal search engines. Writers can also schedule or send an article to their editors as well as as pick the platforms on which to publish. Below is an example of choosing multiple publishing platforms and changing the publish time. This is the final step in the content creation process." -%}
 

@@ -13,8 +13,8 @@ description: I'm a UX designer based in Orlando, FL focusing on product design a
       <a class="btn btn-primary" data-scroll href="#casestudies">Case Studies<span></span></a>
     </div>
     <div class="video-wrapper d-none d-lg-block">
-      <video class="player" width="428" height="710" autoplay loop muted playsinline
-        data-source="{{ site.cloudinary | append: '/video/upload' }}/home/header-video/PaulHershey"
+      <video class="player lazyLoad" width="428" height="710" autoplay loop muted playsinline
+        data-src="{{ site.cloudinary | append: '/video/upload' }}/home/header-video/PaulHershey"
         poster="{{ site.cloudinary | append: '/image/upload' }}/home/lg/PaulHershey.png">
       </video>
     </div>
@@ -105,11 +105,11 @@ description: I'm a UX designer based in Orlando, FL focusing on product design a
     </div>
     <div class="content ~ row flex-column flex-xl-row-reverse align-items-center justify-content-center">
       <div class="d-none d-md-block col-md-8 mb-md-6 d-lg-block col-lg-6 mb-lg-6 col-xl-5 mb-xl-9 ml-xl-7">
-        <picture>
-          <source media="(min-width: 768px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo1_2x.png">
-          <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo1_2x.png">
-          <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo1_2x.png">
-          <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo1_2x.png" class="img-fluid" alt="the UX Process">
+        <picture class="lazyLoad">
+          <source media="(min-width: 768px)" data-srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo1_2x.png">
+          <source media="(min-width: 1024px)" data-srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo1_2x.png">
+          <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo1_2x.png">
+          <img data-src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo1_2x.png" class="img-fluid" alt="the UX Process">
         </picture>
       </div>
       <div class="col-md-10 col-lg-8 col-xl-4 mb-7">
@@ -119,11 +119,11 @@ description: I'm a UX designer based in Orlando, FL focusing on product design a
     </div>
     <div class="content ~ row flex-column flex-xl-row align-items-center justify-content-center">
       <div class="d-none d-md-block col-md-8 mb-md-6 d-lg-block col-lg-6 mb-lg-6 col-xl-5 mb-xl-9 mr-xl-7">
-        <picture>
-          <source media="(min-width: 768px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo2_2x.png">
-          <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo2_2x.png">
-          <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo2_2x.png">
-          <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo2_2x.png" class="img-fluid" alt="Conversational UX">
+        <picture class="lazyLoad">
+          <source media="(min-width: 768px)" data-srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo2_2x.png">
+          <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo2_2x.png">
+          <source media="(min-width: 1024px)" data-srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo2_2x.png">
+          <img data-src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo2_2x.png" class="img-fluid" alt="Conversational UX">
         </picture>
       </div>
       <div class="col-md-10 col-lg-8 col-xl-4 mb-7">
@@ -133,11 +133,11 @@ description: I'm a UX designer based in Orlando, FL focusing on product design a
     </div>
     <div class="content ~ row flex-column flex-xl-row-reverse align-items-center justify-content-center">
       <div class="d-none d-md-block col-md-8 mb-md-6 d-lg-block col-lg-6 mb-lg-6 col-xl-5 mb-xl-9 ml-xl-7">
-        <picture>
-          <source media="(min-width: 768px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo3_2x.png">
-          <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo3_2x.png">
-          <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo3_2x.png">
-          <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo3_2x.png" class="img-fluid" alt="Product design opportunities">
+        <picture class="lazyLoad">
+          <source media="(min-width: 768px)" data-srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo3_2x.png">
+          <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo3_2x.png">
+          <source media="(min-width: 1024px)" data-srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo3_2x.png">
+          <img data-src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo3_2x.png" class="img-fluid" alt="Product design opportunities">
         </picture>
       </div>
       <div class="col-md-10 col-lg-8 col-xl-4 mb-7">
@@ -148,11 +148,11 @@ description: I'm a UX designer based in Orlando, FL focusing on product design a
 
     <div class="content ~ row flex-column flex-xl-row align-items-center justify-content-center">
       <div class="d-none d-md-block col-md-8 mb-md-6 d-lg-block col-lg-6 mb-lg-6 col-xl-5 mb-xl-9 mr-xl-7">
-        <picture>
-          <source media="(min-width: 768px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo4_2x.png">
-          <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo4_2x.png">
-          <source media="(min-width: 1024px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo4_2x.png">
-          <img src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo4_2x.png" class="img-fluid" alt="Design sprints">
+        <picture class="lazyLoad">
+          <source media="(min-width: 768px)" data-srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo4_2x.png">
+          <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/illo4_2x.png">
+          <source media="(min-width: 1024px)" data-srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo4_2x.png">
+          <img data-src="{{ site.cloudinary | append: '/image/upload' }}/home/lg/illo4_2x.png" class="img-fluid" alt="Design sprints">
         </picture>
       </div>
       <div class="col-md-10 col-lg-8 col-xl-4 mb-7">

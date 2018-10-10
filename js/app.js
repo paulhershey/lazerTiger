@@ -7,7 +7,8 @@
     // Initialize major functions
     initScrollToThis();
     formBuilder()
-    responsiveVideos();
+    // responsiveVideos();
+    lazyLoad('.lazyLoad');
     pageTransition();
 
     $("[href='#']").click(function(){return false});
@@ -41,22 +42,76 @@
     });
   }
 
-  function responsiveVideos() {
-    // Cycle through all videos on the page
-    $('video').each(function(index) {
-      // Gather their data-source
-      var videoSrc = $(this).data('source');
+  // Lazy loads elements with a className
+  function lazyLoad(className) {
+    var observer = new window.IntersectionObserver(function (entries, observer) {
+      $(entries).each(function (index, entry) {
+        if (entry.isIntersecting) {
+          var tagName = entry.target.tagName.toLowerCase();
+          switch (tagName) {
+            case 'video':
+              // Gather the data-source
+              var videoSrc = $(entry.target).data('src');
 
-      if (!videoSrc) { return false }
-      // Add video source on large screens and up
-      // Smaller devices won't download assets
-      if ($(window).width() > 1024 ) {
-        $(this).append("<source type='video/mp4' src='"+ videoSrc +".mp4.mp4'>");
-        $(this).append("<source type='video/webm' src='"+ videoSrc +".webmhd.webm'>");
-        $(this).append("<source type='video/ogg' src='"+ videoSrc +".oggtheora.ogv'>");
-      }
+              // Add video source on large screens and up
+              // Smaller devices won't download assets
+              if ($(window).width() > 1024 ) {
+                $(entry.target).append("<source type='video/mp4' src='"+ videoSrc +".mp4.mp4'>");
+                $(entry.target).append("<source type='video/webm' src='"+ videoSrc +".webmhd.webm'>");
+                $(entry.target).append("<source type='video/ogg' src='"+ videoSrc +".oggtheora.ogv'>");
+              }
+              break;
+            case 'picture':
+              $(entry.target).children().each(function (index, child) {
+                var childTagName = child.tagName.toLowerCase();
+                switch (childTagName) {
+                  case 'source':
+                    $(child).attr('srcset', $(child).data('srcset'));
+                    break;
+                  case 'img':
+                    $(child).attr('src', $(child).data('src'));
+                    break;
+                }
+              });
+
+              break;
+            case 'iframe':
+            case 'img':
+              // Just swap in the data-source
+              $(entry.target).attr('src', $(entry.target).data('src'));
+              break;
+          }
+
+          // Stop observing after lazy loading
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '100%',
+      threshold: 0.0
+    });
+
+    $(className).each(function (index, element) {
+      observer.observe(element);
     });
   }
+
+  // function responsiveVideos() {
+  //   // Cycle through all videos on the page
+  //   $('video').each(function(index) {
+  //     // Gather their data-source
+  //     var videoSrc = $(this).data('source');
+  //
+  //     if (!videoSrc) { return false }
+  //     // Add video source on large screens and up
+  //     // Smaller devices won't download assets
+  //     if ($(window).width() > 1024 ) {
+  //       $(this).append("<source type='video/mp4' src='"+ videoSrc +".mp4.mp4'>");
+  //       $(this).append("<source type='video/webm' src='"+ videoSrc +".webmhd.webm'>");
+  //       $(this).append("<source type='video/ogg' src='"+ videoSrc +".oggtheora.ogv'>");
+  //     }
+  //   });
+  // }
 
   function formBuilder() {
     var $messages = $('div[data-type="message"]');
@@ -214,7 +269,8 @@
         var delay = ( transitionsSupported() ) ? 1200 : 0;
 
         // setup responsive videos each time new content is loaded
-        responsiveVideos();
+        // responsiveVideos();
+        lazyLoad('.lazyLoad');
 
         setTimeout(function(){
 

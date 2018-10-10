@@ -213,6 +213,9 @@
         //if browser doesn't support CSS transitions - dont wait for the end of transitions
         var delay = ( transitionsSupported() ) ? 1200 : 0;
 
+        // setup responsive videos each time new content is loaded
+        responsiveVideos();
+
         setTimeout(function(){
 
           $('body').removeClass('page-is-changing');

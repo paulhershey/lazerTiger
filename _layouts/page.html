@@ -21,7 +21,7 @@ layout: default
                 data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/md/{{ page.image.name }}_2x.png">
         <source media="(min-width: 576px)"
                 data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/sm/{{ page.image.name }}_2x.png">
-        <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/sm/{{ page.image.name }}_2x.png" class="img-fluid" alt="{{ page.image.alt }}">
+        <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/{{ image_folder }}/sm/{{ page.image.name }}_2x.png" class="img-fluid" alt="{{ page.image.alt }}">
       </picture>
     </div>
 
@@ -96,7 +96,7 @@ layout: default
               data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/lg/{{ page.quote.image }}_2x.png">
       <source media="(min-width: 736px)"
               data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/md/{{ page.quote.image }}_2x.png">
-      <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/sm/{{ page.quote.image }}_2x.png" class="img-fluid">
+      <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/{{ image_folder }}/sm/{{ page.quote.image }}_2x.png" class="img-fluid" alt="quote">
     </picture>
   </section>
 

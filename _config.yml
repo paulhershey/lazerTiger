@@ -44,3 +44,6 @@ permalink: "/articles/:title/"
 
 highlighter: rouge
 markdown: kramdown
+
+sass:
+  style: compressed

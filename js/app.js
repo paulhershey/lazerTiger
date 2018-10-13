@@ -124,13 +124,13 @@
     });
 
     //you should replace this part with your ajax function
-    $('.cd-form').on('submit', function(event) {
-      if ($('.cd-form').hasClass('is-active')) {
+    $('.cd-submit').on('click', function(event) {
+      var $form = $(this).parent();
+      if ($form.hasClass('is-active')) {
         event.preventDefault();
 
-        var $form = $(this);
         //show the loading bar and the corrisponding message
-        $('.cd-form').addClass('is-submitted').find('.cd-loading').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
+        $form.addClass('is-submitted').find('.cd-loading').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
           registerForm($form);
         });
 

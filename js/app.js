@@ -248,8 +248,9 @@
         //if browser doesn't support CSS transitions - dont wait for the end of transitions
         var delay = ( transitionsSupported() ) ? 1200 : 0;
 
-        // setup lazy loading each time new content is loaded
+        // setup lazy loading and forms each time new content is loaded
         lazyLoad('.lazyLoad');
+        formBuilder();
 
         setTimeout(function(){
 

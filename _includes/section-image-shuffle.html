@@ -24,9 +24,9 @@
                 {% assign min_width = "576px" %}
               {% endcase %}
               <source media="(min-width: {{ min_width }})"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/{{ size }}/{{ image }}">
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ size }}/{{ image }}">
             {%- endfor -%}
-            <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/{{ media | first }}/{{ image }}"
+            <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ media | first }}/{{ image }}"
                   class="img-fluid" alt="{{ include.title }}">
           </picture>
 

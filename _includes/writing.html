@@ -2,12 +2,12 @@
   <div class="body">
     <h4>{{ include.title }}</h4>
     <b>Read More</b>
-    <picture>
-      <source media="(min-width: 1440px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/xl/{{include.image}}_2x.png">
-      <source media="(min-width: 1025px)"srcset="{{ site.cloudinary | append: '/image/upload' }}/home/lg/{{include.image}}_2x.png">
-      <source media="(min-width: 768px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/md/{{include.image}}_2x.png">
-      <source media="(min-width: 576px)" srcset="{{ site.cloudinary | append: '/image/upload' }}/home/sm/{{include.image}}_2x.png">
-      <img src="{{ site.cloudinary | append: '/image/upload' }}/home/sm/{{ include.image }}_2x.png" class="img-contain"
+    <picture class="lazyLoad">
+      <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/home/xl/{{include.image}}_2x.png">
+      <source media="(min-width: 1025px)"data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/home/lg/{{include.image}}_2x.png">
+      <source media="(min-width: 768px)" data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/home/md/{{include.image}}_2x.png">
+      <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/home/sm/{{include.image}}_2x.png">
+      <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto' }}/home/sm/{{ include.image }}_2x.png" class="img-contain"
            alt="{{ include.title }}">
     </picture>
   </div>

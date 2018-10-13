@@ -6,23 +6,23 @@
 
     // Initialize major functions
     initScrollToThis();
-    formBuilder()
-    responsiveVideos();
+    formBuilder();
+    lazyLoad('.lazyLoad');
     pageTransition();
 
-    $("[href='#']").click(function(){return false});
+    $("[href='#']").click(function(){ return false; });
 
     // Button Hovers
     $('.btn').on('mouseenter', function(e) {
   		var parentOffset = $(this).offset(),
       		relX = e.pageX - parentOffset.left,
       		relY = e.pageY - parentOffset.top;
-  		$(this).find('span').css({top:relY, left:relX})
+  		$(this).find('span').css({top:relY, left:relX});
     }).on('mouseout', function(e) {
   		var parentOffset = $(this).offset(),
       		relX = e.pageX - parentOffset.left,
       		relY = e.pageY - parentOffset.top;
-      $(this).find('span').css({top:relY, left:relX})
+      $(this).find('span').css({top:relY, left:relX});
     });
 
   });
@@ -36,31 +36,67 @@
         $('html, body').animate({
           scrollTop: $($target).offset().top
         }, 1000);
-        return false
+        return false;
       }
     });
   }
 
-  function responsiveVideos() {
-    // Cycle through all videos on the page
-    $('video').each(function(index) {
-      // Gather their data-source
-      var videoSrc = $(this).data('source');
+  // Lazy loads elements with a className
+  function lazyLoad(className) {
+    var observer = new window.IntersectionObserver(function (entries, observer) {
+      $(entries).each(function (index, entry) {
+        if (entry.isIntersecting) {
+          var tagName = entry.target.tagName.toLowerCase();
+          switch (tagName) {
+            case 'video':
+              // Gather the data-source
+              var videoSrc = $(entry.target).data('src');
 
-      if (!videoSrc) { return false }
-      // Add video source on large screens and up
-      // Smaller devices won't download assets
-      if ($(window).width() > 1024 ) {
-        $(this).append("<source type='video/mp4' src='"+ videoSrc +".mp4.mp4'>");
-        $(this).append("<source type='video/webm' src='"+ videoSrc +".webmhd.webm'>");
-        $(this).append("<source type='video/ogg' src='"+ videoSrc +".oggtheora.ogv'>");
-      }
+              // Add video source on large screens and up
+              // Smaller devices won't download assets
+              if ($(window).width() > 1024 ) {
+                $(entry.target).append("<source type='video/mp4' src='"+ videoSrc +".mp4.mp4'>");
+                $(entry.target).append("<source type='video/webm' src='"+ videoSrc +".webmhd.webm'>");
+                $(entry.target).append("<source type='video/ogg' src='"+ videoSrc +".oggtheora.ogv'>");
+              }
+              break;
+            case 'picture':
+              $(entry.target).children().each(function (index, child) {
+                var childTagName = child.tagName.toLowerCase();
+                switch (childTagName) {
+                  case 'source':
+                    $(child).attr('srcset', $(child).data('srcset'));
+                    break;
+                  case 'img':
+                    $(child).attr('src', $(child).data('src'));
+                    break;
+                }
+              });
+
+              break;
+            case 'iframe':
+            case 'img':
+              // Just swap in the data-source
+              $(entry.target).attr('src', $(entry.target).data('src'));
+              break;
+          }
+
+          // Stop observing after lazy loading
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '100%',
+      threshold: 0.0
+    });
+
+    $(className).each(function (index, element) {
+      observer.observe(element);
     });
   }
 
   function formBuilder() {
     var $messages = $('div[data-type="message"]');
-    var $form = $('#mc-embedded-subscribe-form');
 
     $('.cd-form .cd-email').keyup(function(event) {
 
@@ -89,11 +125,12 @@
 
     //you should replace this part with your ajax function
     $('.cd-submit').on('click', function(event) {
-      if ($('.cd-form').hasClass('is-active')) {
+      var $form = $(this).parent();
+      if ($form.hasClass('is-active')) {
         event.preventDefault();
 
         //show the loading bar and the corrisponding message
-        $('.cd-form').addClass('is-submitted').find('.cd-loading').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
+        $form.addClass('is-submitted').find('.cd-loading').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
           registerForm($form);
         });
 
@@ -122,7 +159,7 @@
           if (input.val() == input.attr('placeholder')) {
             input.val('');
           }
-        })
+        });
       });
     }
 
@@ -140,11 +177,11 @@
       },
       success: function(data) {
         if (data.result === 'success') {
-          console.log(data.msg)
+          console.log(data.msg);
           $('.cd-response-success').addClass('slide-in');
         } else {
-          console.log(data.msg)
-          $('.cd-response-notification').addClass('is-visible');
+          console.log(data.msg);
+          $('.cd-response-notification').addClass('is-visible').html(data.msg);
         }
       }
     });
@@ -212,6 +249,9 @@
         $('html, body').scrollTop(0, 0);
         //if browser doesn't support CSS transitions - dont wait for the end of transitions
         var delay = ( transitionsSupported() ) ? 1200 : 0;
+
+        // setup lazy loading each time new content is loaded
+        lazyLoad('.lazyLoad');
 
         setTimeout(function(){
 

@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "cp -rf ./node_modules/bootstrap/scss ./_sass/vendor/bootstrap && cp node_modules/cloudinary-jquery/cloudinary-jquery.js ./js/cloudinary-jquery.js"
+    "postinstall": "cp -rf ./node_modules/bootstrap/scss ./_sass/vendor/bootstrap"
   },
   "author": "",
   "license": "ISC",

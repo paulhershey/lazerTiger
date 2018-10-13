@@ -9,7 +9,7 @@
             <b>{{ include.caption_top_1 }}</b>
           </div>
         {%- endunless -%}
-        <picture>
+        <picture class="lazyLoad">
           {%- for size in media reversed -%}
             {% case size %}
               {% when 'xl' %}{% assign min_width = "1440px" %}
@@ -20,9 +20,9 @@
               {% assign min_width = "576px" %}
             {% endcase %}
             <source media="(min-width: {{ min_width }})"
-                    srcset="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/{{ size }}/{{ include.image_name_1 }}">
+                    data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/{{ size }}/{{ include.image_name_1 }}">
           {%- endfor -%}
-          <img src="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/{{ media | first }}/{{ include.image_name_1 }}"
+          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/{{ media | first }}/{{ include.image_name_1 }}"
                 class="img-fluid" alt="{{ include.title }}">
         </picture>
         {%- unless include.caption_1.blank? -%}
@@ -37,7 +37,7 @@
             <b>{{ include.caption_top_2 }}</b>
           </div>
         {%- endunless -%}
-        <picture>
+        <picture class="lazyLoad">
           {%- for size in media reversed -%}
             {% case size %}
               {% when 'xl' %}{% assign min_width = "1440px" %}
@@ -48,9 +48,9 @@
               {% assign min_width = "576px" %}
             {% endcase %}
             <source media="(min-width: {{ min_width }})"
-                    srcset="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/{{ size }}/{{ include.image_name_2 }}">
+                    data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/{{ size }}/{{ include.image_name_2 }}">
           {%- endfor -%}
-          <img src="{{ site.cloudinary | append: '/image/upload' }}/{{ image_folder }}/{{ media | first }}/{{ include.image_name_2 }}"
+          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/{{ media | first }}/{{ include.image_name_2 }}"
                 class="img-fluid" alt="{{ include.title }}">
         </picture>
         {%- unless include.caption_2.blank? -%}

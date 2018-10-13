@@ -46,8 +46,7 @@
     var observer = new window.IntersectionObserver(function (entries, observer) {
       $(entries).each(function (index, entry) {
         if (entry.isIntersecting) {
-          var tagName = entry.target.tagName.toLowerCase();
-          switch (tagName) {
+          switch (entry.target.tagName.toLowerCase()) {
             case 'video':
               // Gather the data-source
               var videoSrc = $(entry.target).data('src');
@@ -55,15 +54,14 @@
               // Add video source on large screens and up
               // Smaller devices won't download assets
               if ($(window).width() > 1024 ) {
-                $(entry.target).append("<source type='video/mp4' src='"+ videoSrc +".mp4.mp4'>");
-                $(entry.target).append("<source type='video/webm' src='"+ videoSrc +".webmhd.webm'>");
-                $(entry.target).append("<source type='video/ogg' src='"+ videoSrc +".oggtheora.ogv'>");
+                $(entry.target).append('<source type="video/mp4" src="' + videoSrc + '.mp4.mp4">');
+                $(entry.target).append('<source type="video/webm" src="' + videoSrc + '.webmhd.webm">');
+                $(entry.target).append('<source type="video/ogg" src="' + videoSrc + '.oggtheora.ogv">');
               }
               break;
             case 'picture':
               $(entry.target).children().each(function (index, child) {
-                var childTagName = child.tagName.toLowerCase();
-                switch (childTagName) {
+                switch (child.tagName.toLowerCase()) {
                   case 'source':
                     $(child).attr('srcset', $(child).data('srcset'));
                     break;

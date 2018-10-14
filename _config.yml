@@ -21,7 +21,7 @@ social:
 baseurl: /
 cloudinary:
   url: https://res.cloudinary.com/paulhershey
-  transforms: f_auto,q_auto
+  transforms: f_auto,q_auto:eco
 collections:
   pages:
     output: true

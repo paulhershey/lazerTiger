@@ -9,16 +9,80 @@
     overflow: hidden;
     hr { border-color: $gray-800; }
   }
-  &-inverted-push-dn {
+  &-persona {
     background-color: $black;
     color: $white;
     margin-top: 195px;
     overflow: visible;
-    hr { border-color: $gray-800; }
-    .row {
-      @include media-breakpoint-up(xxl) {
-        justify-content: center !important;
+    .container-fluid {
+      display: flex;
+      justify-content: center;
+      @include media-breakpoint-up(xl) {
+        justify-content: center;
       }
+    }
+    .row {
+      max-width: 1440px;
+      width: 100%;
+    }
+    .upper {
+      margin-bottom: -195px;
+      padding: 0;
+      @include media-breakpoint-down(lg) {
+        justify-content: flex-end;
+      }
+      .row {
+        margin-right: 0;
+        margin-left: 0;
+        @include media-breakpoint-down(lg) {
+          justify-content: flex-end;
+        }
+      }
+      .d-none {
+        max-width: 28rem;
+        padding-top: 10rem;
+      }
+      .col {
+        @include media-breakpoint-only(md) {
+          max-width: 87%;
+        }
+        @include media-breakpoint-only(lg) {
+          max-width: 88%;
+        }
+      }
+      picture, img {
+        padding: 0;
+      }
+    }
+    .lower {
+      .row {
+        justify-content: center;
+        margin: 0;
+        @include media-breakpoint-up(md) {
+          justify-content: space-between;
+        }
+      }
+      .col {
+        flex-basis: auto;
+        max-width: 18rem;
+        padding: 0 0 1rem 0;
+        @include media-breakpoint-up(md) {
+          flex-basis: 0;
+          max-width: 13rem;
+        }
+        @include media-breakpoint-up(lg) {
+          max-width: 17rem;
+        }
+        @include media-breakpoint-up(xl) {
+          max-width: 19rem;
+        }
+      }
+    }
+    hr {
+      border-color: $gray-800;
+    }
+    picture, img {
+      top: -195px;
     }
   }
   &-gray {

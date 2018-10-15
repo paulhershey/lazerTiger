@@ -3,7 +3,7 @@ title: 'Bisk'
 description: 'With 45+ years of experience in the education space, Bisk was looking for a brand reboot to better express its values.'
 image:
   name: header-image
-  path: /bisk/md/header-image_2x.png
+  path: /bisk/md/header-image_2x
   alt: 'Photo from Bisk the design and branding efforts'
   width: 1424
   height: 1536
@@ -61,12 +61,12 @@ With access to 45+ years’ worth of enrollment data, my team and I had the fort
     <div class="ba-image">
       <picture class="lazyLoad">
         <source media="(min-width: 1440px)"
-                data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/xl/Proto-Photo_2x.png">
+                data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/xl/Proto-Photo_2x">
         <source media="(min-width: 1025px)"
-                data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/lg/Proto-Photo_2x.png">
+                data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/lg/Proto-Photo_2x">
         <source media="(min-width: 767px)"
-                data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/md/Proto-Photo_2x.png">
-        <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/md/Proto-Photo_2x.png"
+                data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/md/Proto-Photo_2x">
+        <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/md/Proto-Photo_2x"
               class="img-fluid" alt="{{ include.title }}">
       </picture>
     </div>
@@ -90,12 +90,12 @@ With access to 45+ years’ worth of enrollment data, my team and I had the fort
   </div>
 </section> -->
 
-<section class="section-inverted-push-dn">
-  <div class="container-fuild">
-    <div class="row d-flex m-0 justify-content-end">
+<section class="section-persona">
 
-      <div class="d-none d-xl-block col-xl-4 col-xxl-3 pt-7 pr-0 pb-7 pl-6 pt-xxl-11 pr-xxl-9">
-        <p>Nick Jacobs</p>
+  <div class="container-fluid upper px-xl-5">
+    <div class="row">
+      <div class="d-none d-xl-block col pl-0 pr-5">
+        <p class="mb-4">Nick Jacobs</p>
         <h6 class="mb-6">“I want to focus on my education but feel I never have enough time.”</h6>
         <table width="100%">
           <tr><td class="lead">Age</td><td>23</td></tr>
@@ -107,35 +107,30 @@ With access to 45+ years’ worth of enrollment data, my team and I had the fort
         </table>
       </div>
 
-      <div class="p-0 col-md-10 col-lg-10 col-xl-8 col-xxl-6 px-xl-5 pull-up">
-        <picture class="lazyLoad">
-          <source media="(min-width: 1440px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/xl/Proto-Photo_2x.png">
-          <source media="(min-width: 1025px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/lg/Proto-Photo_2x.png">
-          <source media="(min-width: 767px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/md/Proto-Photo_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/bisk/md/Proto-Photo_2x.png"
-                class="img-fluid" alt="{{ include.title }}">
-        </picture>
-      </div>
-
+      <picture class="lazyLoad col">
+        <source media="(min-width: 1440px)"
+                data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/xl/Proto-Photo_2x">
+        <source media="(min-width: 1025px)"
+                data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/lg/Proto-Photo_2x">
+        <source media="(min-width: 767px)"
+                data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/md/Proto-Photo_2x">
+        <img class="img-fluid" alt="{{ include.title }}"
+             data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/md/Proto-Photo_2x">
+      </picture>
     </div>
   </div>
-</section>
 
-<section class="section-inverted">
-  <div class="container-fluid">
-    <div class="row pb-4 pt-md-5 pb-md-7 px-lg-2 px-xxl-9">
-      <div class="col-md-4 pt-4 pb-0 px-4 pr-md-2 pr-xl-4 pl-xl-7 pr-xxl-10 pl-xxl-10">
+  <div class="container-fluid lower px-4 py-4 py-md-6 px-lg-5">
+    <div class="row">
+      <div class="col">
         <p class="lead">Goals</p>
         <p>I want to feel like I’m getting the same education I would get if I were on campus. I want to feel connected to my classmates and comfortable reaching out to them if I need help.</p>
       </div>
-      <div class="col-md-4 pt-4 pb-0 px-4 px-md-3 pr-xl-4 pl-xl-7 pr-xxl-10 pl-xxl-10">
+      <div class="col">
         <p class="lead">Concerns</p>
         <p>Between work and family, I don’t have a lot of time for school. When I sit down to focus on my classes I want to ensure the time spent is useful and impactful.</p>
       </div>
-      <div class="col-md-4 pt-4 pb-0 px-4 pl-md-2 pr-xl-4 pl-xl-7 pr-xxl-10 pl-xxl-10">
+      <div class="col">
         <p class="lead">Environment</p>
         <p>Nick* is a tech native and typically does class work from home in the living room and occasionally from work at a table in a quiet area of a restaurant.</p>
       </div>
@@ -163,120 +158,120 @@ Online education is a hundred-billion dollar industry. With students considering
           <div class="col-6 col-md-3 mb-4">
             <picture class="lazyLoad">
               <source media="(min-width: 1025px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/lg/2u_2x.png">
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/lg/2u_2x">
               <source media="(min-width: 576px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/sm/2u_2x.png">
-              <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/bisk/sm/2u_2x.png"
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/2u_2x">
+              <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/2u_2x"
                     class="img-fluid" alt="2U">
             </picture>
           </div>
           <div class="col-6 col-md-3 mb-4">
             <picture class="lazyLoad">
               <source media="(min-width: 1025px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/lg/Pearson_2x.png">
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/lg/Pearson_2x">
               <source media="(min-width: 576px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/sm/Pearson_2x.png">
-              <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/bisk/sm/Pearson_2x.png"
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/Pearson_2x">
+              <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/Pearson_2x"
                     class="img-fluid" alt="Pearson">
             </picture>
           </div>
           <div class="d-none d-md-block col-md-3 mb-4">
             <picture class="lazyLoad">
               <source media="(min-width: 1025px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/lg/udacity_2x.png">
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/lg/udacity_2x">
               <source media="(min-width: 767px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/sm/udacity_2x.png">
-              <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/bisk/sm/udacity_2x.png"
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/udacity_2x">
+              <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/udacity_2x"
                     class="img-fluid" alt="Udacity">
             </picture>
           </div>
           <div class="d-none d-md-block col-md-3 mb-4">
             <picture class="lazyLoad">
               <source media="(min-width: 1025px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/lg/EdX_2x.png">
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/lg/EdX_2x">
               <source media="(min-width: 767px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/sm/EdX_2x.png">
-              <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/bisk/sm/EdX_2x.png"
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/EdX_2x">
+              <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/EdX_2x"
                     class="img-fluid" alt="EdX">
             </picture>
           </div>
           <div class="col-6 col-md-3 mb-4">
             <picture class="lazyLoad">
               <source media="(min-width: 1025px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/lg/hot-chalk_2x.png">
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/lg/hot-chalk_2x">
               <source media="(min-width: 576px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/sm/hot-chalk_2x.png">
-              <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/bisk/sm/hot-chalk_2x.png"
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/hot-chalk_2x">
+              <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/hot-chalk_2x"
                     class="img-fluid" alt="Hot Chalk">
             </picture>
           </div>
           <div class="col-6 col-md-3 mb-4">
             <picture class="lazyLoad">
               <source media="(min-width: 1025px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/lg/Wiley_2x.png">
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/lg/Wiley_2x">
               <source media="(min-width: 576px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/sm/Wiley_2x.png">
-              <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/bisk/sm/Wiley_2x.png"
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/Wiley_2x">
+              <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/Wiley_2x"
                     class="img-fluid" alt="Wiley">
             </picture>
           </div>
           <div class="d-none d-md-block col-md-3 mb-4">
             <picture class="lazyLoad">
               <source media="(min-width: 1025px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/lg/Orbis_2x.png">
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/lg/Orbis_2x">
               <source media="(min-width: 767px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/sm/Orbis_2x.png">
-              <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/bisk/sm/Orbis_2x.png"
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/Orbis_2x">
+              <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/Orbis_2x"
                     class="img-fluid" alt="Orbis">
             </picture>
           </div>
           <div class="d-none d-md-block col-md-3 mb-4">
             <picture class="lazyLoad">
               <source media="(min-width: 1025px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/lg/Colloquy_2x.png">
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/lg/Colloquy_2x">
               <source media="(min-width: 767px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/sm/Colloquy_2x.png">
-              <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/bisk/sm/Colloquy_2x.png"
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/Colloquy_2x">
+              <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/Colloquy_2x"
                     class="img-fluid" alt="Colloquy">
             </picture>
           </div>
           <div class="col-6 col-md-3 mb-4">
             <picture class="lazyLoad">
               <source media="(min-width: 1025px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/lg/Coursera_2x.png">
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/lg/Coursera_2x">
               <source media="(min-width: 576px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/sm/Coursera_2x.png">
-              <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/bisk/sm/Coursera_2x.png"
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/Coursera_2x">
+              <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/Coursera_2x"
                     class="img-fluid" alt="Coursera">
             </picture>
           </div>
           <div class="col-6 col-md-3 mb-4">
             <picture class="lazyLoad">
               <source media="(min-width: 1025px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/lg/Blackboard_2x.png">
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/lg/Blackboard_2x">
               <source media="(min-width: 576px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/sm/Blackboard_2x.png">
-              <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/bisk/sm/Blackboard_2x.png"
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/Blackboard_2x">
+              <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/Blackboard_2x"
                     class="img-fluid" alt="Blackboard">
             </picture>
           </div>
           <div class="d-none d-md-block col-md-3 mb-4">
             <picture class="lazyLoad">
               <source media="(min-width: 1025px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/lg/Synergis_2x.png">
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/lg/Synergis_2x">
               <source media="(min-width: 767px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/sm/Synergis_2x.png">
-              <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/bisk/sm/Synergis_2x.png"
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/Synergis_2x">
+              <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/Synergis_2x"
                     class="img-fluid" alt="Synergis">
             </picture>
           </div>
           <div class="d-none d-md-block col-md-3 mb-4">
             <picture class="lazyLoad">
               <source media="(min-width: 1025px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/lg/Udemy_2x.png">
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/lg/Udemy_2x">
               <source media="(min-width: 767px)"
-                      data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/sm/Udemy_2x.png">
-              <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/bisk/sm/Udemy_2x.png"
+                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/Udemy_2x">
+              <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/sm/Udemy_2x"
                     class="img-fluid" alt="Udemy">
             </picture>
           </div>
@@ -395,12 +390,12 @@ We built out a roadmap with each deliverable being categorized into a design spr
     <div class="bl-image">
       <picture class="lazyLoad">
         <source media="(min-width: 1440px)"
-                data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/xl/Logos_2x.png">
+                data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/xl/Logos_2x">
         <source media="(min-width: 1025px)"
-                data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/lg/Logos_2x.png">
+                data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/lg/Logos_2x">
         <source media="(min-width: 767px)"
-                data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/md/Logos_2x.png">
-        <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/bisk/md/Logos_2x.png"
+                data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/md/Logos_2x">
+        <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/md/Logos_2x"
               class="img-fluid" alt="Bisk logo design sketches">
       </picture>
     </div>
@@ -486,12 +481,12 @@ After running the sprints and finalizing the brand elements, we built out a mast
   <div class="img-container">
     <picture class="lazyLoad">
       <source media="(min-width: 1440px)"
-              data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/xl/website_2x.png">
+              data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/xl/website_2x">
       <source media="(min-width: 1025px)"
-              data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/lg/website_2x.png">
+              data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/lg/website_2x">
       <source media="(min-width: 767px)"
-              data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/bisk/md/website_2x.png">
-      <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/bisk/md/website_2x.png"
+              data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/md/website_2x">
+      <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/bisk/md/website_2x"
             class="img-fluid bisk-website" alt="Final webdesign of the Bisk site">
     </picture>
   </div>

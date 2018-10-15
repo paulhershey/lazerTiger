@@ -3,7 +3,7 @@ title: 'Gategroup'
 description: 'Gategroup, which delivers training to students 39,000 ft. in the air, needed to improve the effectiveness of its courses.'
 image:
   name: header-image
-  path: /gategroup/md/header-image_2x.png
+  path: /gategroup/md/header-image_2x
   alt: 'Gategroup product design and design system development'
   width: 1424
   height: 1536
@@ -70,7 +70,7 @@ Understanding the technical structure was important for us. This information wou
             background_color="inverted"
             spacing="pb-7"
             class_2="d-none d-md-flex"
-            image_name="tech-spec_2x.png" -%}
+            image_name="tech-spec_2x" -%}
 
 {%- include section-text.html
             background_color="gray"
@@ -251,10 +251,10 @@ While focused on our research we also started work on the design system. We took
       <div class="d-none d-lg-flex flex-column justify-content-center col-lg-3 mb-6">
         <picture class="lazyLoad">
           <source media="(min-width: 1440px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/xl/input-filled_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/xl/input-filled_2x">
           <source media="(min-width: 1025px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/input-filled_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/gategroup/lg/input-filled_2x.png"
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/input-filled_2x">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/input-filled_2x"
                 class="img-fluid" width="127" alt="Input filled">
         </picture>
         <small class="mt-3">Input filled</small>
@@ -262,14 +262,14 @@ While focused on our research we also started work on the design system. We took
       <div class="d-flex align-items-center flex-column col-md-4 col-lg-3 mb-6">
         <picture class="lazyLoad">
           <source media="(min-width: 1440px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/xl/input-active_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/xl/input-active_2x">
           <source media="(min-width: 1025px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/input-active_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/input-active_2x">
           <source media="(min-width: 767px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/md/input-active_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/input-active_2x">
           <source media="(min-width: 576px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/sm/input-active_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/gategroup/md/input-active_2x.png"
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/sm/input-active_2x">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/input-active_2x"
                 class="img-fluid" width="205" alt="Input active">
         </picture>
         <p><small>Input field active</small></p>
@@ -277,14 +277,14 @@ While focused on our research we also started work on the design system. We took
       <div class="col-md-4 col-lg-3 mb-6">
         <picture class="lazyLoad">
           <source media="(min-width: 1440px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/xl/input-error_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/xl/input-error_2x">
           <source media="(min-width: 1025px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/input-error_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/input-error_2x">
           <source media="(min-width: 767px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/md/input-error_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/input-error_2x">
           <source media="(min-width: 576px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/sm/input-error_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/gategroup/md/input-error_2x.png"
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/sm/input-error_2x">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/input-error_2x"
                 class="img-fluid" width="205" alt="Input Error">
         </picture>
         <p><small>Input field Error</small></p>
@@ -292,14 +292,14 @@ While focused on our research we also started work on the design system. We took
       <div class="d-flex flex-column justify-content-center col-md-4 col-lg-3 mb-6">
         <picture class="lazyLoad">
           <source media="(min-width: 1440px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/xl/input-success_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/xl/input-success_2x">
           <source media="(min-width: 1025px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/input-success_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/input-success_2x">
           <source media="(min-width: 767px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/md/input-success_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/input-success_2x">
           <source media="(min-width: 576px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/sm/input-success_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/gategroup/md/input-success_2x.png"
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/sm/input-success_2x">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/input-success_2x"
                 class="img-fluid" width="203" alt="Input Success">
         </picture>
         <small class="mt-3">Input field Success</small>
@@ -312,14 +312,14 @@ While focused on our research we also started work on the design system. We took
       <div class="col-md-4 col-lg-3 mb-6">
         <picture class="lazyLoad">
           <source media="(min-width: 1440px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/xl/primary-cta_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/xl/primary-cta_2x">
           <source media="(min-width: 1025px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/primary-cta_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/primary-cta_2x">
           <source media="(min-width: 767px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/md/primary-cta_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/primary-cta_2x">
           <source media="(min-width: 576px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/sm/primary-cta_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/gategroup/md/primary-cta_2x.png"
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/sm/primary-cta_2x">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/primary-cta_2x"
                 class="img-fluid" width="270" alt="Primary CTA">
         </picture>
         <p><small>Primary CTA</small>  </p>
@@ -327,14 +327,14 @@ While focused on our research we also started work on the design system. We took
       <div class="col-md-4 col-lg-3 mb-6">
         <picture class="lazyLoad">
           <source media="(min-width: 1440px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/xl/video-cta_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/xl/video-cta_2x">
           <source media="(min-width: 1025px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/video-cta_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/video-cta_2x">
           <source media="(min-width: 767px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/md/video-cta_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/video-cta_2x">
           <source media="(min-width: 576px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/sm/video-cta_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/gategroup/md/video-cta_2x.png"
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/sm/video-cta_2x">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/video-cta_2x"
                 class="img-fluid" width="237" alt="Video CTA">
         </picture>
         <p><small>Video CTA</small></p>
@@ -342,14 +342,14 @@ While focused on our research we also started work on the design system. We took
       <div class="col-md-4 col-lg-3 mb-6">
         <picture class="lazyLoad">
           <source media="(min-width: 1440px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/xl/secondary-cta_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/xl/secondary-cta_2x">
           <source media="(min-width: 1025px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/secondary-cta_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/secondary-cta_2x">
           <source media="(min-width: 767px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/md/secondary-cta_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/secondary-cta_2x">
           <source media="(min-width: 576px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/sm/secondary-cta_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/gategroup/md/secondary-cta_2x.png"
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/sm/secondary-cta_2x">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/secondary-cta_2x"
                 class="img-fluid" width="169" alt="Secondary CTA">
         </picture>
         <p class="mt-3"><small>Secondary CTA with icon</small></p>
@@ -357,10 +357,10 @@ While focused on our research we also started work on the design system. We took
       <div class="d-none d-lg-block col-lg-3">
         <picture class="lazyLoad">
           <source media="(min-width: 1440px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/xl/icon-cta_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/xl/icon-cta_2x">
           <source media="(min-width: 1025px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/icon-cta_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/gategroup/lg/icon-cta_2x.png"
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/icon-cta_2x">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/icon-cta_2x"
                 class="img-fluid" width="64" alt="Icon CTA">
         </picture>
         <p><small>Icon CTA</small></p>
@@ -380,9 +380,9 @@ While focused on our research we also started work on the design system. We took
 As we conducted our research we also started conceptualizing feature flows and the overall design. We began with the learner app experience and worked back to the course development tools. Features were tested at every step of the design process, from sketching with learners to conducting full interactive task-based analysis." -%}
 
 {%- include section-image-shuffle.html
-            image_name_1="sketch-1_2x.png"
-            image_name_2="sketch-2_2x.png"
-            image_name_3="sketch-3_2x.png" -%}
+            image_name_1="sketch-1_2x"
+            image_name_2="sketch-2_2x"
+            image_name_3="sketch-3_2x" -%}
 
 {%- include section-separator.html
             spacing="pt-7"-%}
@@ -394,7 +394,7 @@ As our hypotheses were being proven through user testing, we starting looking at
 
 {%- include section-image.html
             class_2="d-none d-md-flex"
-            image_name="flow_2x.png" -%}
+            image_name="flow_2x" -%}
 
 {%- include section-separator.html
             spacing="pt-0 pt-md-7" -%}
@@ -405,9 +405,9 @@ As our hypotheses were being proven through user testing, we starting looking at
 Beyond adding delight, illustrations help visual learners retain information. We knew we needed something fun and bright that we could build at scale. There would be a lot of spot illustrations needed in the courses and we would need non-artistic designers to help generate them. We created a simple framework of basic rules and colors as well as Pinterest boards for inspiration. After some quick training, the designers sat with content creators to devise illustrations that paired well with the course content. All illustrations passed through me for art direction and consistency." -%}
 
 {%- include section-image-shuffle.html
-            image_name_1="illustration-1_2x.png"
-            image_name_2="illustration-2_2x.png"
-            image_name_3="illustration-3_2x.png" -%}
+            image_name_1="illustration-1_2x"
+            image_name_2="illustration-2_2x"
+            image_name_3="illustration-3_2x" -%}
 
 <section class="mt-6">
   <div class="container d-flex justify-content-center">
@@ -432,15 +432,15 @@ Beyond adding delight, illustrations help visual learners retain information. We
       <div class="col-md-8 col-lg-6">
         <video class="embed-responsive d-none d-lg-block lazyLoad" width="1104"
           autoplay loop muted playsinline
-          data-src="{{ site.cloudinary | append: '/video/upload' }}/gategroup/md-mobile-videos/Mobile-Course-Launch-Flow"
-          poster="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/mobile-img-1_2x.png">
+          data-src="{{ site.cloudinary.url }}/video/upload/{{ site.cloudinary.transforms }}/gategroup/md-mobile-videos/Mobile-Course-Launch-Flow"
+          poster="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/mobile-img-1_2x">
         </video>
         <picture class="lazyLoad">
           <source media="(min-width: 767px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/md/mobile-img-1_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/mobile-img-1_2x">
           <source media="(min-width: 576px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/sm/mobile-img-1_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/gategroup/md/mobile-img-1_2x.png"
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/sm/mobile-img-1_2x">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/mobile-img-1_2x"
                 class="img-fluid d-lg-none" alt="Engaging With Content">
         </picture>
       </div>
@@ -458,15 +458,15 @@ Beyond adding delight, illustrations help visual learners retain information. We
       <div class="col-md-8 col-lg-6">
         <video class="embed-responsive d-none d-lg-block lazyLoad" width="1104"
           autoplay loop muted playsinline
-          data-src="{{ site.cloudinary | append: '/video/upload' }}/gategroup/md-mobile-videos/Mobile-Course-Data"
-          poster="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/mobile-img-2_2x.png">
+          data-src="{{ site.cloudinary.url }}/video/upload/{{ site.cloudinary.transforms }}/gategroup/md-mobile-videos/Mobile-Course-Data"
+          poster="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/mobile-img-2_2x">
         </video>
         <picture class="lazyLoad">
           <source media="(min-width: 767px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/md/mobile-img-2_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/mobile-img-2_2x">
           <source media="(min-width: 576px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/sm/mobile-img-2_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/gategroup/md/mobile-img-2_2x.png"
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/sm/mobile-img-2_2x">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/mobile-img-2_2x"
                 class="img-fluid d-lg-none" alt="Data Collection">
         </picture>
       </div>
@@ -484,15 +484,15 @@ Beyond adding delight, illustrations help visual learners retain information. We
       <div class="col-md-8 col-lg-6">
         <video class="embed-responsive d-none d-lg-block lazyLoad" width="1104"
           autoplay loop muted playsinline
-          data-src="{{ site.cloudinary | append: '/video/upload' }}/gategroup/md-mobile-videos/Mobile-Course-Flow"
-          poster="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/mobile-img-3_2x.png">
+          data-src="{{ site.cloudinary.url }}/video/upload/{{ site.cloudinary.transforms }}/gategroup/md-mobile-videos/Mobile-Course-Flow"
+          poster="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/mobile-img-3_2x">
         </video>
         <picture class="lazyLoad">
           <source media="(min-width: 767px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/md/mobile-img-3_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/mobile-img-3_2x">
           <source media="(min-width: 576px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/sm/mobile-img-3_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/gategroup/md/mobile-img-3_2x.png"
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/sm/mobile-img-3_2x">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/mobile-img-3_2x"
                 class="img-fluid d-lg-none" alt="Flash Cards">
         </picture>
       </div>
@@ -510,15 +510,15 @@ Beyond adding delight, illustrations help visual learners retain information. We
       <div class="col-md-8 col-lg-6">
         <video class="embed-responsive d-none d-lg-block lazyLoad" width="1104"
           autoplay loop muted playsinline
-          data-src="{{ site.cloudinary | append: '/video/upload' }}/gategroup/md-mobile-videos/Mobile-Challenges"
-          poster="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/mobile-img-4_2x.png">
+          data-src="{{ site.cloudinary.url }}/video/upload/{{ site.cloudinary.transforms }}/gategroup/md-mobile-videos/Mobile-Challenges"
+          poster="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/mobile-img-4_2x">
         </video>
         <picture class="lazyLoad">
           <source media="(min-width: 767px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/md/mobile-img-4_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/mobile-img-4_2x">
           <source media="(min-width: 576px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/sm/mobile-img-4_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/gategroup/md/mobile-img-4_2x.png"
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/sm/mobile-img-4_2x">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/mobile-img-4_2x"
                 class="img-fluid d-lg-none" alt="Thought-Provoking Challenges">
         </picture>
       </div>
@@ -536,7 +536,7 @@ Since Baden wouldn’t be training on location, he needed a tool that allowing h
             background_color="gray"
             class_2="d-none d-md-flex"
             media="md, lg, xl"
-            image_name="topview_2x.png" -%}
+            image_name="topview_2x" -%}
 
 <section class="section-gray">
   <div class="container">
@@ -548,12 +548,12 @@ Since Baden wouldn’t be training on location, he needed a tool that allowing h
       <div class="col-xl-7">
         <picture class="lazyLoad">
           <source media="(min-width: 1440px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/xl/dash_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/xl/dash_2x">
           <source media="(min-width: 1025px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/dash_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/dash_2x">
           <source media="(min-width: 767px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/md/dash_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/gategroup/md/dash_2x.png"
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/dash_2x">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/dash_2x"
                 class="img-overflow flow-xl-right" alt="View of the course management tool">
         </picture>
       </div>
@@ -571,12 +571,12 @@ Since Baden wouldn’t be training on location, he needed a tool that allowing h
       <div class="col-xl-7">
         <picture class="lazyLoad">
           <source media="(min-width: 1440px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/xl/drag_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/xl/drag_2x">
           <source media="(min-width: 1025px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/drag_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/drag_2x">
           <source media="(min-width: 767px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/md/drag_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/gategroup/md/drag_2x.png"
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/drag_2x">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/drag_2x"
                 class="img-overflow flow-xl-left" alt="View of the course creation tool">
         </picture>
       </div>
@@ -594,12 +594,12 @@ Since Baden wouldn’t be training on location, he needed a tool that allowing h
       <div class="col-xl-7">
         <picture class="lazyLoad">
           <source media="(min-width: 1440px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/xl/edit_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/xl/edit_2x">
           <source media="(min-width: 1025px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/edit_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/edit_2x">
           <source media="(min-width: 767px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/md/edit_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/gategroup/md/edit_2x.png"
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/edit_2x">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/edit_2x"
                 class="img-overflow flow-xl-right" alt="Editing a course from the dashboard">
         </picture>
       </div>
@@ -617,12 +617,12 @@ Since Baden wouldn’t be training on location, he needed a tool that allowing h
       <div class="col-xl-7">
         <picture class="lazyLoad">
           <source media="(min-width: 1440px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/profiles_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/profiles_2x">
           <source media="(min-width: 1025px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/lg/profiles_2x.png">
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/lg/profiles_2x">
           <source media="(min-width: 767px)"
-                  data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/gategroup/md/profiles_2x.png">
-          <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/gategroup/md/profiles_2x.png"
+                  data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/profiles_2x">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/gategroup/md/profiles_2x"
                 class="img-overflow flow-xl-left" alt="Learner card on the management tool">
         </picture>
       </div>

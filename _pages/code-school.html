@@ -3,7 +3,7 @@ title: 'Code School'
 description: 'The Elements of Web Design is a Code School course on UX aimed at teaching developers the fundamentals of user-centered design.'
 image:
   name: header-image
-  path: /code-school/md/header-image_2x.png
+  path: /code-school/md/header-image_2x
   alt: 'Code School UX course development'
   width: 1424
   height: 1536
@@ -50,9 +50,9 @@ quote:
 The kick-off meeting is a fun first step Code School takes with all their courses. We convened with designers, developers, and the marketing team to identify a theme for the course. We pitched a lot of ideas — from a retro oil can look to a play off Mario Kart. We ultimately decided on a retro science theme. The style was fun and had a loose connection to the UX process." -%}
 
 {%- include section-image-shuffle.html
-            image_name_1="retro1_2x.png"
-            image_name_2="retro2_2x.png"
-            image_name_3="retro3_2x.png" -%}
+            image_name_1="retro1_2x"
+            image_name_2="retro2_2x"
+            image_name_3="retro3_2x" -%}
 
 {%- include section-separator.html
             background_color="white"
@@ -68,14 +68,14 @@ When creating the outline, I started by listing out all areas of UX I wanted to 
     <div class="cd-image">
       <picture class="lazyLoad">
         <source media="(min-width: 1440px)"
-                data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/code-school/xl/docs_2x.png">
+                data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/code-school/xl/docs_2x">
         <source media="(min-width: 1025px)"
-                data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/code-school/lg/docs_2x.png">
+                data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/code-school/lg/docs_2x">
         <source media="(min-width: 767px)"
-                data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/code-school/md/docs_2x.png">
+                data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/code-school/md/docs_2x">
         <source media="(min-width: 576px)"
-                data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/code-school/sm/docs_2x.png">
-        <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/code-school/sm/docs_2x.png"
+                data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/code-school/sm/docs_2x">
+        <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/code-school/sm/docs_2x"
               class="img-fluid" alt="course syllabus for the elements of web design UX course">
       </picture>
     </div>
@@ -133,7 +133,7 @@ Code School always does a terrific job with their framing mechanisms, and the st
 
 {%- include section-image.html
             background_color="gray"
-            image_name="courseApp_2x.png" -%}
+            image_name="courseApp_2x" -%}
 
 {%- include section-separator.html
             background_color="gray"
@@ -159,7 +159,7 @@ In lesson one we focused on user discovery. I started by encouraging learners to
 
 {%- include section-image.html
             background_color="inverted"
-            image_name="lesson1_2x.png" -%}
+            image_name="lesson1_2x" -%}
 
 {%- include section-separator.html
             background_color="inverted"
@@ -173,7 +173,7 @@ Lesson two focused on navigation and basic information architecture. I explained
 
 {%- include section-image.html
             background_color="inverted"
-            image_name="lesson2_2x.png" -%}
+            image_name="lesson2_2x" -%}
 
 {%- include section-separator.html
             background_color="inverted"
@@ -187,7 +187,7 @@ The usability lesson focused on three key areas of web design: forms, home page 
 
 {%- include section-image.html
             background_color="inverted"
-            image_name="lesson3_2x.png" -%}
+            image_name="lesson3_2x" -%}
 
 {%- include section-separator.html
             background_color="inverted"
@@ -201,7 +201,7 @@ Lesson four focused on mobile sites. After going through some best practices aro
 
 {%- include section-image.html
             background_color="inverted"
-            image_name="lesson4_2x.png" -%}
+            image_name="lesson4_2x" -%}
 
 {%- include section-text.html
             background_color="inverted"

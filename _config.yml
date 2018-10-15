@@ -19,7 +19,9 @@ social:
     - https://dribbble.com/paulhershey
     - https://www.behance.net/paulhershey
 baseurl: /
-cloudinary: https://res.cloudinary.com/paulhershey
+cloudinary:
+  url: https://res.cloudinary.com/paulhershey
+  transforms: f_auto,q_auto:eco
 collections:
   pages:
     output: true

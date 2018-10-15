@@ -13,24 +13,18 @@ layout: default
     </div>
     <div class="media">
       <picture class="lazyLoad">
-        <source media="(min-width: 1440px)"
-                data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/xl/{{ page.image.name }}_2x.png">
-        <source media="(min-width: 1024px)"
-                data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/lg/{{ page.image.name }}_2x.png">
-        <source media="(min-width: 736px)"
-                data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/md/{{ page.image.name }}_2x.png">
-        <source media="(min-width: 576px)"
-                data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/sm/{{ page.image.name }}_2x.png">
-        <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/{{ image_folder }}/sm/{{ page.image.name }}_2x.png" class="img-fluid" alt="{{ page.image.alt }}">
+        <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/xl/{{ page.image.name }}_2x">
+        <source media="(min-width: 1024px) and (max-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_1440/{{ image_folder }}/xl/{{ page.image.name }}_2x">
+        <source media="(min-width: 736px) and (max-width: 1024px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_1024/{{ image_folder }}/lg/{{ page.image.name }}_2x">
+        <source media="(min-width: 576px) and (max-width: 736px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_736/{{ image_folder }}/md/{{ page.image.name }}_2x">
+        <source media="(max-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_576/{{ image_folder }}/sm/{{ page.image.name }}_2x">
+        <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_576/{{ image_folder }}/sm/{{ page.image.name }}_2x" class="img-fluid" alt="{{ page.image.alt }}">
       </picture>
     </div>
 
     <div class="bkg-top"></div>
     <div class="bkg-bottom"></div>
-
   </section>
-
-
 
   <section class="goals ~ py-6 py-md-7">
     <div class="container">
@@ -79,24 +73,17 @@ layout: default
   </section>
 
   <section class="quote">
-    <div class="container my-6 my-md-8 my-xl-9 pb-xl-5">
-      <div class="row justify-content-center ">
-        <div class="col-md-10 col-lg-8 col-xl-6">
-          <blockquote>
-            {{ page.quote.text }}
-          </blockquote>
-          <cite>{{ page.quote.cite | newline_to_br }}</cite>
-        </div>
-      </div>
+    <div class="container-fluid">
+      <blockquote>{{ page.quote.text }}</blockquote>
+      <cite>{{ page.quote.cite | newline_to_br }}</cite>
     </div>
     <picture class="lazyLoad">
-      <source media="(min-width: 1440px)"
-              data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/xl/{{ page.quote.image }}_2x.png">
-      <source media="(min-width: 1024px)"
-              data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/lg/{{ page.quote.image }}_2x.png">
-      <source media="(min-width: 736px)"
-              data-srcset="{{ site.cloudinary | append: '/image/upload/f_auto' }}/{{ image_folder }}/md/{{ page.quote.image }}_2x.png">
-      <img data-src="{{ site.cloudinary | append: '/image/upload/f_auto,w_0.25,h_0.25' }}/{{ image_folder }}/sm/{{ page.quote.image }}_2x.png" class="img-fluid" alt="quote">
+      <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/xl/{{ page.quote.image }}_2x">
+      <source media="(min-width: 1024px) and (max-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_1440/{{ image_folder }}/xl/{{ page.quote.image }}_2x">
+      <source media="(min-width: 736px) and (max-width: 1024px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_1024/{{ image_folder }}/lg/{{ page.quote.image }}_2x">
+      <source media="(min-width: 576px) and (max-width: 736px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_736/{{ image_folder }}/md/{{ page.quote.image }}_2x">
+      <source media="(max-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_576/{{ image_folder }}/sm/{{ page.quote.image }}_2x">
+      <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_576/{{ image_folder }}/sm/{{ page.quote.image }}_2x" class="img-fluid" alt="quote">
     </picture>
   </section>
 

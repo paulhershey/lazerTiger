@@ -196,7 +196,7 @@
 
       //detect which page has been selected
       var newPage = $(this).attr('href');
-      console.log(newPage);
+      // console.log(newPage);
 
       //if the page is not already being animated - trigger animation
       if( !isAnimating ) changePage(newPage, true);

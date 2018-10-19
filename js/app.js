@@ -84,7 +84,7 @@
         }
       });
     }, {
-      rootMargin: '1000%',
+      rootMargin: '750%',
       threshold: 0.0
     });
 

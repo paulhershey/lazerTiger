@@ -183,9 +183,9 @@ $bg-color:    $white;
 //$font-family-base:            $font-family-sans-serif !default;
 
 //Custom font overrides
-$font-family-display:         "BodoniSeventytwoITCW01-_731136", "Times New Roman", "Times", Georgia, serif;
-$font-family-heading:         "EgyptianSlateW01-Light", "Garamond", "Palatino", Georgia, serif;
-$font-family-sans-serif:      "Trade Gothic LT W01 Roman", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-display:         'Abril Fatface', cursive;
+$font-family-heading:         'Roboto Slab', serif;
+$font-family-sans-serif:      'Roboto', sans-serif;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem; // Assumes the browser default, typically `16px`

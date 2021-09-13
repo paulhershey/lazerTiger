@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
     "postinstall": "cp -rf ./node_modules/bootstrap/scss ./_sass/vendor/bootstrap"
   },
   "author": "",

@@ -4,94 +4,89 @@ title: Paul Hershey, UX Designer, Orlando, FL
 description: I'm a UX designer based in Orlando, FL focusing on product design and user research.
 ---
 
-<section class="hero ~ conainer-fluid">
-  <div class="hero-container ~ row align-items-center justify-content-center justify-content-lg-start">
-    <div class="content ~ col-md-10 col-lg-6">
-      {% include svg.html name="logo" %}
-      <h1 class="display-1">Product Designer</h1>
-      <p>Research / Interaction Design / FE Design</p>
-      <a class="btn btn-primary" data-scroll href="#casestudies">Case Studies<span></span></a>
-    </div>
-    <div class="video-wrapper d-none d-lg-block">
-      <video class="player lazyLoad" width="428" height="710" autoplay loop muted playsinline
-        data-src="{{ site.cloudinary.url }}/video/upload/{{ site.cloudinary.transforms }}/home/header-video/PaulHershey"
-        poster="{{ site.cloudinary.url }}//image/upload/{{ site.cloudinary.transforms }}/home/lg/PaulHershey.png">
-      </video>
-    </div>
-  </div>
-</section>
-
-<section class="about ~ container">
-  <div class="row d-flex justify-content-center">
-    <div class="col-sm-10 col-lg-8 col-xl-6">
-      <h2>About</h2>
-      <p>I help people create human-centered products that users love. I have over fifteen years of experience in the design field and have worked with the U.S. Army, Infor, Code School, and Electronic Arts to name a few. I enjoy every stage of the design process from initial research to building visual languages and analyzing data. Giving back to the community is also very important to me. I’m on the board for AIGA Orlando, mentor designers new to the industry, and regularly speak about UX, design, leadership, and culture at conferences and meetups.</p>
-      <a class="btn btn-linkedin" href="https://www.linkedin.com/in/paulhershey/" target="_blank" rel="noopener">LinkedIn<span></span></a>
-
-      <div class="logo-list ~ row align-items-center text-center">
-        <div class="col-4 col-md-2">
-          {% include svg.html name="EA" %}
-        </div>
-        <div class="col-4 col-md-2">
-          {% include svg.html name="Pluralsight" %}
-        </div>
-        <div class="col-4 col-md-2">
-          {% include svg.html name="CodeSchool" %}
-        </div>
-        <div class="col-4 col-md-2">
-          {% include svg.html name="Southwest" %}
-        </div>
-        <div class="col-4 col-md-2">
-          {% include svg.html name="infor" %}
-        </div>
-        <div class="col-4 col-md-2">
-          {% include svg.html name="Gannett" %}
+<header class="hero">
+  <div class="container align-items-center">
+    <div class="row">
+      <div class="col">
+        <div class="hero-container">
+          <div class="hero-content">
+            {% include svg.html name="logo" %}
+            <h1 class="display-1 mb-0">Product Design Leadership</h1>
+            <p class="mt-3 mb-0">Design Ops / System Architecture / People Development</p>
+            <div class="d-flex justify-content-center justify-content-sm-start mt-3">
+              <a href="#casestudies" class="btn btn-primary mt-2" data-scroll>Case Studies<span></span></a>
+            </div>
+          </div>
+          <figure class="hero-photo">
+            <img src="{{ '/img/paul-hershey.webp' | relative_url }}" srcset="{{ '/img/paul-hershey.webp' | relative_url }}, {{ '/img/paul-hershey@2x.webp 2x' | relative_url }}, {{'/img/paul-hershey@3x.webp 3x' | relative_url }}" width="521" height="737" alt="Paul Hershey">
+          </figure>
         </div>
       </div>
     </div>
   </div>
+</header>
 
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3 class="about-heading">About</h3>
+        <p>I’m a design leader passionate about guiding and mentoring teams to thrive and deliver their best work. I excel at collaborating across functions—whether with engineering, product, or research—to align strategies and develop roadmaps that truly drive impact. Crafting design visions that balance business goals with customer needs is at the core of what I do, while ensuring quality and efficiency through well-structured design systems. I believe in clear, approachable communication to keep everyone—teammates, stakeholders, and executives—aligned and moving forward together.</p>
+        <a class="btn btn-primary mt-2" href="https://www.linkedin.com/in/paulhershey/" target="_blank" rel="noopener">LinkedIn<span></span></a>
+        <ul class="about-logos">
+          <li>{% include svg.html name="EA" %}</li>
+          <li>{% include svg.html name="Pluralsight" %}</li>
+          <li>{% include svg.html name="CodeSchool" %}</li>
+          <li>{% include svg.html name="Southwest" %}</li>
+          <li>{% include svg.html name="infor" %}</li>
+          <li>{% include svg.html name="Gannett" %}</li>
+          <li>{% include svg.html name="Apple" %}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="casestudies" class="case-studies ~ container">
+<section class="case-studies" id="casestudies">
+  <div class="container">
+    {%- include casestudy.html
+      category="Product Design"
+      title="Flux"
+      body="Electronic Arts needed a new way to empower its writers. The solution was Flux, a custom publishing platform."
+      image="flux-pic"
+      alt="image of retro video games"
+      url="/electronic-arts/"-%}
 
-  {%- include casestudy.html
-    category="Product Design"
-    title="Flux"
-    body="Electronic Arts needed a new way to empower its writers. The solution was Flux, a custom publishing platform."
-    image="flux-pic"
-    alt="image of retro video games"
-    url="/electronic-arts/" -%}
+    {%- include casestudy.html
+      direction="reverse"
+      category="Branding"
+      title="Bisk Rebrand"
+      body="With 45+ years of experience in the education space, Bisk was looking for a brand reboot to better express its values."
+      image="bisk-pic"
+      alt="young man on his phone"
+      url="/bisk-rebrand/" -%}
 
-  {%- include casestudy.html
-    direction="reverse"
-    category="Branding"
-    title="Bisk Rebrand"
-    body="With 45+ years of experience in the education space, Bisk was looking for a brand reboot to better express its values."
-    image="bisk-pic"
-    alt="young man on his phone"
-    url="/bisk-rebrand/" -%}
+    {%- include casestudy.html
+      category="Art Direction"
+      title="Gategroup"
+      body="Gategroup, which delivers training to students 39,000 ft. in the air, needed to improve the effectiveness of its courses."
+      image="gate-pic"
+      alt="commercial airplane wing"
+      url="/gategroup/" -%}
 
-  {%- include casestudy.html
-    category="Art Direction"
-    title="Gategroup"
-    body="Gategroup, which delivers training to students 39,000 ft. in the air, needed to improve the effectiveness of its courses."
-    image="gate-pic"
-    alt="commercial airplane wing"
-    url="/gategroup/" -%}
+    {%- include casestudy.html
+      direction="reverse"
+      category="Education"
+      title="Code School"
+      body="The Elements of Web Design is a UX course aimed at teaching developers the fundamentals of user-centered design."
+      image="code-school-pic"
+      alt="man learning on a computer"
+      url="code-school" -%}
 
-  {%- include casestudy.html
-    direction="reverse"
-    category="Education"
-    title="Code School"
-    body="The Elements of Web Design is a UX course aimed at teaching developers the fundamentals of user-centered design."
-    image="code-school-pic"
-    alt="man learning on a computer"
-    url="code-school" -%}
-
-  <div class="external-links ~ text-center">
-    <a class="btn btn-dribbble" href="https://dribbble.com/paulhershey" target="_blank" rel="noopener">Dribbble<span></span></a>
-    <a class="btn btn-behance" href="https://www.behance.net/paulhershey" target="_blank" rel="noopener">Behance<span></span></a>
+    <div class="external-links ~ text-center">
+      <a class="btn btn-dribbble" href="https://dribbble.com/paulhershey" target="_blank" rel="noopener">Dribbble<span></span></a>
+      <a class="btn btn-behance" href="https://www.behance.net/paulhershey" target="_blank" rel="noopener">Behance<span></span></a>
+    </div>
   </div>
 </section>
 

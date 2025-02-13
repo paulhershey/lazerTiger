@@ -79,7 +79,7 @@ body.page-is-changing::after, body.page-is-changing::before {
   // .main-content basic style - index page
   background-color: $white;
   // vertically center its content
-  display: table;
+  //display: table;
   width: 100%;
 }
 .main .main-content.index > div {

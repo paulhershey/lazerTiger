@@ -1,7 +1,15 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-width: 360px;
+}
+
+:target {
+  scroll-margin-top: 64px;
 }
 
 iframe {
@@ -13,40 +21,41 @@ iframe {
   height: 0;
 }
 
+svg:not(:root).invisible {
+  display: none;
+}
+
 // Example Code
 
 // Grid Overlay
 .grid-overlay {
-  // z-index: -1;
-  // position: absolute;
-  top: 0;
   width: 100%;
-}
+  top: 0;
 
-.grid-overlay div[class^="col-"] {
-  border-left: 2px dotted rgba(0, 0, 0, 0.1);
-  border-right: 2px dotted rgba(0, 0, 0, 0.1);
-}
+  div[class^="col-"] {
+    border-left: 2px dotted rgba(black, .1);
+    border-right: 2px dotted rgba(black, .1);
 
-.grid-overlay div[class^="col-"] h1 {
-  background-color: rgba(255, 0, 0, 0.1);
-  height: 100vh;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+    h1 {
+      height: 100vh;
+      margin-top: 0;
+      margin-bottom: 0;
+      background-color: rgba(255, 0, 0, .1);
+    }
 
-.grid-overlay div[class^="col-"]:nth-child(even) h1 {
-  background-color: rgba(255, 0, 0, 0.2);
-  height: 100vh;
-  margin-top: 0;
-  margin-bottom: 0;
+    &:nth-child(even) h1 {
+      height: 100vh;
+      margin-top: 0;
+      margin-bottom: 0;
+      background-color: rgba(255, 0, 0, .2);
+    }
+  }
 }
 // End Grid Overlay
 
 // Gradient Classes
-.primary-gradient   { background: $primary-gradient; }
+.primary-gradient { background: $primary-gradient; }
 .secondary-gradient { background: $secondary-gradient; }
-
 
 // Shadow Classes
 .s-light-1 { box-shadow: $shadow-light-1; }
@@ -54,7 +63,7 @@ iframe {
 .s-light-3 { box-shadow: $shadow-light-3; }
 .s-light-4 { box-shadow: $shadow-light-4; }
 
-.s-dark-1  { box-shadow: $shadow-dark-1; }
-.s-dark-2  { box-shadow: $shadow-dark-2; }
-.s-dark-3  { box-shadow: $shadow-dark-3; }
-.s-dark-4  { box-shadow: $shadow-dark-4; }
+.s-dark-1 { box-shadow: $shadow-dark-1; }
+.s-dark-2 { box-shadow: $shadow-dark-2; }
+.s-dark-3 { box-shadow: $shadow-dark-3; }
+.s-dark-4 { box-shadow: $shadow-dark-4; }

@@ -22,14 +22,14 @@ gulp.task('styles', function () {
   .pipe(autoprefixer())
   .pipe(gulp.dest('./css'))
   .pipe(browserSync.reload({stream: true}));
-});﻿
+});
 
 //Image Compression Task
 // gulp.task('image', function () {
 //  gulp.src('img/*')
 //  .pipe(imagemin())
 //  .pipe(gulp.dest('img/min'));
-// });﻿
+// });
 
 gulp.task('svg', function () {
   gulp.src('**/*.svg', { cwd: '.{{ site.cloudinary }}/home/sm/' })
@@ -50,7 +50,7 @@ gulp.task('uglify', function () {
   gulp.src('js/*.js')
   .pipe(uglify())
   .pipe(gulp.dest('./minjs'));
-});﻿
+});
 
 //Browser Sync Task
 gulp.task('serve', function () {

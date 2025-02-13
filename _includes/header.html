@@ -1,28 +1,28 @@
-<nav class="navbar navbar-expand navbar-light fixed-top">
+<header class="navbar navbar-expand navbar-light fixed-top">
   <ul class="navbar-nav">
     <li class="nav-item {% if page.url == '/' %}active{% endif %}">
-      <a class="nav-link" href="{{ "/" | relative_url }}" data-type="page-transition">Home</a>
+      <a class="nav-link" href="{{ '/' | relative_url }}" data-type="page-transition">Home</a>
     </li>
     <li class="nav-item dropdown{%- for node in site.pages -%}{% if page.url == node.url %} active{% endif %}{%- endfor -%}">
-      <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:;">
-        Case Studies</a>
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:">Case Study</a>
       <div class="dropdown-menu">
         <div class="content">
           {%- for node in site.pages -%}
-            <a class="dropdown-item" href="{{ node.url | relative_url }}" data-type="page-transition">{{ node.title }}</a>
+          <a class="dropdown-item" href="{{ node.url | relative_url }}" data-type="page-transition">{{ node.title }}</a>
           {%- endfor -%}
         </div>
       </div>
     </li>
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:;">
-        Hire Me</a>
+      <a class="nav-link dropdown-toggle no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:">Contact</a>
       <div class="dropdown-menu">
-        {%- include contact.html
-                    label="header"
-                    title="Let's work together."
-                    text="Send me your email and I'll send you my \"Getting Started\" PDF. From there, we can schedule a time to meet." -%}
+        {%-
+          include contact.html
+          label="header"
+          title="Let’s chat"
+          text="If you have any questions regarding design leadership, operations, building and scaling design systems, or fostering a culture of creativity and innovation, please don’t hesitate to reach out. I’d be happy to schedule a time for us to connect and discuss further."
+        -%}
       </div>
     </li>
   </ul>
-</nav>
+</header>

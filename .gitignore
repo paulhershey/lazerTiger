@@ -3,13 +3,7 @@ node_modules
 _site
 .DS_Store
 .jekyll-metadata
-.DS_Store
 img/.DS_Store
 img/gategroup/.DS_Store
-<<<<<<< HEAD
-img/gategroup/.DS_Store
-=======
 ssl
->>>>>>> 2ec9e82cd74c493679b8a4ba4145317d54637037
-.DS_Store
-.DS_Store
+.idea

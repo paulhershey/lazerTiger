@@ -1,57 +1,99 @@
 .writing {
-  background: $black;
-  color: $white;
-  padding-top: map-get($spacers, 7);
+  padding-top: 7rem;
   padding-bottom: map-get($spacers, 7);
-
+  color: $white;
+  background: $black;
+  @include media-breakpoint-up(md) {
+    padding-top: 12rem;
+    padding-bottom: 10rem;
+  }
   @include media-breakpoint-up(lg) {
-    padding-top: map-get($spacers, 10);
-    padding-bottom: map-get($spacers, 10);
+    padding-bottom: 15.5rem;
   }
 
-  @include media-breakpoint-up(xl) {
-    padding-top: map-get($spacers, 11);
-    padding-bottom: map-get($spacers, 11);
+
+  .container {
+    @include media-breakpoint-up(xl) {
+      max-width: 1390px;
+      .col-sm-10 {
+        padding-right: 16px;
+        padding-left: 16px;
+      }
+    }
   }
 
-  .title {
-    margin-bottom: map-get($spacers, 6);
-  }
-
-  [class^="col"] {
-    margin-bottom: map-get($spacers, 6);
-  }
-
-  .box {
+  &-box {
+    min-height: 350px;
+    padding: 22px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 100%;
-    padding: map-get($spacers, 3);
-    text-decoration: none;
+    font-size: 12px;
+    line-height: 14px;
     color: $white;
-    transform: translate(0);
+    text-decoration: none;
     box-shadow: $shadow-dark-1;
-    transition: all 0.6s;
+    transition: box-shadow .4s ease, transform .4s ease;
+    @include media-breakpoint-up(lg) {
+      min-height: 247px;
+    }
+    @include media-breakpoint-up(xl) {
+      min-height: 350px;
+      padding: 25px 30px;
+    }
 
-    .img-contain {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: -1;
+    b {
+      display: block;
+      font-weight: normal;
     }
 
     &:hover {
-      transform: translateY(-8px);
-      box-shadow: $shadow-dark-3;
+      color: white;
+      text-decoration: none;
+      transform: translateY(-6px);
+      box-shadow: $shadow-light-4;
+    }
+  }
+
+  &-title {
+    margin: 0 0 8px;
+    font: 300 24px/1.5 $font-family-heading;
+  }
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      @include user-select;
+    }
+  }
+
+  .btn {
+    margin-top: 14px;
+    @include media-breakpoint-up(lg) {
+      margin-top: 46px;
     }
 
-    &:before {
-      content: '';
-      display: block;
-      padding-top: 50%;
+    &.btn-primary {
+      color: $black;
+      background: white;
     }
   }
 }

@@ -72,6 +72,13 @@
     @include media-breakpoint-up(xxl) {
       max-width: 600px;
     }
+
+    p {letter-spacing: 0;}
+  }
+
+  .svg-logo {
+    margin-bottom: 7px;
+    display: block;
   }
 
   &-heading {
@@ -134,9 +141,10 @@
   bottom: 0;
   right: map-get($spacers, 6);
   overflow: hidden;
+
   .player {
     transform: scale(1.01);
-    border-color: #fff;
-    color: #fff;
+    border-color: white;
+    color: white;
   }
 }

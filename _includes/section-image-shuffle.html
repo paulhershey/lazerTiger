@@ -12,7 +12,6 @@
 
       {%- for image in images -%}
         <div class="shuffle-item-{{ forloop.index }} ~ col-md-{{ 12 | divided_by: list_size }} d-flex justify-content-center mb-4 mb-md-0">
-
           <picture class="lazyLoad">
             {%- for size in media reversed -%}
               {% case size %}
@@ -23,13 +22,10 @@
                 {% else %}
                 {% assign min_width = "576px" %}
               {% endcase %}
-              <source media="(min-width: {{ min_width }})"
-                      data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ size }}/{{ image }}">
+              <source media="(min-width: {{ min_width }})" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ size }}/{{ image }}">
             {%- endfor -%}
-            <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ media | first }}/{{ image }}"
-                  class="img-fluid" alt="{{ include.title }}">
+            <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ media | first }}/{{ image }}" class="img-fluid" alt="{{ include.title }}">
           </picture>
-
         </div>
       {%- endfor -%}
 

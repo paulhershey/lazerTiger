@@ -1,0 +1,205 @@
+.case-studies {
+  padding-top: map-get($spacers, 7);
+  padding-bottom: map-get($spacers, 7);
+  overflow: hidden;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 12.5rem;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 232px;
+    padding-bottom: 200px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 14.5rem;
+    padding-bottom: 12.5rem;
+  }
+
+  .container {
+    @include media-breakpoint-down(sm) {
+      max-width: 732px;
+    }
+    @include media-breakpoint-up(md) {
+      max-width: 1024px;
+    }
+    @include media-breakpoint-up(lg) {
+      max-width: 960px;
+    }
+    @include media-breakpoint-up(xxl) {
+      max-width: 1440px;
+    }
+  }
+
+  &-block {
+    margin-bottom: 1.5rem;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 2rem;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-right: 24px;
+      margin-left: 24px;
+    }
+  }
+
+  &-media {
+    margin: 0;
+    z-index: -1;
+    @include media-breakpoint-up(lg) {
+      margin-right: -8px;
+      margin-left: 0;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-right: -6px;
+    }
+
+    picture {
+      width: 100%;
+      height: 100%;
+      display: block;
+      @include user-select;
+
+      img {
+        min-height: 512px;
+        display: block;
+        object-fit: cover;
+        @include media-breakpoint-up(xl) {
+        }
+      }
+    }
+  }
+
+  &-box {
+    height: 100%;
+    min-height: 480px;
+    padding: 3rem 1rem;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: $white;
+    box-shadow: $shadow-light-1;
+    transition: transform .4s ease, box-shadow .4s ease;
+    @include media-breakpoint-up(md) {
+      min-height: 460px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    @include media-breakpoint-up(lg) {
+      min-height: calc(100% + 32px);
+      padding-right: .5rem;
+      padding-left: .5rem;
+      margin: -16px 0;
+      left: 8px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-right: 4rem;
+      padding-left: 4rem;
+      margin: -16px -14px -16px 6px;
+      left: 0;
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: $shadow-light-4;
+      @include media-breakpoint-up(lg) {
+        transform: translateY(-16px);
+      }
+
+      .btn {
+        color: $white;
+        background-color: $black;
+      }
+    }
+  }
+
+  &-content {
+    //width: 447px;
+    text-align: center;
+  }
+
+  &-block.flex-row-reverse {
+    @include media-breakpoint-up(lg) {
+      .case-studies-media {
+        margin-right: 0;
+        margin-left: -8px;
+      }
+      .case-studies-box {
+        left: auto;
+        right: 8px;
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      .case-studies-media {
+        margin-right: 0;
+        margin-left: -8px;
+      }
+      .case-studies-box {
+        margin-right: -2px;
+        margin-left: -6px;
+      }
+    }
+  }
+
+  &-lead {
+    margin: 0 0 map-get($spacers, 2);
+    display: block;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #94949e;
+  }
+
+  &-title {
+    margin-bottom: .5rem;
+  }
+
+  &-button {
+    margin-top: .5rem;
+    color: $black;
+    background-color: transparent;
+    transition: border-radius .3s ease, background-color .3s ease, color .3s ease;
+    @include media-breakpoint-up(md) {
+      margin-top: 1.25rem;
+    }
+  }
+
+  &-links {
+    margin-top: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 95px;
+    @include media-breakpoint-up(md) {
+      margin-top: 96px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-top: 112px;
+    }
+  }
+
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      display: block;
+      filter: grayscale(100%);
+      opacity: .5;
+      transition: opacity .3s ease, filter .3s ease;
+    }
+
+    &:hover, &:focus {
+      svg {
+        filter: grayscale(0%);
+        opacity: 1;
+      }
+    }
+  }
+}

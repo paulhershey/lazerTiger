@@ -6,14 +6,14 @@
   position: relative;
   display: inline-block;
   font: bold 14px/14px $font-family-base;
-  letter-spacing: .145em;
+  letter-spacing: .14em;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   transition: border-radius .3s ease;
   @include user-select;
-
-  &:hover {
+  outline: none;
+  &:hover, &:focus {
     border-radius: 25px;
     text-decoration: none;
   }
@@ -33,13 +33,6 @@
     }
   }
 
-  &-dribbble {
-    color: #f341c3;
-    &:hover {
-      color: tint(#f341c3, 75%);
-    }
-  }
-
   &-medium {
     color: #00b973;
     &:hover {
@@ -47,7 +40,6 @@
     }
   }
 
-  &-behance,
   &-linkedin {
     color: #4a90e2;
     &:hover {

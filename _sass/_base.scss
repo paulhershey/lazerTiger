@@ -67,3 +67,10 @@ svg:not(:root).invisible {
 .s-dark-2 { box-shadow: $shadow-dark-2; }
 .s-dark-3 { box-shadow: $shadow-dark-3; }
 .s-dark-4 { box-shadow: $shadow-dark-4; }
+
+cite {
+  margin: 1.25em 0 0;
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+}

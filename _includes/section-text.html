@@ -1,14 +1,14 @@
 <section class="section-{{ include.background_color | default: 'default' }}">
   <div class="container">
-    <div class="row justify-content-center {{ include.spacing | default: 'py-7'}}">
+    <div class="row justify-content-center {{ include.spacing | default: 'py-5 py-md-7'}}">
       <div class="col-md-10 col-lg-8 col-xl-6">
-        {%- unless include.heading.blank? -%}
-          <h3>{{ include.heading }}</h3>
-        {%- endunless -%}
+        {%- if include.heading -%}
+          <h3 class="mb-4 mb-md-6">{{ include.heading }}</h3>
+        {%- endif -%}
 
-        {%- unless include.heading_5.blank? -%}
-          <h5>{{ include.heading_5 }}</h5>
-        {%- endunless -%}
+        {%- if include.heading_5 -%}
+          <h4>{{ include.heading_5 }}</h4>
+        {%- endif -%}
 
         {%- if include.text != '' -%}
           {{ include.text | markdownify }}

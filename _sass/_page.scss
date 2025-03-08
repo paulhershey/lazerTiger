@@ -89,6 +89,112 @@
     background-color: $gray-200;
     overflow: hidden;
   }
+  &-halfwhite {
+    position: relative;
+    z-index: 1;
+
+    > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    &::after {
+      width: 100vw;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 53.5%;
+      left: 50%;
+      z-index: -1;
+      background: white;
+      transform: translateX(-50%);
+    }
+  }
+  &-halfblack {
+    position: relative;
+    z-index: 1;
+
+    > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    &::after {
+      width: 100vw;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 23.5%;
+      bottom: 0;
+      left: 50%;
+      z-index: -1;
+      background: #fafaff;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.img-container {
+  width: 100%;
+}
+
+.image-pull-left {
+  @include media-breakpoint-up(xl) {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+
+    picture {
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      left: -29.5%;
+
+      img {
+        margin: 0 auto;
+        max-width: 1650px;
+        display: block;
+      }
+    }
+
+    cite {
+      max-width: 1650px;
+      padding: 0 20px;
+      margin: -30px auto 0;
+    }
+  }
+}
+
+.image-pull-right {
+  @include media-breakpoint-up(xl) {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+
+    picture {
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      right: -11.5%;
+
+      img {
+        margin: 0 auto;
+        max-width: 1650px;
+        display: block;
+      }
+    }
+
+    cite {
+      max-width: 1650px;
+      padding: 0 20px;
+      margin: -30px auto 0;
+      position: relative;
+      right: -11.5%;
+    }
+  }
 }
 
 .pull-up {
@@ -96,41 +202,41 @@
 }
 
 .header-img {
-    display: grid;
-    justify-content: center;
-    grid-template-rows: auto;
-    grid-template-areas: "c" "m";
+  display: grid;
+  justify-content: center;
+  grid-template-rows: auto;
+  grid-template-areas: "c" "m";
 
-    @include media-breakpoint-up(lg) {
-      grid-template-columns: repeat(12, 10%);
-      grid-template-areas:
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(12, 10%);
+    grid-template-areas:
         ". . c c c c c . . . ."
         "t t m m m m m m m m m"
         "b b m m m m m m m m m";
-    }
+  }
 
-    @include media-breakpoint-up(xl) {
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-areas:
+  @include media-breakpoint-up(xl) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
         ". c c . . ."
         "t m m m m m"
         "b m m m m m";
-    }
-
-    > .content {
-      grid-area: c;
-    }
-    > .media {
-      grid-area: m;
-    }
-    > .bkg-top {
-      grid-area: t;
-    }
-    > .bkg-bottom {
-      background: $black;
-      grid-area: b;
-    }
   }
+
+  > .content {
+    grid-area: c;
+  }
+  > .media {
+    grid-area: m;
+  }
+  > .bkg-top {
+    grid-area: t;
+  }
+  > .bkg-bottom {
+    background: $black;
+    grid-area: b;
+  }
+}
 
 .goals {
   background-color: $black;
@@ -185,12 +291,12 @@
   position: relative;
 
   div {
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding-top: 50px;
     padding-bottom: 50px;
-    width: 21rem;
     z-index: 2;
 
     @include media-breakpoint-up(md) {
@@ -210,7 +316,10 @@
 
   blockquote {
     font-family: $font-family-heading;
-    font-size: $h5-font-size;
+    font-size: 32px;
+    @include media-breakpoint-up(md) {
+      font-size: $h5-font-size;
+    }
   }
 
   picture, img {
@@ -219,5 +328,66 @@
     position: absolute;
     // top: 0;
     width: 100%;
+    object-fit: cover;
+  }
+}
+
+.tabbed-gallery {
+  .nav {
+    border-bottom-color: #48484f;
+    margin-bottom: 3rem;
+    justify-content: stretch;
+
+    &-link {
+      padding: 16px;
+      border: none;
+      border-radius: 0;
+      position: relative;
+      display: block;
+      font: bold 16px/1.5 $font-family-sans-serif;
+      letter-spacing: 2px;
+      flex: 1;
+      color: black;
+      background: none;
+      box-shadow: none !important;
+      outline: none !important;
+      cursor: pointer;
+
+      &.active {
+        color: black;
+        background: none;
+
+        &::after {
+          height: 4px;
+          display: block;
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: #0d7bff;
+        }
+      }
+    }
+  }
+}
+
+.heading-image {
+  align-items: center;
+  align-content: center;
+  gap: 35px;
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-left: -120px;
+  }
+
+  img {
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
   }
 }

@@ -17,9 +17,9 @@ description: I'm a UX designer based in Orlando, FL focusing on product design a
               <a href="#casestudies" class="btn btn-primary mt-2" data-scroll>Case Studies<span></span></a>
             </div>
           </div>
-          <figure class="hero-photo">
-            <img src="{{ '/img/paul-hershey.webp' | relative_url }}" srcset="{{ '/img/paul-hershey.webp' | relative_url }}, {{ '/img/paul-hershey@2x.webp 2x' | relative_url }}, {{'/img/paul-hershey@3x.webp 3x' | relative_url }}" width="521" height="737" alt="Paul Hershey">
-          </figure>
+            <picture class="hero-photo lazyLoad">
+              <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/xl/paul-hershey.webp" width="521" height="737" alt="Paul Hershey">
+            </picture>
         </div>
       </div>
     </div>
@@ -53,8 +53,8 @@ description: I'm a UX designer based in Orlando, FL focusing on product design a
       category="Team Development"
       title="Schoox"
       body="Schoox needed to modernize their design operations. The solution had a profound impact on the business and culture."
-      image="flux-pic"
-      alt="image of retro video games"
+      image="schoox-pic"
+      alt="Illustration from Schoox brand book"
       url="/schoox/"-%}
 
     {%- include casestudy.html

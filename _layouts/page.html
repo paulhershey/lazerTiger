@@ -7,9 +7,9 @@ layout: default
 <div class="page-template">
 
   <section class="header-img">
-    <div class="content pt-6 pt-md-7 pb-5 px-3 px-lg-0">
+    <div class="content pt-6 pb-3 px-4 pt-md-7 pb-md-4 mb-md-2 mb-lg-2 px-lg-0">
       <h1 class="mb-2">{{ page.title }}</h1>
-      <p class="mb-0">{{ page.description }}</p>
+      <p class="mb-2">{{ page.description }}</p>
     </div>
     <div class="media">
       <picture class="lazyLoad">
@@ -30,8 +30,10 @@ layout: default
     <div class="container">
       <div class="row justify-content-center pb-md-6 mb-md-5">
         <div class="col-md-10 col-lg-8 col-xl-6">
-          <h4>Project Goals</h4>
-          <p class="mb-0">{{ page.goals.text }}</p>
+          <div class="goals-space">
+            <h4>Project Goals</h4>
+            <p class="mb-0">{{ page.goals.text }}</p>
+          </div>
         </div>
       </div>
       <div class="d-none d-md-block">
@@ -49,10 +51,12 @@ layout: default
 
   <section class="strategy ~ py-6 py-md-7">
     <div class="container">
-      <div class="row justify-content-center pb-md-7">
+      <div class="row justify-content-center pb-md-6 pb-lg-7">
         <div class="col-md-10 col-lg-8 col-xl-6">
-          <h4>Project Strategy</h4>
-          <p>{{ page.strategy.text }}</p>
+          <div class="strategy-space">
+            <h4>Project Strategy</h4>
+            <p class="mb-0">{{ page.strategy.text }}</p>
+          </div>
         </div>
       </div>
       <div class="d-none d-md-block">

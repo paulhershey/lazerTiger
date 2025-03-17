@@ -46,34 +46,38 @@ quote:
 ---
 
 {%- include section-text.html
+            spacing="pt-6 pb-4 pt-md-7 pb-md-6 mb-md-4 heading-hidden-mobile"
             heading="Establishing the <br>Design Center"
             heading_5="Building the Team"
             text="When I joined Schoox, the design team consisted of just three members: one focused on the web product, one on mobile, and one on marketing. Over time, we expanded the team to nineteen members and established a design center supporting multiple teams across the organization. This center included five key departments: design system, experience design, UX writing, UX research, and brand. We also developed operational processes to support development, product, customer success, sales, marketing, and people and culture initiatives."
 -%}
 
 {%- include section-image.html
-            spacing="pb-2 d-none d-md-block"
+            spacing="d-none d-md-block pb-2 pb-md-0"
             image_name="the-team.svg"
             image_title="Representation of the Design Center reporting structure"
 -%}
 
 {%- include section-text.html
+            spacing="py-4 pt-md-7 pb-md-6 mb-md-4"
             heading_5="Establishing Design Ops"
             text="With the team in place, we needed to establish design operations to ensure the team could stay focused on their work. This allowed me to protect their time and help them produce better work, faster. I also prioritized their professional growth through design workshops, increased responsibilities, and emotional support. We fostered collaboration through daily design team huddles and company-wide design updates. Additionally, I managed headcount planning, onboarding, project scoping, and culture and diversity initiatives."
 -%}
 
 {%- include section-image.html
-            spacing="pb-0"
+            spacing="pt-3 pb-4 py-md-0"
             image_name="ops.png"
             image_title="Images from over the years of teaching and developing the team"
 -%}
 
 {%- include section-text.html
+            spacing="pt-4 pb-6 py-md-7"
             heading_5="To Bifurcate or Not"
             text="The first major decision was whether to split our development efforts. This bifurcation would necessitate forming a new development team and dividing the product team to support both new and legacy products. While this approach would enable radical innovation and allow us to build a cleaner, more efficient back-end, the significant drawbacks included high costs and an extended timeline, with years before we could onboard customers. <br><br>Ultimately, we chose to evolve the current product feature by feature. This strategy allowed us to engage existing customers in the design process and provided the sales team with a continuous deployment roadmap for new features and updates."
 -%}
 
 {%- include section-text.html
+            spacing="pt-6 pb-4 pt-md-7 pb-md-6 mb-md-4 heading-hidden-mobile"
             background_color="inverted"
             heading="Building a Foundation; <br>The Design System"
             heading_5="UI Audit"
@@ -81,6 +85,7 @@ quote:
 -%}
 
 {%- include section-image.html
+            spacing="pt-3 pt-md-0"
             background_color="inverted"
             image_name="ui-audit.png"
             image_title="Sample of components from the web & mobile audit"
@@ -88,59 +93,72 @@ quote:
 
 {%- include section-text.html
             background_color="inverted"
-            spacing="pt-7 pb-1"
+            spacing="pt-6 pb-4 pt-md-7 pb-md-3 pt-xl-7 pb-xl-1"
             heading_5="Defining the Structure"
             text="When defining the structure of our design system, we organized it into four key areas:"
 -%}
 
-<section class="section-inverted pb-6">
+<section class="section-inverted pb-5">
   <div class="container">
-    <div class="row justify-content-center align-items-center pt-5">
+    <div class="row justify-content-center align-items-center pt-3 pt-md-5">
       <div class="col-md-6 col-xl-4 pr-xl-4">
-        <h5>Foundation</h5>
-        <p class="mt-0">Built on design tokens, which are the variables in Figma that form the basis for all other elements and components.</p>
+        <div class="section-space">
+          <h5 class="mb-3">Foundation</h5>
+          <p class="mt-0">Built on design tokens, which are the variables in Figma that form the basis for all other elements and components.</p>
+        </div>
       </div>
       <div class="col-md-6 col-xl-4 pl-xl-0">
-        <img class="img-fluid d-block mt-4 mt-md-0" src="https://res.cloudinary.com/paulhershey/image/upload/v1737583967/schoox/xl/foundation.svg" alt="">
+        <div class="d-none d-lg-block m-0 mt-4 mt-md-1 p-0">
+          <figure class="d-block m-0 mt-4 p-0"><img class="img-fluid d-block mx-auto" src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/foundation.svg" alt=""></figure>
+        </div>
+        <div class="d-lg-none">
+          <figure class="d-block m-0 mt-4 mt-md-1 p-0"><img class="img-fluid d-block mx-auto mx-md-0" src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/foundation-s.svg" alt=""></figure>
+        </div>
       </div>
     </div>
-    <div class="row justify-content-center align-items-center pt-6 mt-xl-3">
+    <div class="row justify-content-center align-items-center pt-5 mt-md-2 mt-xl-3">
       <div class="col-md-6 col-xl-4 align-center order-1 order-md-0">
-        <img class="img-fluid d-block mt-4 mt-md-0" src="https://res.cloudinary.com/paulhershey/image/upload/v1737583964/schoox/xl/elements.svg" alt="">
+        <figure class="m-0 mt-4 mt-md-2 p-0 d-block"><img class="img-fluid d-block mx-auto" src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/elements.svg" alt=""></figure>
       </div>
       <div class="col-md-6 col-xl-4 pl-xl-0 pr-xl-4 order-0 order-md-1">
-        <h5>Elements</h5>
-        <p class="mt-0">Basic components like notification tags, input fields, buttons, and more, constructed from design tokens.</p>
+        <div class="section-space">
+          <h5 class="mb-3">Elements</h5>
+          <p class="mt-0">Basic components like notification tags, input fields, buttons, and more, constructed from design tokens.</p>
+        </div>
       </div>
     </div>
-    <div class="row justify-content-center align-items-center pt-6 mt-xl-3">
+    <div class="row justify-content-center align-items-center pt-5 mt-xl-3">
       <div class="col-md-6 col-xl-4 pr-xl-4">
-        <h5>Components</h5>
-        <p class="mt-0">Functional groups of tokens and elements that can have multiple variants, allowing for flexibility. Examples include cards, which can vary in size and content layout; input fields that may differ in style and validation rules; and tab groups that can change in appearance and behavior depending on the context. These components are essential for creating a cohesive user experience across the product.</p>
+        <div class="section-space">
+          <h5 class="mb-3">Components</h5>
+          <p class="mt-0">Functional groups of tokens and elements that can have multiple variants, allowing for flexibility. Examples include cards, which can vary in size and content layout; input fields that may differ in style and validation rules; and tab groups that can change in appearance and behavior depending on the context. These components are essential for creating a cohesive user experience across the product.</p>
+        </div>
       </div>
       <div class="col-md-6 col-xl-4 d-none d-md-flex justify-content-center">
-        <figure class="m-0 p-0 d-block">
+        <figure class="d-block m-0 mt-md-3 p-0">
           <picture class="lazyLoad">
-            <source media="(min-width: 1025px)" srcset="https://res.cloudinary.com/paulhershey/image/upload/v1737583974/schoox/xl/components.svg">
-            <img class="img-fluid d-block mx-auto" alt="" src="https://res.cloudinary.com/paulhershey/image/upload/v1737583949/schoox/md/components.svg">
+            <source media="(min-width: 1025px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/components.svg">
+            <img class="img-fluid d-block mx-auto" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/components.svg" alt="">
           </picture>
           <cite>Sample learner activity component</cite>
         </figure>
       </div>
     </div>
-    <div class="row justify-content-center align-items-center pt-6 mt-xl-3">
+    <div class="row justify-content-center align-items-center pt-5 mt-xl-3">
       <div class="col-md-6 col-xl-4 d-none d-md-flex">
-        <figure class="m-0 p-0 d-block">
+        <figure class="d-block m-0 mt-md-3 p-0">
           <picture class="lazyLoad">
-            <source media="(min-width: 1025px)" srcset="https://res.cloudinary.com/paulhershey/image/upload/v1737583974/schoox/xl/chase.svg">
-            <img class="img-fluid d-block mx-auto" alt="" src="https://res.cloudinary.com/paulhershey/image/upload/v1737583947/schoox/md/chase.svg">
+            <source media="(min-width: 1025px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/chase.svg">
+            <img class="img-fluid d-block mx-auto" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/chase.svg" alt="">
           </picture>
           <cite>Sample subset of the primary nav pattern</cite>
         </figure>
       </div>
       <div class="col-md-6 col-xl-4 pr-xl-5 pl-xl-1">
+        <div class="section-space">
         <h5>Patterns</h5>
         <p class="mt-0">Reusable features across the product that foster mental modeling and create a more intuitive user experience. Examples include meta filters, global search, and content streams. Patterns are categorized into two groups: those delivered to development and those intended for the design team only, as determined at the product level by the supported teams.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -148,13 +166,13 @@ quote:
 
 {%- include section-text.html
             background_color="inverted"
-            spacing="py-0 py-xl-4"
+            spacing="py-0 pt-md-3 py-xl-4"
             text="This structured approach ensures consistency, reusability, and a seamless user experience across the product."
 -%}
 
 {%- include section-separator.html
             background_color="inverted"
-            spacing="py-6"
+            spacing="py-4 py-md-5"
 -%}
 
 {%- include section-text.html
@@ -167,7 +185,7 @@ quote:
 <section class="section-inverted">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-11">
+      <div class="col-md-12 pt-md-5 mt-md-4">
         <div class="tabbed-gallery">
           <div class="d-none d-md-block">
             <nav class="mx-xl-6">
@@ -196,6 +214,7 @@ quote:
                     <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/web-schoox.svg">
                     <img class="img-fluid d-block mx-auto" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-schoox.png" alt="diagram of the design token structure for the Schoox application">
                   </picture>
+                  <cite>This is only an example that illustrates the power of layered design tokens</cite>
                 </figure>
               </div>
               <div class="tab-pane fade" id="nav-social-2" role="tabpanel" aria-labelledby="nav-social-2">
@@ -207,6 +226,7 @@ quote:
                     <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/web-spotify.svg">
                     <img class="img-fluid d-block mx-auto" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-spotify.png" alt="diagram of the theme ability of the design token structure for Spotify">
                   </picture>
+                  <cite>This is only an example that illustrates the power of layered design tokens</cite>
                 </figure>
               </div>
               <div class="tab-pane fade" id="nav-social-3" role="tabpanel" aria-labelledby="nav-social-3">
@@ -218,6 +238,7 @@ quote:
                     <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/web-chase.svg">
                     <img class="img-fluid d-block mx-auto" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-chase.png" alt="diagram of the theme ability of the design token structure for Chase Bank">
                   </picture>
+                  <cite>This is only an example that illustrates the power of layered design tokens</cite>
                 </figure>
               </div>
               <div class="tab-pane fade" id="nav-social-4" role="tabpanel" aria-labelledby="nav-social-4">
@@ -229,13 +250,15 @@ quote:
                     <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/web-target.svg">
                     <img class="img-fluid d-block mx-auto" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-target.png" alt="diagram of the theme ability of the design token structure for Target">
                   </picture>
+                  <cite>This is only an example that illustrates the power of layered design tokens</cite>
                 </figure>
               </div>
             </div>
           </div>
           <div class="d-md-none">
-            <figure class="m-0 p-0 d-block">
+            <figure class="m-0 mt-5 p-0 d-block">
               <img class="img-fluid d-block mx-auto" style="width: 100%;max-width:343px;" src="https://res.cloudinary.com/paulhershey/image/upload/v1737583937/schoox/sm/design-tokens.svg" alt="">
+              <cite>This is only an example that illustrates the power of layered design tokens</cite>
             </figure>
           </div>
         </div>
@@ -246,37 +269,40 @@ quote:
 
 {%- include section-text.html
             background_color="inverted"
-            spacing="pt-6 pb-4 pb-xl-5"
+            spacing="pt-6 pb-5 pt-md-7 pb-xl-5"
             heading_5="Maintenance &amp; Versioning"
             text="As the design system matured, we focused on maintaining it effectively through versioning, governance, and QA."
 -%}
 
-<section class="section-inverted pb-6">
-  <div class="container">
+<section class="section-inverted pt-md-3 pb-md-5">
+  <div class="container pb-md-1">
     <div class="row justify-content-center align-items-center">
-      <div class="col-md-6 col-xl-5 pr-md-4 pr-xl-6 pl-xl-0 pb-6 pb-xl-3">
+      <div class="col-md-6 col-xl-5 pb-6 pb-md-0 pb-xl-3 pr-xl-6 pl-xl-0">
         <figure class="m-0 p-0 d-block">
           <picture class="lazyLoad">
             <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/maintenance.svg">
             <source media="(min-width: 1025px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/maintenance.svg">
             <source media="(min-width: 767px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/maintenance.svg">
-            <img class="img-fluid d-block mx-auto" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/maintenance.svg" alt="">
+            <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/maintenance.svg">
+            <img class="img-fluid d-block mx-auto" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/maintenance.svg" alt="">
           </picture>
         </figure>
       </div>
       <div class="col-md-6 col-xl-4 offset-xl-1">
-        <section>
-          <h5>Versioning</h5>
-          <p>We opted to version individual components rather than the entire library, allowing us to create new components and variants in real-time as we developed new experiences.</p>
-        </section>
-        <section class="mt-5">
-          <h5>Governance</h5>
-          <p>We established a governance model to ensure thoughtful scaling, meeting product needs while avoiding bloat and duplication.</p>
-        </section>
-        <section class="mt-5">
-          <h5>Component QA</h5>
-          <p>Design QA became a crucial final step in our process. As components were built, they were added to Storybook for the team to test animations, props, states, and tokens.</p>
-        </section>
+        <div class="section-space">
+          <section>
+            <h5>Versioning</h5>
+            <p>We opted to version individual components rather than the entire library, allowing us to create new components and variants in real-time as we developed new experiences.</p>
+          </section>
+          <section class="mt-5">
+            <h5>Governance</h5>
+            <p>We established a governance model to ensure thoughtful scaling, meeting product needs while avoiding bloat and duplication.</p>
+          </section>
+          <section class="mt-5 mt-md-4 pt-md-4">
+            <h5>Component QA</h5>
+            <p>Design QA became a crucial final step in our process. As components were built, they were added to Storybook for the team to test animations, props, states, and tokens.</p>
+          </section>
+        </div>
       </div>
     </div>
   </div>
@@ -284,22 +310,22 @@ quote:
 
 {%- include section-text.html
             background_color="inverted"
-            spacing="py-5 pr-xl-3"
+            spacing="pt-5 pb-4 pr-xl-4"
             heading_5="Design Portal"
             text="To ensure that assets and documentation were readily available throughout the company, we created a design portal. This portal offered comprehensive resources, including documentation for design tokens, component usage, and accessibility guidelines, as well as writing guidelines, downloadable assets, and tutorials. It also housed brand guidelines, brand assets, and support contact information. This centralized approach streamlined access to critical design resources, facilitating better collaboration and consistency."
 -%}
 
-<section class="section-inverted d-none d-md-block py-5">
+<section class="section-inverted d-none d-md-block pt-6 pb-5 pb-md-3">
   <div class="container">
     <div class="row">
       <div class="img-container">
         <figure class="d-block p-0 m-0 image-pull-left">
-          <picture class="lazyLoad">
+          <picture class="lazyLoad d-block">
             <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/design-portal">
             <source media="(min-width: 1025px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/design-portal">
             <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/design-portal" class="img-fluid bisk-website" alt="Design system documentation showing the avatar component">
           </picture>
-          <cite>The portal acted as the first point of contact for the design team. It gave the <br>company access to assets, documentation, and points of contact.</cite>
+          <cite class="mt-md-0">The portal acted as the first point of contact for the design team. It gave the <br>company access to assets, documentation, and points of contact.</cite>
         </figure>
       </div>
     </div>
@@ -308,19 +334,19 @@ quote:
 
 {%- include section-separator.html
             background_color="inverted"
-            spacing="py-2 py-xl-6"
+            spacing="py-xl-6"
 -%}
 
 {%- include section-text.html
             background_color="inverted"
-            spacing="py-5 pb-md-6 pr-xl-4"
+            spacing="pt-4 pb-6 pt-md-5 pr-xl-4"
             heading_5="Building Trust"
             text="A design system is a foundational framework shared across multiple departments, making clear roles and responsibilities. We aimed to integrate every department's tools, from Figma to Storybook to Jira and more. We collaborated closely with supported teams involving them in the creation process. By identifying leads across departments to contribute to resource development, we ensured a deeper understanding of how to use and implement the design system across the product."
 -%}
 
 {%- include section-image.html
             background_color="inverted"
-            spacing="py-0 pt-md-3 pb-md-7 d-none d-md-block"
+            spacing="py-0 pt-md-3 pt-md-6 pb-md-7 d-none d-md-block"
             image_name="design-system-team.png"
             title="Diagram of the different components of the design system shared by supported teams in the product organization"
 -%}
@@ -329,8 +355,8 @@ quote:
   <div class="container">
     <div class="row justify-content-center">
       <figure class="img-container d-block p-0 m-0">
-        <picture class="lazyLoad">
-          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/guild" class="img-fluid" alt="">
+        <picture class="lazyLoad d-block">
+          <img class="img-fluid d-block mx-auto" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/guild" alt="">
         </picture>
       </figure>
     </div>
@@ -368,7 +394,7 @@ quote:
     <div class="row justify-content-center py-5 py-md-7">
       <div class="col-md-10 col-lg-8 col-xl-6">
         <div class="heading-image mb-4 mb-md-6">
-          <img width="199" height="199" src="https://res.cloudinary.com/paulhershey/image/upload/v1737583960/schoox/xl/design-team.svg" alt="">
+          <img width="199" height="199" src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/design-team.svg" alt="">
           <h3 class="m-0">Transforming the Product Experience</h3>
         </div>
         <h4>Named Versioning</h4>
@@ -407,33 +433,33 @@ quote:
               <div class="tab-pane fade show active" id="nav-citrus" role="tabpanel" aria-labelledby="nav-citrus-tab">
                 <figure class="m-0 p-0 d-block">
                   <picture class="lazyLoad">
-                    <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/citrus.svg">
-                    <source media="(min-width: 1025px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/citrus.svg">
-                    <source media="(min-width: 767px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/citrus.svg">
-                    <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/citrus.svg">
-                    <img class="img-fluid d-block mx-auto" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/citrus.svg" alt="Screenshot of the Schoox platform in 2022">
+                    <source media="(min-width: 1440px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/citrus.png">
+                    <source media="(min-width: 1025px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/citrus.png">
+                    <source media="(min-width: 767px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/citrus.png">
+                    <source media="(min-width: 576px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/citrus.png">
+                    <img class="img-fluid d-block mx-auto" src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/citrus.png" alt="Screenshot of the Schoox platform in 2022">
                   </picture>
                 </figure>
               </div>
               <div class="tab-pane fade" id="nav-sigma" role="tabpanel" aria-labelledby="nav-sigma-tab">
                 <figure class="m-0 p-0 d-block">
                   <picture class="lazyLoad">
-                    <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/sigma.svg">
-                    <source media="(min-width: 1025px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/sigma.svg">
-                    <source media="(min-width: 767px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/sigma.svg">
-                    <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/sigma.svg">
-                    <img class="img-fluid d-block mx-auto" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/sigma.svg" alt="Screenshot of the Schoox platform in 2023">
+                    <source media="(min-width: 1440px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/sigma.png">
+                    <source media="(min-width: 1025px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/sigma.png">
+                    <source media="(min-width: 767px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/sigma.png">
+                    <source media="(min-width: 576px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/sigma.png">
+                    <img class="img-fluid d-block mx-auto" src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/sigma.png" alt="Screenshot of the Schoox platform in 2023">
                   </picture>
                 </figure>
               </div>
               <div class="tab-pane fade" id="nav-tau" role="tabpanel" aria-labelledby="nav-tau-tab">
                 <figure class="m-0 p-0 d-block">
                   <picture class="lazyLoad">
-                    <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/tau.svg">
-                    <source media="(min-width: 1025px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/tau.svg">
-                    <source media="(min-width: 767px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/tau.svg">
-                    <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/tau.svg">
-                    <img class="img-fluid d-block mx-auto" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/tau.svg" alt="Screenshot of the Schoox platform in 2025">
+                    <source media="(min-width: 1440px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/tau.png">
+                    <source media="(min-width: 1025px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/tau.png">
+                    <source media="(min-width: 767px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/tau.png">
+                    <source media="(min-width: 576px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/tau.png">
+                    <img class="img-fluid d-block mx-auto" src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/tau.png" alt="Screenshot of the Schoox platform in 2025">
                   </picture>
                 </figure>
               </div>
@@ -473,44 +499,44 @@ quote:
               <div class="tab-pane fade show active" id="nav-1920" role="tabpanel" aria-labelledby="nav-1920-tab">
                 <figure class="m-0 p-0 d-block">
                   <picture class="lazyLoad">
-                    <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-1920.png">
-                    <source media="(min-width: 1025px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/web-1920.png">
-                    <source media="(min-width: 767px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/web-1920.png">
-                    <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/web-1920.svg">
-                    <img class="img-fluid d-block mx-auto" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-1920.png" alt="Schoox platform at the extra large breakpoint">
+                    <source media="(min-width: 1440px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-1920.png">
+                    <source media="(min-width: 1025px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/web-1920.png">
+                    <source media="(min-width: 767px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/web-1920.png">
+                    <source media="(min-width: 576px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/web-1920.svg">
+                    <img class="img-fluid d-block mx-auto" src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-1920.png" alt="Schoox platform at the extra large breakpoint">
                   </picture>
                 </figure>
               </div>
               <div class="tab-pane fade" id="nav-1440" role="tabpanel" aria-labelledby="nav-1440-tab">
                 <figure class="m-0 p-0 d-block">
                   <picture class="lazyLoad">
-                    <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-1440.png">
-                    <source media="(min-width: 1025px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/web-1440.png">
-                    <source media="(min-width: 767px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/web-1440.png">
-                    <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/web-1440.svg">
-                    <img class="img-fluid d-block mx-auto" width="1288" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-1440.png" alt="Schoox platform at the large breakpoint">
+                    <source media="(min-width: 1440px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-1440.png">
+                    <source media="(min-width: 1025px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/web-1440.png">
+                    <source media="(min-width: 767px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/web-1440.png">
+                    <source media="(min-width: 576px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/web-1440.svg">
+                    <img class="img-fluid d-block mx-auto" width="1288" src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-1440.png" alt="Schoox platform at the large breakpoint">
                   </picture>
                 </figure>
               </div>
               <div class="tab-pane fade" id="nav-1024" role="tabpanel" aria-labelledby="nav-1024-tab">
                 <figure class="m-0 p-0 d-block">
                   <picture class="lazyLoad">
-                    <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-1024.png">
-                    <source media="(min-width: 1025px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/web-1024.png">
-                    <source media="(min-width: 767px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/web-1024.png">
-                    <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/web-1024.svg">
-                    <img class="img-fluid d-block mx-auto" width="644" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-1024.png" alt="Schoox platform at the medium breakpoint">
+                    <source media="(min-width: 1440px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-1024.png">
+                    <source media="(min-width: 1025px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/web-1024.png">
+                    <source media="(min-width: 767px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/web-1024.png">
+                    <source media="(min-width: 576px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/web-1024.svg">
+                    <img class="img-fluid d-block mx-auto" width="644" src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-1024.png" alt="Schoox platform at the medium breakpoint">
                   </picture>
                 </figure>
               </div>
               <div class="tab-pane fade" id="nav-764" role="tabpanel" aria-labelledby="nav-764-tab">
                 <figure class="m-0 p-0 d-block">
                   <picture class="lazyLoad">
-                    <source width="" media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-768.png">
-                    <source media="(min-width: 1025px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/web-768.png">
-                    <source media="(min-width: 767px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/web-768.png">
-                    <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/web-768.svg">
-                    <img class="img-fluid d-block mx-auto" width="544" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-768.png" alt="Schoox platform at the small breakpoint">
+                    <source width="" media="(min-width: 1440px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-768.png">
+                    <source media="(min-width: 1025px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/web-768.png">
+                    <source media="(min-width: 767px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/web-768.png">
+                    <source media="(min-width: 576px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/web-768.svg">
+                    <img class="img-fluid d-block mx-auto" width="544" src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-768.png" alt="Schoox platform at the small breakpoint">
                   </picture>
                 </figure>
               </div>
@@ -535,30 +561,30 @@ quote:
           <div class="d-none d-md-block">
             <nav class="mx-xl-6">
               <div class="nav nav-tabs" role="tablist">
-                <button class="nav-link active" data-toggle="tab" data-target="#nav-tau-2025" type="button" role="tab" aria-controls="nav-tau-2025" aria-selected="true">Tau (2025)</button>
-                <button class="nav-link" data-toggle="tab" data-target="#nav-citrus-2022" type="button" role="tab" aria-controls="nav-citrus-2022" aria-selected="false">Citrus (2022)</button>
+                <button class="nav-link active" toggle="tab" target="#nav-tau-2025" type="button" role="tab" aria-controls="nav-tau-2025" aria-selected="true">Tau (2025)</button>
+                <button class="nav-link" toggle="tab" target="#nav-citrus-2022" type="button" role="tab" aria-controls="nav-citrus-2022" aria-selected="false">Citrus (2022)</button>
               </div>
             </nav>
             <div class="tab-content">
               <div class="tab-pane fade show active" id="nav-tau-2025" role="tabpanel" aria-labelledby="nav-1920-tab">
                 <figure class="m-0 p-0 d-block">
                   <picture class="lazyLoad">
-                    <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-tau.png">
-                    <source media="(min-width: 1025px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/web-tau.png">
-                    <source media="(min-width: 767px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/web-tau.png">
-                    <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/web-tau.svg">
-                    <img class="img-fluid d-block mx-auto" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-tau.png" alt="Example of the consistency created between Web experiences and native mobile experiences">
+                    <source media="(min-width: 1440px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-tau.png">
+                    <source media="(min-width: 1025px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/web-tau.png">
+                    <source media="(min-width: 767px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/web-tau.png">
+                    <source media="(min-width: 576px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/web-tau.svg">
+                    <img class="img-fluid d-block mx-auto" src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-tau.png" alt="Example of the consistency created between Web experiences and native mobile experiences">
                   </picture>
                 </figure>
               </div>
               <div class="tab-pane fade" id="nav-citrus-2022" role="tabpanel" aria-labelledby="nav-1440-tab">
                 <figure class="m-0 p-0 d-block">
                   <picture class="lazyLoad">
-                    <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-citrus.png">
-                    <source media="(min-width: 1025px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/web-citrus.png">
-                    <source media="(min-width: 767px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/web-citrus.png">
-                    <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/web-citrus.svg">
-                    <img class="img-fluid d-block mx-auto" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-citrus.png" alt="Example of the lack of consistency between web experiences and native mobile experiences">
+                    <source media="(min-width: 1440px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-citrus.png">
+                    <source media="(min-width: 1025px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/lg/web-citrus.png">
+                    <source media="(min-width: 767px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/md/web-citrus.png">
+                    <source media="(min-width: 576px)" srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/sm/web-citrus.svg">
+                    <img class="img-fluid d-block mx-auto" src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/schoox/xl/web-citrus.png" alt="Example of the lack of consistency between web experiences and native mobile experiences">
                   </picture>
                 </figure>
               </div>

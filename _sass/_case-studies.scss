@@ -41,6 +41,10 @@
       margin-right: 24px;
       margin-left: 24px;
     }
+
+    &:nth-child(even) {
+      .case-studies-media picture img {object-position: right center;}
+    }
   }
 
   &-media {
@@ -64,6 +68,7 @@
         min-height: 512px;
         display: block;
         object-fit: cover;
+        object-position: left center;
         @include media-breakpoint-up(xl) {
         }
       }
@@ -152,7 +157,7 @@
     line-height: 1.5em;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #94949e;
+    color: var(--gray);
   }
 
   &-title {

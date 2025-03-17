@@ -7,6 +7,12 @@
     padding-top: 15.5rem;
   }
 
+  .container {
+    @include media-breakpoint-up(xl) {
+      max-width: 1440px;
+    }
+  }
+
   .content {
     text-align: center;
 
@@ -33,11 +39,16 @@
             position: relative;
             top: -10px;
             left: 68px;
+
             img {
-              width: 530px;
               height: auto;
               display: block;
               @include user-select;
+            }
+
+            &.pos2 {
+              top: -7px;
+              left: 92px;
             }
           }
         }
@@ -55,12 +66,16 @@
             float: right;
             position: relative;
             top: 0;
-            left: -84px;
+            left: -121px;
+
             img {
-              width: 530px;
               height: auto;
               display: block;
               @include user-select;
+            }
+
+            &.pos3 {
+              left: -137px;
             }
           }
         }

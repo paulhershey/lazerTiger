@@ -8,6 +8,11 @@ body {
   min-width: 360px;
 }
 
+:root {
+  --gray: #94949e;
+  --blue: #0d7bff;
+}
+
 :target {
   scroll-margin-top: 64px;
 }

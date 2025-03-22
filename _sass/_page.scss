@@ -123,6 +123,28 @@
       transform: translateX(-50%);
     }
   }
+  &-halfgray {
+    position: relative;
+    z-index: 1;
+
+    > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    &::after {
+      width: 100vw;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 53.5%;
+      left: 50%;
+      z-index: -1;
+      background: #fafaff;
+      transform: translateX(-50%);
+    }
+  }
   &-halfblack {
     position: relative;
     z-index: 1;
@@ -264,20 +286,9 @@
 
   > .content {
     grid-area: c;
-    @include media-breakpoint-up(md) {
-      .mb-2 {
-        max-width: 380px;
-      }
-    }
   }
   > .media {
     grid-area: m;
-    @include media-breakpoint-up(md) {
-      img {
-        min-height: 710px;
-        object-fit: cover;
-      }
-    }
   }
   > .bkg-top {
     grid-area: t;

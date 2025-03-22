@@ -7,7 +7,7 @@
       <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:">Case Study</a>
       <div class="dropdown-menu">
         <div class="content">
-          {%- for node in site.pages -%}
+          {%- for node in site.pages | sort: "path" -%}
           <a class="dropdown-item" href="{{ node.url | relative_url }}" data-type="page-transition">{{ node.title }}</a>
           {%- endfor -%}
         </div>

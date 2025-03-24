@@ -510,6 +510,24 @@
       }
     }
   }
+
+  &.equal {
+    .tab-pane figure img {
+      width: auto;
+      @include media-breakpoint-up(md) {
+        height: 474px;
+      }
+      @include media-breakpoint-up(lg) {
+        height: 625px;
+      }
+      @include media-breakpoint-up(xl) {
+        height: 858px;
+      }
+      @include media-breakpoint-up(xxl) {
+        height: 916px;
+      }
+    }
+  }
 }
 
 .heading-image {

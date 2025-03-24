@@ -86,3 +86,9 @@ cite {
   font-size: 12px;
   line-height: 1.5;
 }
+
+.w-md-auto {
+  @include media-breakpoint-up(md) {
+    width: auto !important;
+  }
+}

@@ -1,14 +1,13 @@
-<a class="box ~ d-flex align-items-stretch" href="{{ include.url }}" target="_blank" rel="noopener">
-  <div class="body">
-    <h4>{{ include.title }}</h4>
+<a class="writing-box" href="{{ include.url }}" target="_blank" rel="noopener">
+  <div class="writing-body">
+    <p class="writing-title">{{ include.title }}</p>
     <b>Read More</b>
-    <picture class="lazyLoad">
-      <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/xl/{{include.image}}_2x">
-      <source media="(min-width: 1025px)"data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/{{include.image}}_2x">
-      <source media="(min-width: 768px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/md/{{include.image}}_2x">
-      <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/sm/{{include.image}}_2x">
-      <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/sm/{{ include.image }}_2x" class="img-contain"
-           alt="{{ include.title }}">
-    </picture>
   </div>
+  <picture class="writing-image lazyLoad">
+    <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/xl/{{include.image}}_2x">
+    <source media="(min-width: 1025px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/{{include.image}}_2x">
+    <source media="(min-width: 768px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/md/{{include.image}}_2x">
+    <source media="(min-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/sm/{{include.image}}_2x">
+    <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/sm/{{ include.image }}_2x" alt="{{ include.title }}">
+  </picture>
 </a>

@@ -5,24 +5,27 @@
   <div class="container">
     <div class="row">
       <div class="col-12 d-flex justify-content-center">
-        <picture class="lazyLoad">
-          {%- for size in media reversed -%}
-            {% case size %}
-              {% when 'xl' %}{% assign min_width = "1440px" %}
-              {% when 'lg' %}{% assign min_width = "1025px" %}
-              {% when 'md' %}{% assign min_width = "767px" %}
-              {% when 'sm' %}{% assign min_width = "576px" %}
-              {% else %}
-              {% assign min_width = "576px" %}
-            {% endcase %}
-            {% capture show %}{% unless size == 'sm' %}d-none d-{{size}}-flex{% endunless %}
-            {% endcapture %}
-            <source media="(min-width: {{ min_width }})"
-                    data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ size }}/{{ include.image_name }}">
-          {%- endfor -%}
-          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ media | first }}/{{ include.image_name }}"
-                class="img-fluid" alt="{{ include.title }}">
-        </picture>
+        <figure class="d-block p-0 m-0">
+          <picture class="d-block lazyLoad">
+            {%- for size in media reversed -%}
+              {% case size %}
+                {% when 'xl' %}{% assign min_width = "1440px" %}
+                {% when 'lg' %}{% assign min_width = "1024px" %}
+                {% when 'md' %}{% assign min_width = "767px" %}
+                {% when 'sm' %}{% assign min_width = "576px" %}
+                {% else %}
+                {% assign min_width = "576px" %}
+              {% endcase %}
+              {% capture show %}{% unless size == 'sm' %}d-none d-{{size}}-flex{% endunless %}
+              {% endcapture %}
+              <source media="(min-width: {{ min_width }})" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ size }}/{{ include.image_name }}">
+            {%- endfor -%}
+            <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ media | first }}/{{ include.image_name }}" class="img-fluid" alt="{{ include.title }}">
+          </picture>
+          {%- if include.image_title -%}
+            <cite>{{ include.image_title }}</cite>
+          {%- endif -%}
+        </figure>
       </div>
     </div>
   </div>

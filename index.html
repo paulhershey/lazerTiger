@@ -4,166 +4,171 @@ title: Paul Hershey, UX Designer, Orlando, FL
 description: I'm a UX designer based in Orlando, FL focusing on product design and user research.
 ---
 
-<section class="hero ~ conainer-fluid">
-  <div class="hero-container ~ row align-items-center justify-content-center justify-content-lg-start">
-    <div class="content ~ col-md-10 col-lg-6">
-      {% include svg.html name="logo" %}
-      <h1 class="display-1">Product Designer</h1>
-      <p>Research / Interaction Design / FE Design</p>
-      <a class="btn btn-primary" data-scroll href="#casestudies">Case Studies<span></span></a>
-    </div>
-    <div class="video-wrapper d-none d-lg-block">
-      <video class="player lazyLoad" width="428" height="710" autoplay loop muted playsinline
-        data-src="{{ site.cloudinary.url }}/video/upload/{{ site.cloudinary.transforms }}/home/header-video/PaulHershey"
-        poster="{{ site.cloudinary.url }}//image/upload/{{ site.cloudinary.transforms }}/home/lg/PaulHershey.png">
-      </video>
-    </div>
-  </div>
-</section>
-
-<section class="about ~ container">
-  <div class="row d-flex justify-content-center">
-    <div class="col-sm-10 col-lg-8 col-xl-6">
-      <h2>About</h2>
-      <p>I help people create human-centered products that users love. I have over fifteen years of experience in the design field and have worked with the U.S. Army, Infor, Code School, and Electronic Arts to name a few. I enjoy every stage of the design process from initial research to building visual languages and analyzing data. Giving back to the community is also very important to me. I’m on the board for AIGA Orlando, mentor designers new to the industry, and regularly speak about UX, design, leadership, and culture at conferences and meetups.</p>
-      <a class="btn btn-linkedin" href="https://www.linkedin.com/in/paulhershey/" target="_blank" rel="noopener">LinkedIn<span></span></a>
-
-      <div class="logo-list ~ row align-items-center text-center">
-        <div class="col-4 col-md-2">
-          {% include svg.html name="EA" %}
-        </div>
-        <div class="col-4 col-md-2">
-          {% include svg.html name="Pluralsight" %}
-        </div>
-        <div class="col-4 col-md-2">
-          {% include svg.html name="CodeSchool" %}
-        </div>
-        <div class="col-4 col-md-2">
-          {% include svg.html name="Southwest" %}
-        </div>
-        <div class="col-4 col-md-2">
-          {% include svg.html name="infor" %}
-        </div>
-        <div class="col-4 col-md-2">
-          {% include svg.html name="Gannett" %}
+<header class="hero">
+  <div class="container align-items-center">
+    <div class="row">
+      <div class="col">
+        <div class="hero-container">
+          <div class="hero-content">
+            {% include svg.html name="logo" %}
+            <h1 class="display-1 mb-0">Product Design Leadership</h1>
+            <p class="mt-3 mb-0">Design Ops / System Architecture / People Development</p>
+            <div class="d-flex justify-content-center justify-content-sm-start mt-3">
+              <a href="#casestudies" class="btn btn-primary mt-2" data-scroll>Case Studies<span></span></a>
+            </div>
+          </div>
+            <picture class="hero-photo lazyLoad">
+              <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/xl/paul-hershey.webp" width="521" height="737" alt="Paul Hershey">
+            </picture>
         </div>
       </div>
     </div>
   </div>
+</header>
 
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3 class="about-heading">About</h3>
+        <p>I’m a design leader passionate about guiding and mentoring teams to thrive and deliver their best work. I excel at collaborating across functions—whether with engineering, product, or research—to align strategies and develop roadmaps that truly drive impact. Crafting design visions that balance business goals with customer needs is at the core of what I do, while ensuring quality and efficiency through well-structured design systems. I believe in clear, approachable communication to keep everyone—teammates, stakeholders, and executives—aligned and moving forward together.</p>
+        <a class="btn btn-primary mt-2" href="https://www.linkedin.com/in/paulhershey/" target="_blank" rel="noopener">LinkedIn<span></span></a>
+        <ul class="about-logos">
+          <li>{% include svg.html name="EA" %}</li>
+          <li>{% include svg.html name="Pluralsight" %}</li>
+          <li>{% include svg.html name="CodeSchool" %}</li>
+          <li>{% include svg.html name="Southwest" %}</li>
+          <li>{% include svg.html name="infor" %}</li>
+          <li>{% include svg.html name="Gannett" %}</li>
+          <li>{% include svg.html name="Apple" %}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="casestudies" class="case-studies ~ container">
+<section class="case-studies" id="casestudies">
+  <div class="container">
+    {%- include casestudy.html
+      category="Team Development"
+      title="Schoox"
+      body="Schoox needed to modernize their design operations. The solution had a profound impact on the business and culture."
+      image="schoox-pic"
+      alt="Illustration from Schoox brand book"
+      url="/schoox/"-%}
 
-  {%- include casestudy.html
-    category="Product Design"
-    title="Flux"
-    body="Electronic Arts needed a new way to empower its writers. The solution was Flux, a custom publishing platform."
-    image="flux-pic"
-    alt="image of retro video games"
-    url="/electronic-arts/" -%}
+    {%- include casestudy.html
+      direction="reverse"
+      category="Product Design"
+      title="Flux"
+      body="Electronic Arts needed a new way to empower its writers. The solution was Flux, a custom publishing platform."
+      image="flux-pic"
+      alt="image of retro video games"
+      url="/electronic-arts/"-%}
 
-  {%- include casestudy.html
-    direction="reverse"
-    category="Branding"
-    title="Bisk Rebrand"
-    body="With 45+ years of experience in the education space, Bisk was looking for a brand reboot to better express its values."
-    image="bisk-pic"
-    alt="young man on his phone"
-    url="/bisk-rebrand/" -%}
+    {%- include casestudy.html
+      category="Branding"
+      title="Bisk Rebrand"
+      body="With 45+ years of experience in the education space, Bisk was looking for a brand reboot to better express its values."
+      image="bisk-pic"
+      alt="young man on his phone"
+      url="/bisk-rebrand/" -%}
 
-  {%- include casestudy.html
-    category="Art Direction"
-    title="Gategroup"
-    body="Gategroup, which delivers training to students 39,000 ft. in the air, needed to improve the effectiveness of its courses."
-    image="gate-pic"
-    alt="commercial airplane wing"
-    url="/gategroup/" -%}
+    {%- include casestudy.html
+      direction="reverse"
+      category="Product Design"
+      title="Gategroup"
+      body="Gategroup, which delivers training to students 39,000 ft. in&nbsp;the air, needed to improve the effectiveness of its courses."
+      image="gate-pic"
+      alt="commercial airplane wing"
+      url="/gategroup/" -%}
 
-  {%- include casestudy.html
-    direction="reverse"
-    category="Education"
-    title="Code School"
-    body="The Elements of Web Design is a UX course aimed at teaching developers the fundamentals of user-centered design."
-    image="code-school-pic"
-    alt="man learning on a computer"
-    url="code-school" -%}
+    {%- include casestudy.html
+      category="Education"
+      title="Code School"
+      body="The Elements of Web Design is a UX course aimed at teaching developers the fundamentals of user-centered design."
+      image="code-school-pic"
+      alt="man learning on a computer"
+      url="code-school" -%}
 
-  <div class="external-links ~ text-center">
-    <a class="btn btn-dribbble" href="https://dribbble.com/paulhershey" target="_blank" rel="noopener">Dribbble<span></span></a>
-    <a class="btn btn-behance" href="https://www.behance.net/paulhershey" target="_blank" rel="noopener">Behance<span></span></a>
+    <div class="case-studies-links">
+      <a class="case-studies-link" href="https://dribbble.com/paulhershey" target="_blank" rel="noopener">
+        {% include svg.html name="dribbble" %}
+      </a>
+      <a class="case-studies-link" href="https://www.behance.net/paulhershey" target="_blank" rel="noopener">
+        {% include svg.html name="behance" %}
+      </a>
+    </div>
   </div>
 </section>
 
 <section class="process">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-10 col-lg-8 col-xl-6 mb-8">
-        <h2>Process</h2>
+      <div class="col-md-10 col-lg-8 col-xl-6 mb-5 pb-md-5 pb-xl-6">
+        <h2 class="h3 pb-2 mb-3">Process</h2>
         <p>For me, good design requires three fundamental things: a thorough understanding of people, a desire to empathize with their needs, and the ability to align those needs with their business goals. This is the core of my professional career and what I set out to hone every day.</p>
       </div>
     </div>
     <div class="content ~ row flex-column flex-xl-row-reverse align-items-center justify-content-center">
-      <div class="d-none d-md-block col-md-8 mb-md-6 d-lg-block col-lg-6 mb-lg-6 col-xl-5 mb-xl-9 ml-xl-7">
+      <div class="d-none d-lg-block col-md-8 col-lg-6 col-xl-5 mb-md-6 mb-lg-6 mb-xl-0 ml-xl-7">
         <picture class="lazyLoad">
           <source media="(min-width: 768px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/illo1_2x.png">
           <source media="(min-width: 1024px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/illo1_2x.png">
           <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/xl/illo1_2x.png">
-          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/illo1_2x.png" class="img-fluid" alt="the UX Process">
+          <img width="496" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/illo1_2x.png" class="img-fluid" alt="the UX Process">
         </picture>
       </div>
-      <div class="col-md-10 col-lg-8 col-xl-4 mb-7">
-        <h3>Start with a conversation.</h3>
+      <div class="col-md-10 col-lg-8 col-xl-4 mb-5 pb-md-3 pb-xl-0 mb-xl-0">
+        <h3 class="h4 pb-2 mb-3">Start with a conversation.</h3>
         <p>The first step is a discovery phase. During this phase, I identify key areas of the business on which to focus by creating problem statements and job stories, which I then cluster into actionable groupings. From here, I can diverge into primary and secondary research and start building a base of qualitative and quantitative data. This phase should produce a large pile of unstructured findings that can be synthesized.</p>
       </div>
     </div>
     <div class="content ~ row flex-column flex-xl-row align-items-center justify-content-center">
-      <div class="d-none d-md-block col-md-8 mb-md-6 d-lg-block col-lg-6 mb-lg-6 col-xl-5 mb-xl-9 mr-xl-7">
+      <div class="d-none col-md-8 mb-md-6 d-lg-block col-lg-6 mb-lg-6 col-xl-5 mb-xl-0 mr-xl-7">
         <picture class="lazyLoad">
           <source media="(min-width: 768px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/xl/illo2_2x.png">
           <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/xl/illo2_2x.png">
           <source media="(min-width: 1024px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/illo2_2x.png">
-          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/illo2_2x.png" class="img-fluid" alt="Conversational UX">
+          <img width="530" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/illo2_2x.png" class="img-fluid" alt="Conversational UX">
         </picture>
       </div>
-      <div class="col-md-10 col-lg-8 col-xl-4 mb-7">
-        <h3>Identify challenges &mdash; and opportunities.</h3>
+      <div class="col-md-10 col-lg-8 col-xl-4 mb-5 mb-xl-0 pb-3 pb-xl-0">
+        <h3 class="h4 pb-2 mb-3">Identify challenges &mdash; and opportunities.</h3>
         <p>Once I converge on the findings and define my areas of focus, I can identify underlying themes. This will reveal challenges and opportunities for ideation. This phase allows for an understanding of the customer’s motivations and helps to empathize with their needs. I can begin to reframe the problems, create hypotheses, and consider possible solutions.</p>
       </div>
     </div>
-    <div class="content ~ row flex-column flex-xl-row-reverse align-items-center justify-content-center">
-      <div class="d-none d-md-block col-md-8 mb-md-6 d-lg-block col-lg-6 mb-lg-6 col-xl-5 mb-xl-9 ml-xl-7">
-        <picture class="lazyLoad">
+    <div class="content ~ row flex-column flex-xl-row-reverse align-items-center justify-content-center pt-xl-2">
+      <div class="d-none col-md-8 mb-md-6 d-lg-block col-lg-6 mb-lg-6 col-xl-5 mb-xl-0 ml-xl-7">
+        <picture class="lazyLoad pos2">
           <source media="(min-width: 768px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/xl/illo3_2x.png">
           <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/xl/illo3_2x.png">
           <source media="(min-width: 1024px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/illo3_2x.png">
-          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/illo3_2x.png" class="img-fluid" alt="Product design opportunities">
+          <img width="550" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/illo3_2x.png" class="img-fluid" alt="Product design opportunities">
         </picture>
       </div>
-      <div class="col-md-10 col-lg-8 col-xl-4 mb-7">
-        <h3>Pitch multiple solutions.</h3>
+      <div class="col-md-10 col-lg-8 col-xl-4 mb-5 mb-xl-0 pb-3 pb-xl-0 pt-xl-2">
+        <h3 class="h4 pb-2 mb-3">Pitch multiple solutions.</h3>
         <p>Once I have a thorough understanding of the customer’s motivations, I can start pitching solutions. This is the point where I really get to flex my creative muscles. Through ideation sessions — and team workshops whenever possible — I am able to zero in on a handful of ideas to validate with real users.</p>
       </div>
     </div>
-
     <div class="content ~ row flex-column flex-xl-row align-items-center justify-content-center">
-      <div class="d-none d-md-block col-md-8 mb-md-6 d-lg-block col-lg-6 mb-lg-6 col-xl-5 mb-xl-9 mr-xl-7">
-        <picture class="lazyLoad">
+      <div class="d-none col-md-8 mb-md-6 d-lg-block col-lg-6 mb-lg-6 col-xl-5 mb-xl-0 mr-xl-7">
+        <picture class="lazyLoad pos3">
           <source media="(min-width: 768px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/xl/illo4_2x.png">
           <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/xl/illo4_2x.png">
           <source media="(min-width: 1024px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/illo4_2x.png">
-          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/illo4_2x.png" class="img-fluid" alt="Design sprints">
+          <img width="504" data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/illo4_2x.png" class="img-fluid" alt="Design sprints">
         </picture>
       </div>
-      <div class="col-md-10 col-lg-8 col-xl-4 mb-7">
-        <h3>Build, test, analyze, and repeat.</h3>
+      <div class="col-md-10 col-lg-8 col-xl-4 mb-5 mb-xl-0 pb-4 pb-xl-0 pt-xl-3">
+        <h3 class="h4 pb-2 mb-3">Build, test, analyze, and repeat.</h3>
         <p>Once an initial set of ideas has been established, I enter the testing and validation phase. I’ll build interactive prototypes, experiment with different interaction models, and design out animations. My job is to test, learn, iterate, and repeat. I continue this while increasing the fidelity of the prototypes until I feel I have one or two solutions worth developing.</p>
       </div>
     </div>
-
     <div class="row justify-content-center">
-      <div class="col-md-10 col-lg-8 col-xl-6">
-        <h3>Learning is a habit and I love it.</h3>
+      <div class="col-md-10 col-lg-8 col-xl-6 pt-xl-2">
+        <h3 class="h4 mb-4 mb-xl-3 pb-xl-2">Learning is a habit and I love it.</h3>
         <p>To design a product people truly love, you have to include them in the design process. Everyone is creative and has creative ideas. I always try to involve potential users in the design process early and often. This keeps me focused on the right problems and ensures I’m creating the best possible experience for the end user.</p>
       </div>
     </div>
@@ -174,7 +179,7 @@ description: I'm a UX designer based in Orlando, FL focusing on product design a
   <div class="container">
     <div class="row">
       <div class="col text-center">
-        <h2 class="title">Writing</h2>
+        <h2 class="h3 pb-1 pb-lg-4 mb-4 mb-lg-6">Writing</h2>
       </div>
     </div>
     <div class="row d-flex flex-column flex-lg-row align-items-center align-items-lg-stretch">
@@ -199,7 +204,7 @@ description: I'm a UX designer based in Orlando, FL focusing on product design a
     </div>
 
     <div class="text-center">
-      <a class="btn btn-medium" href="https://medium.com/@paulhershey" target="_blank" rel="noopener">Medium<span></span></a>
+      <a class="btn btn-primary" href="https://medium.com/@paulhershey" target="_blank" rel="noopener">Read More<span></span></a>
     </div>
   </div>
 </section>

@@ -19,11 +19,9 @@
               {% else %}
               {% assign min_width = "576px" %}
             {% endcase %}
-            <source media="(min-width: {{ min_width }})"
-                    data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ size }}/{{ include.image_name_1 }}">
+            <source media="(min-width: {{ min_width }})" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ size }}/{{ include.image_name_1 }}">
           {%- endfor -%}
-          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ media | first }}/{{ include.image_name_1 }}"
-                class="img-fluid" alt="{{ include.title }}">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ media | first }}/{{ include.image_name_1 }}" class="img-fluid" alt="{{ include.title }}">
         </picture>
         {%- unless include.caption_1.blank? -%}
           <div class="w-50 mt-3 d-flex justify-content-center">
@@ -47,11 +45,9 @@
               {% else %}
               {% assign min_width = "576px" %}
             {% endcase %}
-            <source media="(min-width: {{ min_width }})"
-                    data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ size }}/{{ include.image_name_2 }}">
+            <source media="(min-width: {{ min_width }})" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ size }}/{{ include.image_name_2 }}">
           {%- endfor -%}
-          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ media | first }}/{{ include.image_name_2 }}"
-                class="img-fluid" alt="{{ include.title }}">
+          <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/{{ media | first }}/{{ include.image_name_2 }}" class="img-fluid" alt="{{ include.title }}">
         </picture>
         {%- unless include.caption_2.blank? -%}
           <div class="w-50 mt-3 d-flex justify-content-center">

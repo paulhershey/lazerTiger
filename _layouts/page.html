@@ -7,9 +7,9 @@ layout: default
 <div class="page-template">
 
   <section class="header-img">
-    <div class="content pt-6 pt-md-8 pb-4 pb-md-6 px-3 px-lg-0">
-      <h1>{{ page.title }}</h1>
-      <p>{{ page.description }}</p>
+    <div class="content pt-6 pb-3 px-4 pt-md-7 pb-md-4 mb-md-2 mb-lg-2 px-lg-0">
+      <h1 class="mb-2">{{ page.title }}</h1>
+      <p class="mb-2">{{ page.description }}</p>
     </div>
     <div class="media">
       <picture class="lazyLoad">
@@ -28,17 +28,19 @@ layout: default
 
   <section class="goals ~ py-6 py-md-7">
     <div class="container">
-      <div class="row justify-content-center pb-md-7">
+      <div class="row justify-content-center pb-md-6 mb-md-5">
         <div class="col-md-10 col-lg-8 col-xl-6">
-          <h4>Project Goals</h4>
-          <p>{{ page.goals.text }}</p>
+          <div class="goals-space">
+            <h4>Project Goals</h4>
+            <p class="mb-0">{{ page.goals.text }}</p>
+          </div>
         </div>
       </div>
       <div class="d-none d-md-block">
         <div class="row">
           {%- for stat in page.goals.stats -%}
             <div class="col-4">
-              <span class="h1">{{ stat.metric }}</span>
+              <span class="h2">{{ stat.metric }}</span>
               <p class="lead">{{ stat.title }}</p>
             </div>
           {%- endfor -%}
@@ -49,10 +51,12 @@ layout: default
 
   <section class="strategy ~ py-6 py-md-7">
     <div class="container">
-      <div class="row justify-content-center pb-md-7">
+      <div class="row justify-content-center pb-md-6 pb-lg-7">
         <div class="col-md-10 col-lg-8 col-xl-6">
-          <h4>Project Strategy</h4>
-          <p>{{ page.strategy.text }}</p>
+          <div class="strategy-space">
+            <h4>Project Strategy</h4>
+            <p class="mb-0">{{ page.strategy.text }}</p>
+          </div>
         </div>
       </div>
       <div class="d-none d-md-block">
@@ -78,12 +82,12 @@ layout: default
       <cite>{{ page.quote.cite | newline_to_br }}</cite>
     </div>
     <picture class="lazyLoad">
-      <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/xl/{{ page.quote.image }}_2x">
-      <source media="(min-width: 1024px) and (max-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_1440/{{ image_folder }}/xl/{{ page.quote.image }}_2x">
-      <source media="(min-width: 736px) and (max-width: 1024px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_1024/{{ image_folder }}/lg/{{ page.quote.image }}_2x">
-      <source media="(min-width: 576px) and (max-width: 736px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_736/{{ image_folder }}/md/{{ page.quote.image }}_2x">
-      <source media="(max-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_576/{{ image_folder }}/sm/{{ page.quote.image }}_2x">
-      <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_576/{{ image_folder }}/sm/{{ page.quote.image }}_2x" class="img-fluid" alt="quote">
+      <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/{{ image_folder }}/xl/{{ page.quote.image }}_2x.png">
+      <source media="(min-width: 1024px) and (max-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_1440/{{ image_folder }}/xl/{{ page.quote.image }}_2x.png">
+      <source media="(min-width: 736px) and (max-width: 1024px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_1024/{{ image_folder }}/lg/{{ page.quote.image }}_2x.png">
+      <source media="(min-width: 576px) and (max-width: 736px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_736/{{ image_folder }}/md/{{ page.quote.image }}_2x.png">
+      <source media="(max-width: 576px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_576/{{ image_folder }}/sm/{{ page.quote.image }}_2x.png">
+      <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }},w_576/{{ image_folder }}/sm/{{ page.quote.image }}_2x.png" class="img-fluid" alt="quote">
     </picture>
   </section>
 

@@ -1,22 +1,20 @@
-<section id="{{ include.title | replace: ' ', '-' | lowercase }}" class="block ~ row {% if include.direction == 'reverse' %}flex-row-reverse{% endif %} justify-content-center justify-content-lg-start no-gutters">
+<section id="{{ include.title | replace: ' ', '-' | lowercase }}" class="case-studies-block ~ row {% if include.direction == 'reverse' %}flex-row-reverse{% endif %} justify-content-center justify-content-lg-start no-gutters">
   <div class="d-none d-lg-block col-6 col-xl-7">
-    <div class="media">
+    <figure class="case-studies-media">
       <picture class="lazyLoad">
         <source media="(min-width: 1440px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/xl/{{ include.image }}_2x">
         <source media="(min-width: 1024px)" data-srcset="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/{{ include.image }}_2x">
         <img data-src="{{ site.cloudinary.url }}/image/upload/{{ site.cloudinary.transforms }}/home/lg/{{ include.image }}_2x" class="img-fluid" alt="{{ include.alt }}">
       </picture>
-    </div>
+    </figure>
   </div>
   <div class="col col-md-8 col-lg-6 col-xl-5">
-    <div class="box ~ d-flex align-items-stretch">
-      <div class="row justify-content-center align-items-center text-center">
-        <div class="col-10 col-md-8 col-xl-6">
-          <span class="lead">{{ include.category }}</span>
-          <h3 style="margin-bottom: 1rem;">{{ include.title }}</h3>
-          <p>{{ include.body }}</p>
-          <a class="btn btn-secondary" href="{{ include.url | relative_url }}" data-type="page-transition">Learn more<span></span></a>
-        </div>
+    <div class="case-studies-box">
+      <div class="case-studies-content">
+        <strong class="case-studies-lead">{{ include.category }}</strong>
+        <h3 class="case-studies-title">{{ include.title }}</h3>
+        <p>{{ include.body }}</p>
+        <a class="btn btn-primary case-studies-button" href="{{ include.url | relative_url }}" data-type="page-transition">Learn more<span></span></a>
       </div>
     </div>
   </div>

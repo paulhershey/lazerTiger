@@ -7,3 +7,4 @@ img/.DS_Store
 img/gategroup/.DS_Store
 ssl
 .idea
+Gemfile.lock

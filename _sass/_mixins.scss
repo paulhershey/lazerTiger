@@ -12,6 +12,13 @@
   appearance: $arg;
 }
 
+@mixin user-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /// Slightly lighten a color
 /// @access public
 /// @param {Color} $color - color to tint
